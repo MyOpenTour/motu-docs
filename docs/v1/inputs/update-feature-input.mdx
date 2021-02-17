@@ -1,0 +1,31 @@
+---
+id: update-feature-input
+title: updateFeatureInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateFeatureInput {
+  where: InputID
+  data: editFeatureInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editFeatureInput`](/v1/inputs/edit-feature-input))

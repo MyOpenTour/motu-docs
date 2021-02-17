@@ -1,0 +1,31 @@
+---
+id: update-currency-input
+title: updateCurrencyInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateCurrencyInput {
+  where: InputID
+  data: editCurrencyInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editCurrencyInput`](/v1/inputs/edit-currency-input))

@@ -1,0 +1,28 @@
+---
+id: delete-like-payload
+title: deleteLikePayload
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type deleteLikePayload {
+  like: Like
+}
+```
+
+### Fields
+
+#### `like` ([`Like`](/v1/objects/like))

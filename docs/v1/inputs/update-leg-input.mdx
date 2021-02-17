@@ -1,0 +1,31 @@
+---
+id: update-leg-input
+title: updateLegInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateLegInput {
+  where: InputID
+  data: editLegInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editLegInput`](/v1/inputs/edit-leg-input))

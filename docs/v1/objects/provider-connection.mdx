@@ -1,0 +1,34 @@
+---
+id: provider-connection
+title: ProviderConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ProviderConnection {
+  values: [Provider]
+  groupBy: ProviderGroupBy
+  aggregate: ProviderAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Provider]`](/v1/objects/provider))
+
+#### `groupBy` ([`ProviderGroupBy`](/v1/objects/provider-group-by))
+
+#### `aggregate` ([`ProviderAggregator`](/v1/objects/provider-aggregator))

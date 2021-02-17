@@ -1,0 +1,33 @@
+---
+id: update-category
+title: updateCategory
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+updateCategory(
+  input: updateCategoryInput
+): updateCategoryPayload
+
+```
+
+### Arguments
+
+#### `input` ([`updateCategoryInput`](/v1/inputs/update-category-input))
+
+### Type
+
+#### [`updateCategoryPayload`](/v1/objects/update-category-payload)

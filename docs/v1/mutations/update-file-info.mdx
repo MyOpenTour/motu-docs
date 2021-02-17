@@ -1,0 +1,36 @@
+---
+id: update-file-info
+title: updateFileInfo
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+updateFileInfo(
+  id: ID!
+  info: FileInfoInput!
+): UploadFile!
+
+```
+
+### Arguments
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `info` ([`FileInfoInput!`](/v1/inputs/file-info-input))
+
+### Type
+
+#### [`UploadFile`](/v1/objects/upload-file)

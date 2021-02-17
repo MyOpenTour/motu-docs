@@ -1,0 +1,33 @@
+---
+id: update-itinerary
+title: updateItinerary
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+updateItinerary(
+  input: updateItineraryInput
+): updateItineraryPayload
+
+```
+
+### Arguments
+
+#### `input` ([`updateItineraryInput`](/v1/inputs/update-itinerary-input))
+
+### Type
+
+#### [`updateItineraryPayload`](/v1/objects/update-itinerary-payload)

@@ -1,0 +1,33 @@
+---
+id: delete-category
+title: deleteCategory
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+deleteCategory(
+  input: deleteCategoryInput
+): deleteCategoryPayload
+
+```
+
+### Arguments
+
+#### `input` ([`deleteCategoryInput`](/v1/inputs/delete-category-input))
+
+### Type
+
+#### [`deleteCategoryPayload`](/v1/objects/delete-category-payload)

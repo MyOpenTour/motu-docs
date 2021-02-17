@@ -1,0 +1,28 @@
+---
+id: update-providers-to-property-payload
+title: updateProvidersToPropertyPayload
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateProvidersToPropertyPayload {
+  providersToProperty: ProvidersToProperties
+}
+```
+
+### Fields
+
+#### `providersToProperty` ([`ProvidersToProperties`](/v1/objects/providers-to-properties))

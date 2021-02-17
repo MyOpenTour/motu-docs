@@ -1,0 +1,52 @@
+---
+id: order
+title: Order
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Order {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  address: String
+  city: String
+  dishes: JSON
+  amount: Float
+  published_at: DateTime
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `address` ([`String`](/v1/scalars/string))
+
+#### `city` ([`String`](/v1/scalars/string))
+
+#### `dishes` ([`JSON`](/v1/scalars/json))
+
+#### `amount` ([`Float`](/v1/scalars/float))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))

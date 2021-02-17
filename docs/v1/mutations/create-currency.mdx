@@ -1,0 +1,33 @@
+---
+id: create-currency
+title: createCurrency
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createCurrency(
+  input: createCurrencyInput
+): createCurrencyPayload
+
+```
+
+### Arguments
+
+#### `input` ([`createCurrencyInput`](/v1/inputs/create-currency-input))
+
+### Type
+
+#### [`createCurrencyPayload`](/v1/objects/create-currency-payload)

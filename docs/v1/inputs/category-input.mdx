@@ -1,0 +1,52 @@
+---
+id: category-input
+title: CategoryInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CategoryInput {
+  name: String
+  tag: JSON
+  providers: [ID]
+  name_ru: String
+  name_en: String
+  features: [ID]
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `name` ([`String`](/v1/scalars/string))
+
+#### `tag` ([`JSON`](/v1/scalars/json))
+
+#### `providers` ([`[ID]`](/v1/scalars/id))
+
+#### `name_ru` ([`String`](/v1/scalars/string))
+
+#### `name_en` ([`String`](/v1/scalars/string))
+
+#### `features` ([`[ID]`](/v1/scalars/id))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

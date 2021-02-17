@@ -1,0 +1,31 @@
+---
+id: leg-connection-end-time
+title: LegConnectionEndTime
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegConnectionEndTime {
+  key: DateTime
+  connection: LegConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`LegConnection`](/v1/objects/leg-connection))

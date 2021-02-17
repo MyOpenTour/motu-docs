@@ -1,0 +1,31 @@
+---
+id: users-permissions-login-payload
+title: UsersPermissionsLoginPayload
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UsersPermissionsLoginPayload {
+  jwt: String
+  user: UsersPermissionsMe!
+}
+```
+
+### Fields
+
+#### `jwt` ([`String`](/v1/scalars/string))
+
+#### `user` ([`UsersPermissionsMe!`](/v1/objects/users-permissions-me))

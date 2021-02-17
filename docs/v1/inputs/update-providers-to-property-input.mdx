@@ -1,0 +1,31 @@
+---
+id: update-providers-to-property-input
+title: updateProvidersToPropertyInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateProvidersToPropertyInput {
+  where: InputID
+  data: editProvidersToPropertyInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editProvidersToPropertyInput`](/v1/inputs/edit-providers-to-property-input))

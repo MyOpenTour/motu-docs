@@ -1,0 +1,40 @@
+---
+id: edit-like-input
+title: editLikeInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type editLikeInput {
+  author: ID
+  review: ID
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `author` ([`ID`](/v1/scalars/id))
+
+#### `review` ([`ID`](/v1/scalars/id))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

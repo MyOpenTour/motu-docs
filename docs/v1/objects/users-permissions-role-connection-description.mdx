@@ -1,0 +1,31 @@
+---
+id: users-permissions-role-connection-description
+title: UsersPermissionsRoleConnectionDescription
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UsersPermissionsRoleConnectionDescription {
+  key: String
+  connection: UsersPermissionsRoleConnection
+}
+```
+
+### Fields
+
+#### `key` ([`String`](/v1/scalars/string))
+
+#### `connection` ([`UsersPermissionsRoleConnection`](/v1/objects/users-permissions-role-connection))

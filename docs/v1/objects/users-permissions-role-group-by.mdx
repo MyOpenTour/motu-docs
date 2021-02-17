@@ -1,0 +1,40 @@
+---
+id: users-permissions-role-group-by
+title: UsersPermissionsRoleGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UsersPermissionsRoleGroupBy {
+  id: [UsersPermissionsRoleConnectionId]
+  _id: [UsersPermissionsRoleConnection_id]
+  name: [UsersPermissionsRoleConnectionName]
+  description: [UsersPermissionsRoleConnectionDescription]
+  type: [UsersPermissionsRoleConnectionType]
+}
+```
+
+### Fields
+
+#### `id` ([`[UsersPermissionsRoleConnectionId]`](/v1/objects/users-permissions-role-connection-id))
+
+#### `_id` ([`[UsersPermissionsRoleConnection_id]`](/v1/objects/users-permissions-role-connection-id))
+
+#### `name` ([`[UsersPermissionsRoleConnectionName]`](/v1/objects/users-permissions-role-connection-name))
+
+#### `description` ([`[UsersPermissionsRoleConnectionDescription]`](/v1/objects/users-permissions-role-connection-description))
+
+#### `type` ([`[UsersPermissionsRoleConnectionType]`](/v1/objects/users-permissions-role-connection-type))

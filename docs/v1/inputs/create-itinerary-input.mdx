@@ -1,0 +1,28 @@
+---
+id: create-itinerary-input
+title: createItineraryInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type createItineraryInput {
+  data: ItineraryInput
+}
+```
+
+### Fields
+
+#### `data` ([`ItineraryInput`](/v1/inputs/itinerary-input))

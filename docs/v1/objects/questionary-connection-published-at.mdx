@@ -1,0 +1,31 @@
+---
+id: questionary-connection-published-at
+title: QuestionaryConnectionPublished_at
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type QuestionaryConnectionPublished_at {
+  key: DateTime
+  connection: QuestionaryConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`QuestionaryConnection`](/v1/objects/questionary-connection))

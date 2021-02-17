@@ -1,0 +1,79 @@
+---
+id: edit-user-input
+title: editUserInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type editUserInput {
+  username: String
+  email: String
+  provider: String
+  password: String
+  resetPasswordToken: String
+  confirmationToken: String
+  confirmed: Boolean
+  blocked: Boolean
+  role: ID
+  reviews: [ID]
+  likes: [ID]
+  img: [ID]
+  location: editComponentLocationLocationInput
+  providers: [ID]
+  questionary: ID
+  user_category: ENUM_USERSPERMISSIONSUSER_USER_CATEGORY
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `username` ([`String`](/v1/scalars/string))
+
+#### `email` ([`String`](/v1/scalars/string))
+
+#### `provider` ([`String`](/v1/scalars/string))
+
+#### `password` ([`String`](/v1/scalars/string))
+
+#### `resetPasswordToken` ([`String`](/v1/scalars/string))
+
+#### `confirmationToken` ([`String`](/v1/scalars/string))
+
+#### `confirmed` ([`Boolean`](/v1/scalars/boolean))
+
+#### `blocked` ([`Boolean`](/v1/scalars/boolean))
+
+#### `role` ([`ID`](/v1/scalars/id))
+
+#### `reviews` ([`[ID]`](/v1/scalars/id))
+
+#### `likes` ([`[ID]`](/v1/scalars/id))
+
+#### `img` ([`[ID]`](/v1/scalars/id))
+
+#### `location` ([`editComponentLocationLocationInput`](/v1/inputs/edit-component-location-location-input))
+
+#### `providers` ([`[ID]`](/v1/scalars/id))
+
+#### `questionary` ([`ID`](/v1/scalars/id))
+
+#### `user_category` ([`ENUM_USERSPERMISSIONSUSER_USER_CATEGORY`](/v1/enums/enum-userspermissionsuser-user-category))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

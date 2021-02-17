@@ -1,0 +1,33 @@
+---
+id: create-feature
+title: createFeature
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createFeature(
+  input: createFeatureInput
+): createFeaturePayload
+
+```
+
+### Arguments
+
+#### `input` ([`createFeatureInput`](/v1/inputs/create-feature-input))
+
+### Type
+
+#### [`createFeaturePayload`](/v1/objects/create-feature-payload)

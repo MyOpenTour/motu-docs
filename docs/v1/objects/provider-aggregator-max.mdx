@@ -1,0 +1,40 @@
+---
+id: provider-aggregator-max
+title: ProviderAggregatorMax
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ProviderAggregatorMax {
+  rating: Float
+  discount: Float
+  average_price: Float
+  from_operation_hour: Float
+  to_operation_hour: Float
+}
+```
+
+### Fields
+
+#### `rating` ([`Float`](/v1/scalars/float))
+
+#### `discount` ([`Float`](/v1/scalars/float))
+
+#### `average_price` ([`Float`](/v1/scalars/float))
+
+#### `from_operation_hour` ([`Float`](/v1/scalars/float))
+
+#### `to_operation_hour` ([`Float`](/v1/scalars/float))

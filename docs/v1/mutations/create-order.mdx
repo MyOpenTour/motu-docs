@@ -1,0 +1,33 @@
+---
+id: create-order
+title: createOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createOrder(
+  input: createOrderInput
+): createOrderPayload
+
+```
+
+### Arguments
+
+#### `input` ([`createOrderInput`](/v1/inputs/create-order-input))
+
+### Type
+
+#### [`createOrderPayload`](/v1/objects/create-order-payload)

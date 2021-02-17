@@ -1,0 +1,31 @@
+---
+id: update-category-input
+title: updateCategoryInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateCategoryInput {
+  where: InputID
+  data: editCategoryInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editCategoryInput`](/v1/inputs/edit-category-input))

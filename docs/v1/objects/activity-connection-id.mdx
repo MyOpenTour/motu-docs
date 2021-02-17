@@ -1,0 +1,31 @@
+---
+id: activity-connection-id
+title: ActivityConnection_id
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ActivityConnection_id {
+  key: ID
+  connection: ActivityConnection
+}
+```
+
+### Fields
+
+#### `key` ([`ID`](/v1/scalars/id))
+
+#### `connection` ([`ActivityConnection`](/v1/objects/activity-connection))

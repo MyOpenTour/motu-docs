@@ -1,0 +1,37 @@
+---
+id: admin-user
+title: AdminUser
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type AdminUser {
+  id: ID!
+  username: String
+  firstname: String!
+  lastname: String!
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `username` ([`String`](/v1/scalars/string))
+
+#### `firstname` ([`String!`](/v1/scalars/string))
+
+#### `lastname` ([`String!`](/v1/scalars/string))

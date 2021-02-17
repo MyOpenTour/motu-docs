@@ -1,0 +1,64 @@
+---
+id: users-permissions-user-group-by
+title: UsersPermissionsUserGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UsersPermissionsUserGroupBy {
+  id: [UsersPermissionsUserConnectionId]
+  _id: [UsersPermissionsUserConnection_id]
+  createdAt: [UsersPermissionsUserConnectionCreatedAt]
+  updatedAt: [UsersPermissionsUserConnectionUpdatedAt]
+  username: [UsersPermissionsUserConnectionUsername]
+  email: [UsersPermissionsUserConnectionEmail]
+  provider: [UsersPermissionsUserConnectionProvider]
+  confirmed: [UsersPermissionsUserConnectionConfirmed]
+  blocked: [UsersPermissionsUserConnectionBlocked]
+  role: [UsersPermissionsUserConnectionRole]
+  location: [UsersPermissionsUserConnectionLocation]
+  questionary: [UsersPermissionsUserConnectionQuestionary]
+  user_category: [UsersPermissionsUserConnectionUser_category]
+}
+```
+
+### Fields
+
+#### `id` ([`[UsersPermissionsUserConnectionId]`](/v1/objects/users-permissions-user-connection-id))
+
+#### `_id` ([`[UsersPermissionsUserConnection_id]`](/v1/objects/users-permissions-user-connection-id))
+
+#### `createdAt` ([`[UsersPermissionsUserConnectionCreatedAt]`](/v1/objects/users-permissions-user-connection-created-at))
+
+#### `updatedAt` ([`[UsersPermissionsUserConnectionUpdatedAt]`](/v1/objects/users-permissions-user-connection-updated-at))
+
+#### `username` ([`[UsersPermissionsUserConnectionUsername]`](/v1/objects/users-permissions-user-connection-username))
+
+#### `email` ([`[UsersPermissionsUserConnectionEmail]`](/v1/objects/users-permissions-user-connection-email))
+
+#### `provider` ([`[UsersPermissionsUserConnectionProvider]`](/v1/objects/users-permissions-user-connection-provider))
+
+#### `confirmed` ([`[UsersPermissionsUserConnectionConfirmed]`](/v1/objects/users-permissions-user-connection-confirmed))
+
+#### `blocked` ([`[UsersPermissionsUserConnectionBlocked]`](/v1/objects/users-permissions-user-connection-blocked))
+
+#### `role` ([`[UsersPermissionsUserConnectionRole]`](/v1/objects/users-permissions-user-connection-role))
+
+#### `location` ([`[UsersPermissionsUserConnectionLocation]`](/v1/objects/users-permissions-user-connection-location))
+
+#### `questionary` ([`[UsersPermissionsUserConnectionQuestionary]`](/v1/objects/users-permissions-user-connection-questionary))
+
+#### `user_category` ([`[UsersPermissionsUserConnectionUser_category]`](/v1/objects/users-permissions-user-connection-user-category))

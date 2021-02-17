@@ -1,0 +1,59 @@
+---
+id: providers-to-properties
+title: ProvidersToProperties
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ProvidersToProperties {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  provider: Provider
+  published_at: DateTime
+  providers_properties(
+    sort: String
+    limit: Int = 0
+    start: Int = 0
+    where: JSON
+  ): [ProvidersProperties]
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `provider` ([`Provider`](/v1/objects/provider))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `providers_properties` ([`[ProvidersProperties]`](/v1/objects/providers-properties))
+
+- ##### `sort` ([`String`](/v1/scalars/string))
+
+- ##### `limit` ([`Int`](/v1/scalars/int))
+
+- ##### `start` ([`Int`](/v1/scalars/int))
+
+- ##### `where` ([`JSON`](/v1/scalars/json))

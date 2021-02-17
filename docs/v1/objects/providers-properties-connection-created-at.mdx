@@ -1,0 +1,31 @@
+---
+id: providers-properties-connection-created-at
+title: ProvidersPropertiesConnectionCreatedAt
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ProvidersPropertiesConnectionCreatedAt {
+  key: DateTime
+  connection: ProvidersPropertiesConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`ProvidersPropertiesConnection`](/v1/objects/providers-properties-connection))

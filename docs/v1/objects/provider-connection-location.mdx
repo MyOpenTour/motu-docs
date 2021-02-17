@@ -1,0 +1,31 @@
+---
+id: provider-connection-location
+title: ProviderConnectionLocation
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ProviderConnectionLocation {
+  key: ID
+  connection: ProviderConnection
+}
+```
+
+### Fields
+
+#### `key` ([`ID`](/v1/scalars/id))
+
+#### `connection` ([`ProviderConnection`](/v1/objects/provider-connection))

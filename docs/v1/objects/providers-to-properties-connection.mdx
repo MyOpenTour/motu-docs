@@ -1,0 +1,34 @@
+---
+id: providers-to-properties-connection
+title: ProvidersToPropertiesConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ProvidersToPropertiesConnection {
+  values: [ProvidersToProperties]
+  groupBy: ProvidersToPropertiesGroupBy
+  aggregate: ProvidersToPropertiesAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[ProvidersToProperties]`](/v1/objects/providers-to-properties))
+
+#### `groupBy` ([`ProvidersToPropertiesGroupBy`](/v1/objects/providers-to-properties-group-by))
+
+#### `aggregate` ([`ProvidersToPropertiesAggregator`](/v1/objects/providers-to-properties-aggregator))

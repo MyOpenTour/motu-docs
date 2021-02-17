@@ -1,0 +1,33 @@
+---
+id: create-review
+title: createReview
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createReview(
+  input: createReviewInput
+): createReviewPayload
+
+```
+
+### Arguments
+
+#### `input` ([`createReviewInput`](/v1/inputs/create-review-input))
+
+### Type
+
+#### [`createReviewPayload`](/v1/objects/create-review-payload)

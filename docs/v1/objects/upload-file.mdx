@@ -1,0 +1,90 @@
+---
+id: upload-file
+title: UploadFile
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UploadFile {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  alternativeText: String
+  caption: String
+  width: Int
+  height: Int
+  formats: JSON
+  hash: String!
+  ext: String
+  mime: String!
+  size: Float!
+  url: String!
+  previewUrl: String
+  provider: String!
+  provider_metadata: JSON
+  related(sort: String, limit: Int = 0, start: Int = 0, where: JSON): [Morph]
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `name` ([`String!`](/v1/scalars/string))
+
+#### `alternativeText` ([`String`](/v1/scalars/string))
+
+#### `caption` ([`String`](/v1/scalars/string))
+
+#### `width` ([`Int`](/v1/scalars/int))
+
+#### `height` ([`Int`](/v1/scalars/int))
+
+#### `formats` ([`JSON`](/v1/scalars/json))
+
+#### `hash` ([`String!`](/v1/scalars/string))
+
+#### `ext` ([`String`](/v1/scalars/string))
+
+#### `mime` ([`String!`](/v1/scalars/string))
+
+#### `size` ([`Float!`](/v1/scalars/float))
+
+#### `url` ([`String!`](/v1/scalars/string))
+
+#### `previewUrl` ([`String`](/v1/scalars/string))
+
+#### `provider` ([`String!`](/v1/scalars/string))
+
+#### `provider_metadata` ([`JSON`](/v1/scalars/json))
+
+#### `related` ([`[Morph]`](/v1/unions/morph))
+
+- ##### `sort` ([`String`](/v1/scalars/string))
+
+- ##### `limit` ([`Int`](/v1/scalars/int))
+
+- ##### `start` ([`Int`](/v1/scalars/int))
+
+- ##### `where` ([`JSON`](/v1/scalars/json))

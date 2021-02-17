@@ -1,0 +1,40 @@
+---
+id: edit-providers-property-input
+title: editProvidersPropertyInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type editProvidersPropertyInput {
+  feature: String
+  category: ID
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `feature` ([`String`](/v1/scalars/string))
+
+#### `category` ([`ID`](/v1/scalars/id))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

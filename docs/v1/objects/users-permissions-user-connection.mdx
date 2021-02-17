@@ -1,0 +1,34 @@
+---
+id: users-permissions-user-connection
+title: UsersPermissionsUserConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UsersPermissionsUserConnection {
+  values: [UsersPermissionsUser]
+  groupBy: UsersPermissionsUserGroupBy
+  aggregate: UsersPermissionsUserAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[UsersPermissionsUser]`](/v1/objects/users-permissions-user))
+
+#### `groupBy` ([`UsersPermissionsUserGroupBy`](/v1/objects/users-permissions-user-group-by))
+
+#### `aggregate` ([`UsersPermissionsUserAggregator`](/v1/objects/users-permissions-user-aggregator))

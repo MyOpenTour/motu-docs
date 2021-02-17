@@ -1,0 +1,36 @@
+---
+id: coupon
+title: coupon
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+coupon(
+  id: ID!
+  publicationState: PublicationState
+): Coupon
+
+```
+
+### Arguments
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `publicationState` ([`PublicationState`](/v1/enums/publication-state))
+
+### Type
+
+#### [`Coupon`](/v1/objects/coupon)

@@ -1,0 +1,31 @@
+---
+id: update-order-input
+title: updateOrderInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateOrderInput {
+  where: InputID
+  data: editOrderInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editOrderInput`](/v1/inputs/edit-order-input))

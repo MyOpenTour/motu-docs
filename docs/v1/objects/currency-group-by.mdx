@@ -1,0 +1,61 @@
+---
+id: currency-group-by
+title: CurrencyGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CurrencyGroupBy {
+  id: [CurrencyConnectionId]
+  _id: [CurrencyConnection_id]
+  createdAt: [CurrencyConnectionCreatedAt]
+  updatedAt: [CurrencyConnectionUpdatedAt]
+  name: [CurrencyConnectionName]
+  symbol: [CurrencyConnectionSymbol]
+  code: [CurrencyConnectionCode]
+  decimal_digits: [CurrencyConnectionDecimal_digits]
+  rounding: [CurrencyConnectionRounding]
+  name_ru: [CurrencyConnectionName_ru]
+  name_en: [CurrencyConnectionName_en]
+  published_at: [CurrencyConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[CurrencyConnectionId]`](/v1/objects/currency-connection-id))
+
+#### `_id` ([`[CurrencyConnection_id]`](/v1/objects/currency-connection-id))
+
+#### `createdAt` ([`[CurrencyConnectionCreatedAt]`](/v1/objects/currency-connection-created-at))
+
+#### `updatedAt` ([`[CurrencyConnectionUpdatedAt]`](/v1/objects/currency-connection-updated-at))
+
+#### `name` ([`[CurrencyConnectionName]`](/v1/objects/currency-connection-name))
+
+#### `symbol` ([`[CurrencyConnectionSymbol]`](/v1/objects/currency-connection-symbol))
+
+#### `code` ([`[CurrencyConnectionCode]`](/v1/objects/currency-connection-code))
+
+#### `decimal_digits` ([`[CurrencyConnectionDecimal_digits]`](/v1/objects/currency-connection-decimal-digits))
+
+#### `rounding` ([`[CurrencyConnectionRounding]`](/v1/objects/currency-connection-rounding))
+
+#### `name_ru` ([`[CurrencyConnectionName_ru]`](/v1/objects/currency-connection-name-ru))
+
+#### `name_en` ([`[CurrencyConnectionName_en]`](/v1/objects/currency-connection-name-en))
+
+#### `published_at` ([`[CurrencyConnectionPublished_at]`](/v1/objects/currency-connection-published-at))

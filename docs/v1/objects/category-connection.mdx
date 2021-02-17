@@ -1,0 +1,34 @@
+---
+id: category-connection
+title: CategoryConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CategoryConnection {
+  values: [Category]
+  groupBy: CategoryGroupBy
+  aggregate: CategoryAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Category]`](/v1/objects/category))
+
+#### `groupBy` ([`CategoryGroupBy`](/v1/objects/category-group-by))
+
+#### `aggregate` ([`CategoryAggregator`](/v1/objects/category-aggregator))

@@ -1,0 +1,33 @@
+---
+id: update-activity
+title: updateActivity
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+updateActivity(
+  input: updateActivityInput
+): updateActivityPayload
+
+```
+
+### Arguments
+
+#### `input` ([`updateActivityInput`](/v1/inputs/update-activity-input))
+
+### Type
+
+#### [`updateActivityPayload`](/v1/objects/update-activity-payload)

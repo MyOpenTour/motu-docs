@@ -1,0 +1,31 @@
+---
+id: users-permissions-user-connection-provider
+title: UsersPermissionsUserConnectionProvider
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UsersPermissionsUserConnectionProvider {
+  key: String
+  connection: UsersPermissionsUserConnection
+}
+```
+
+### Fields
+
+#### `key` ([`String`](/v1/scalars/string))
+
+#### `connection` ([`UsersPermissionsUserConnection`](/v1/objects/users-permissions-user-connection))

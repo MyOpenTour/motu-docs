@@ -1,0 +1,33 @@
+---
+id: create-like
+title: createLike
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createLike(
+  input: createLikeInput
+): createLikePayload
+
+```
+
+### Arguments
+
+#### `input` ([`createLikeInput`](/v1/inputs/create-like-input))
+
+### Type
+
+#### [`createLikePayload`](/v1/objects/create-like-payload)

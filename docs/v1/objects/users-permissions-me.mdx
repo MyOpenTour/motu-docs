@@ -1,0 +1,43 @@
+---
+id: users-permissions-me
+title: UsersPermissionsMe
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UsersPermissionsMe {
+  id: ID!
+  username: String!
+  email: String!
+  confirmed: Boolean
+  blocked: Boolean
+  role: UsersPermissionsMeRole
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `username` ([`String!`](/v1/scalars/string))
+
+#### `email` ([`String!`](/v1/scalars/string))
+
+#### `confirmed` ([`Boolean`](/v1/scalars/boolean))
+
+#### `blocked` ([`Boolean`](/v1/scalars/boolean))
+
+#### `role` ([`UsersPermissionsMeRole`](/v1/objects/users-permissions-me-role))

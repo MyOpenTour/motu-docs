@@ -1,0 +1,31 @@
+---
+id: upload-file-connection-formats
+title: UploadFileConnectionFormats
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UploadFileConnectionFormats {
+  key: JSON
+  connection: UploadFileConnection
+}
+```
+
+### Fields
+
+#### `key` ([`JSON`](/v1/scalars/json))
+
+#### `connection` ([`UploadFileConnection`](/v1/objects/upload-file-connection))

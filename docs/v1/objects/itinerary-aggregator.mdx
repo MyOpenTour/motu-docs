@@ -1,0 +1,31 @@
+---
+id: itinerary-aggregator
+title: ItineraryAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ItineraryAggregator {
+  count: Int
+  totalCount: Int
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))

@@ -1,0 +1,33 @@
+---
+id: update-order
+title: updateOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+updateOrder(
+  input: updateOrderInput
+): updateOrderPayload
+
+```
+
+### Arguments
+
+#### `input` ([`updateOrderInput`](/v1/inputs/update-order-input))
+
+### Type
+
+#### [`updateOrderPayload`](/v1/objects/update-order-payload)

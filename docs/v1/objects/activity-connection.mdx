@@ -1,0 +1,34 @@
+---
+id: activity-connection
+title: ActivityConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ActivityConnection {
+  values: [Activity]
+  groupBy: ActivityGroupBy
+  aggregate: ActivityAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Activity]`](/v1/objects/activity))
+
+#### `groupBy` ([`ActivityGroupBy`](/v1/objects/activity-group-by))
+
+#### `aggregate` ([`ActivityAggregator`](/v1/objects/activity-aggregator))

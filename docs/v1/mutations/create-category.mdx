@@ -1,0 +1,33 @@
+---
+id: create-category
+title: createCategory
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createCategory(
+  input: createCategoryInput
+): createCategoryPayload
+
+```
+
+### Arguments
+
+#### `input` ([`createCategoryInput`](/v1/inputs/create-category-input))
+
+### Type
+
+#### [`createCategoryPayload`](/v1/objects/create-category-payload)

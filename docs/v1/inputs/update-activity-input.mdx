@@ -1,0 +1,31 @@
+---
+id: update-activity-input
+title: updateActivityInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateActivityInput {
+  where: InputID
+  data: editActivityInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editActivityInput`](/v1/inputs/edit-activity-input))

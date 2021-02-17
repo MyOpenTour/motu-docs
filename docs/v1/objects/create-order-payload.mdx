@@ -1,0 +1,28 @@
+---
+id: create-order-payload
+title: createOrderPayload
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type createOrderPayload {
+  order: Order
+}
+```
+
+### Fields
+
+#### `order` ([`Order`](/v1/objects/order))

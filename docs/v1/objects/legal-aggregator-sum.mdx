@@ -1,0 +1,40 @@
+---
+id: legal-aggregator-sum
+title: LegalAggregatorSum
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegalAggregatorSum {
+  tax_id: Float
+  registration_id: Float
+  registration_cause_id: Float
+  bank_id: Float
+  checking_account: Float
+}
+```
+
+### Fields
+
+#### `tax_id` ([`Float`](/v1/scalars/float))
+
+#### `registration_id` ([`Float`](/v1/scalars/float))
+
+#### `registration_cause_id` ([`Float`](/v1/scalars/float))
+
+#### `bank_id` ([`Float`](/v1/scalars/float))
+
+#### `checking_account` ([`Float`](/v1/scalars/float))

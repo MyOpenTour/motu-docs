@@ -1,0 +1,80 @@
+---
+id: leg
+title: Leg
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Leg {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  from: Provider
+  to: Provider
+  startTime: DateTime
+  endTime: DateTime
+  mode: ENUM_LEG_MODE
+  radius: Int
+  travellers: Int
+  legState: ENUM_LEG_LEGSTATE
+  published_at: DateTime
+  users(
+    sort: String
+    limit: Int = 0
+    start: Int = 0
+    where: JSON
+  ): [UsersPermissionsUser]
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `from` ([`Provider`](/v1/objects/provider))
+
+#### `to` ([`Provider`](/v1/objects/provider))
+
+#### `startTime` ([`DateTime`](/v1/scalars/date-time))
+
+#### `endTime` ([`DateTime`](/v1/scalars/date-time))
+
+#### `mode` ([`ENUM_LEG_MODE`](/v1/enums/enum-leg-mode))
+
+#### `radius` ([`Int`](/v1/scalars/int))
+
+#### `travellers` ([`Int`](/v1/scalars/int))
+
+#### `legState` ([`ENUM_LEG_LEGSTATE`](/v1/enums/enum-leg-legstate))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `users` ([`[UsersPermissionsUser]`](/v1/objects/users-permissions-user))
+
+- ##### `sort` ([`String`](/v1/scalars/string))
+
+- ##### `limit` ([`Int`](/v1/scalars/int))
+
+- ##### `start` ([`Int`](/v1/scalars/int))
+
+- ##### `where` ([`JSON`](/v1/scalars/json))

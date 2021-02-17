@@ -1,0 +1,46 @@
+---
+id: edit-role-input
+title: editRoleInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type editRoleInput {
+  name: String
+  description: String
+  type: String
+  permissions: [ID]
+  users: [ID]
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `name` ([`String`](/v1/scalars/string))
+
+#### `description` ([`String`](/v1/scalars/string))
+
+#### `type` ([`String`](/v1/scalars/string))
+
+#### `permissions` ([`[ID]`](/v1/scalars/id))
+
+#### `users` ([`[ID]`](/v1/scalars/id))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

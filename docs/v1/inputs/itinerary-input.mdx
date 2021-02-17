@@ -1,0 +1,46 @@
+---
+id: itinerary-input
+title: ItineraryInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ItineraryInput {
+  legs: [ID]
+  itineraryState: ENUM_ITINERARY_ITINERARYSTATE
+  startTime: DateTime
+  endTime: DateTime
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `legs` ([`[ID]`](/v1/scalars/id))
+
+#### `itineraryState` ([`ENUM_ITINERARY_ITINERARYSTATE`](/v1/enums/enum-itinerary-itinerarystate))
+
+#### `startTime` ([`DateTime`](/v1/scalars/date-time))
+
+#### `endTime` ([`DateTime`](/v1/scalars/date-time))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

@@ -1,0 +1,36 @@
+---
+id: category
+title: category
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+category(
+  id: ID!
+  publicationState: PublicationState
+): Category
+
+```
+
+### Arguments
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `publicationState` ([`PublicationState`](/v1/enums/publication-state))
+
+### Type
+
+#### [`Category`](/v1/objects/category)

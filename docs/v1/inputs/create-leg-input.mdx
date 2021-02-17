@@ -1,0 +1,28 @@
+---
+id: create-leg-input
+title: createLegInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type createLegInput {
+  data: LegInput
+}
+```
+
+### Fields
+
+#### `data` ([`LegInput`](/v1/inputs/leg-input))

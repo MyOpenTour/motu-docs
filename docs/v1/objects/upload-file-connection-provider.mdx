@@ -1,0 +1,31 @@
+---
+id: upload-file-connection-provider
+title: UploadFileConnectionProvider
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UploadFileConnectionProvider {
+  key: String
+  connection: UploadFileConnection
+}
+```
+
+### Fields
+
+#### `key` ([`String`](/v1/scalars/string))
+
+#### `connection` ([`UploadFileConnection`](/v1/objects/upload-file-connection))

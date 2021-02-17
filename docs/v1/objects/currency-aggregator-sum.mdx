@@ -1,0 +1,31 @@
+---
+id: currency-aggregator-sum
+title: CurrencyAggregatorSum
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CurrencyAggregatorSum {
+  decimal_digits: Float
+  rounding: Float
+}
+```
+
+### Fields
+
+#### `decimal_digits` ([`Float`](/v1/scalars/float))
+
+#### `rounding` ([`Float`](/v1/scalars/float))

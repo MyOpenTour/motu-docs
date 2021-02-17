@@ -1,0 +1,34 @@
+---
+id: currency-connection
+title: CurrencyConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CurrencyConnection {
+  values: [Currency]
+  groupBy: CurrencyGroupBy
+  aggregate: CurrencyAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Currency]`](/v1/objects/currency))
+
+#### `groupBy` ([`CurrencyGroupBy`](/v1/objects/currency-group-by))
+
+#### `aggregate` ([`CurrencyAggregator`](/v1/objects/currency-aggregator))

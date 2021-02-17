@@ -1,0 +1,28 @@
+---
+id: create-legal-payload
+title: createLegalPayload
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type createLegalPayload {
+  legal: Legal
+}
+```
+
+### Fields
+
+#### `legal` ([`Legal`](/v1/objects/legal))

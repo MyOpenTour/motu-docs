@@ -1,0 +1,31 @@
+---
+id: currency-connection-name-en
+title: CurrencyConnectionName_en
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CurrencyConnectionName_en {
+  key: String
+  connection: CurrencyConnection
+}
+```
+
+### Fields
+
+#### `key` ([`String`](/v1/scalars/string))
+
+#### `connection` ([`CurrencyConnection`](/v1/objects/currency-connection))

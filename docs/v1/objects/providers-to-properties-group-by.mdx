@@ -1,0 +1,43 @@
+---
+id: providers-to-properties-group-by
+title: ProvidersToPropertiesGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ProvidersToPropertiesGroupBy {
+  id: [ProvidersToPropertiesConnectionId]
+  _id: [ProvidersToPropertiesConnection_id]
+  createdAt: [ProvidersToPropertiesConnectionCreatedAt]
+  updatedAt: [ProvidersToPropertiesConnectionUpdatedAt]
+  provider: [ProvidersToPropertiesConnectionProvider]
+  published_at: [ProvidersToPropertiesConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[ProvidersToPropertiesConnectionId]`](/v1/objects/providers-to-properties-connection-id))
+
+#### `_id` ([`[ProvidersToPropertiesConnection_id]`](/v1/objects/providers-to-properties-connection-id))
+
+#### `createdAt` ([`[ProvidersToPropertiesConnectionCreatedAt]`](/v1/objects/providers-to-properties-connection-created-at))
+
+#### `updatedAt` ([`[ProvidersToPropertiesConnectionUpdatedAt]`](/v1/objects/providers-to-properties-connection-updated-at))
+
+#### `provider` ([`[ProvidersToPropertiesConnectionProvider]`](/v1/objects/providers-to-properties-connection-provider))
+
+#### `published_at` ([`[ProvidersToPropertiesConnectionPublished_at]`](/v1/objects/providers-to-properties-connection-published-at))

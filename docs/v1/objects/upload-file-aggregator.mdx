@@ -1,0 +1,43 @@
+---
+id: upload-file-aggregator
+title: UploadFileAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UploadFileAggregator {
+  count: Int
+  totalCount: Int
+  sum: UploadFileAggregatorSum
+  avg: UploadFileAggregatorAvg
+  min: UploadFileAggregatorMin
+  max: UploadFileAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`UploadFileAggregatorSum`](/v1/objects/upload-file-aggregator-sum))
+
+#### `avg` ([`UploadFileAggregatorAvg`](/v1/objects/upload-file-aggregator-avg))
+
+#### `min` ([`UploadFileAggregatorMin`](/v1/objects/upload-file-aggregator-min))
+
+#### `max` ([`UploadFileAggregatorMax`](/v1/objects/upload-file-aggregator-max))

@@ -1,0 +1,67 @@
+---
+id: questionary
+title: Questionary
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Questionary {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  users_permissions_user: UsersPermissionsUser
+  sex: ENUM_QUESTIONARY_SEX
+  bdate: Date
+  city: String
+  education: ENUM_QUESTIONARY_EDUCATION
+  interests: String
+  career_industry: String
+  career_position: ENUM_QUESTIONARY_CAREER_POSITION
+  purpose_of_visit: String
+  published_at: DateTime
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `users_permissions_user` ([`UsersPermissionsUser`](/v1/objects/users-permissions-user))
+
+#### `sex` ([`ENUM_QUESTIONARY_SEX`](/v1/enums/enum-questionary-sex))
+
+#### `bdate` ([`Date`](/v1/scalars/date))
+
+#### `city` ([`String`](/v1/scalars/string))
+
+#### `education` ([`ENUM_QUESTIONARY_EDUCATION`](/v1/enums/enum-questionary-education))
+
+#### `interests` ([`String`](/v1/scalars/string))
+
+#### `career_industry` ([`String`](/v1/scalars/string))
+
+#### `career_position` ([`ENUM_QUESTIONARY_CAREER_POSITION`](/v1/enums/enum-questionary-career-position))
+
+#### `purpose_of_visit` ([`String`](/v1/scalars/string))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))

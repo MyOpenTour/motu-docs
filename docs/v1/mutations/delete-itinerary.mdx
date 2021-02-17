@@ -1,0 +1,33 @@
+---
+id: delete-itinerary
+title: deleteItinerary
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+deleteItinerary(
+  input: deleteItineraryInput
+): deleteItineraryPayload
+
+```
+
+### Arguments
+
+#### `input` ([`deleteItineraryInput`](/v1/inputs/delete-itinerary-input))
+
+### Type
+
+#### [`deleteItineraryPayload`](/v1/objects/delete-itinerary-payload)

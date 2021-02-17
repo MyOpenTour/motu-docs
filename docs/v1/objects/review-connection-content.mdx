@@ -1,0 +1,31 @@
+---
+id: review-connection-content
+title: ReviewConnectionContent
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ReviewConnectionContent {
+  key: String
+  connection: ReviewConnection
+}
+```
+
+### Fields
+
+#### `key` ([`String`](/v1/scalars/string))
+
+#### `connection` ([`ReviewConnection`](/v1/objects/review-connection))

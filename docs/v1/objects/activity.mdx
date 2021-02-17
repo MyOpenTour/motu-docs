@@ -1,0 +1,75 @@
+---
+id: activity
+title: Activity
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Activity {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String
+  description: String
+  price: Float
+  provider: Provider
+  name_ru: String
+  name_en: String
+  description_ru: String
+  description_en: String
+  published_at: DateTime
+  image(sort: String, limit: Int = 0, start: Int = 0, where: JSON): [UploadFile]
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `name` ([`String`](/v1/scalars/string))
+
+#### `description` ([`String`](/v1/scalars/string))
+
+#### `price` ([`Float`](/v1/scalars/float))
+
+#### `provider` ([`Provider`](/v1/objects/provider))
+
+#### `name_ru` ([`String`](/v1/scalars/string))
+
+#### `name_en` ([`String`](/v1/scalars/string))
+
+#### `description_ru` ([`String`](/v1/scalars/string))
+
+#### `description_en` ([`String`](/v1/scalars/string))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `image` ([`[UploadFile]`](/v1/objects/upload-file))
+
+- ##### `sort` ([`String`](/v1/scalars/string))
+
+- ##### `limit` ([`Int`](/v1/scalars/int))
+
+- ##### `start` ([`Int`](/v1/scalars/int))
+
+- ##### `where` ([`JSON`](/v1/scalars/json))

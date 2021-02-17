@@ -1,0 +1,31 @@
+---
+id: update-role-input
+title: updateRoleInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateRoleInput {
+  where: InputID
+  data: editRoleInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editRoleInput`](/v1/inputs/edit-role-input))

@@ -1,0 +1,72 @@
+---
+id: users-permissions-role
+title: UsersPermissionsRole
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UsersPermissionsRole {
+  id: ID!
+  _id: ID!
+  name: String!
+  description: String
+  type: String
+  permissions(
+    sort: String
+    limit: Int = 0
+    start: Int = 0
+    where: JSON
+  ): [UsersPermissionsPermission]
+  users(
+    sort: String
+    limit: Int = 0
+    start: Int = 0
+    where: JSON
+  ): [UsersPermissionsUser]
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `name` ([`String!`](/v1/scalars/string))
+
+#### `description` ([`String`](/v1/scalars/string))
+
+#### `type` ([`String`](/v1/scalars/string))
+
+#### `permissions` ([`[UsersPermissionsPermission]`](/v1/objects/users-permissions-permission))
+
+- ##### `sort` ([`String`](/v1/scalars/string))
+
+- ##### `limit` ([`Int`](/v1/scalars/int))
+
+- ##### `start` ([`Int`](/v1/scalars/int))
+
+- ##### `where` ([`JSON`](/v1/scalars/json))
+
+#### `users` ([`[UsersPermissionsUser]`](/v1/objects/users-permissions-user))
+
+- ##### `sort` ([`String`](/v1/scalars/string))
+
+- ##### `limit` ([`Int`](/v1/scalars/int))
+
+- ##### `start` ([`Int`](/v1/scalars/int))
+
+- ##### `where` ([`JSON`](/v1/scalars/json))

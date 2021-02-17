@@ -1,0 +1,31 @@
+---
+id: feature-connection-updated-at
+title: FeatureConnectionUpdatedAt
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type FeatureConnectionUpdatedAt {
+  key: DateTime
+  connection: FeatureConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`FeatureConnection`](/v1/objects/feature-connection))

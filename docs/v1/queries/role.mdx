@@ -1,0 +1,36 @@
+---
+id: role
+title: role
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+role(
+  id: ID!
+  publicationState: PublicationState
+): UsersPermissionsRole
+
+```
+
+### Arguments
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `publicationState` ([`PublicationState`](/v1/enums/publication-state))
+
+### Type
+
+#### [`UsersPermissionsRole`](/v1/objects/users-permissions-role)

@@ -1,0 +1,31 @@
+---
+id: order-connection-published-at
+title: OrderConnectionPublished_at
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OrderConnectionPublished_at {
+  key: DateTime
+  connection: OrderConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`OrderConnection`](/v1/objects/order-connection))

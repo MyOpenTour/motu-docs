@@ -1,0 +1,31 @@
+---
+id: itinerary-connection-published-at
+title: ItineraryConnectionPublished_at
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ItineraryConnectionPublished_at {
+  key: DateTime
+  connection: ItineraryConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`ItineraryConnection`](/v1/objects/itinerary-connection))

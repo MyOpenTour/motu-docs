@@ -1,0 +1,33 @@
+---
+id: delete-order
+title: deleteOrder
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+deleteOrder(
+  input: deleteOrderInput
+): deleteOrderPayload
+
+```
+
+### Arguments
+
+#### `input` ([`deleteOrderInput`](/v1/inputs/delete-order-input))
+
+### Type
+
+#### [`deleteOrderPayload`](/v1/objects/delete-order-payload)

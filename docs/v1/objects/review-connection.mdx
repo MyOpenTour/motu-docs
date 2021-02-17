@@ -1,0 +1,34 @@
+---
+id: review-connection
+title: ReviewConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ReviewConnection {
+  values: [Review]
+  groupBy: ReviewGroupBy
+  aggregate: ReviewAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Review]`](/v1/objects/review))
+
+#### `groupBy` ([`ReviewGroupBy`](/v1/objects/review-group-by))
+
+#### `aggregate` ([`ReviewAggregator`](/v1/objects/review-aggregator))

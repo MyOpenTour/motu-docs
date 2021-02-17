@@ -1,0 +1,76 @@
+---
+id: file-input
+title: FileInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type FileInput {
+  name: String!
+  alternativeText: String
+  caption: String
+  width: Int
+  height: Int
+  formats: JSON
+  hash: String!
+  ext: String
+  mime: String!
+  size: Float!
+  url: String!
+  previewUrl: String
+  provider: String!
+  provider_metadata: JSON
+  related: [ID]
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `name` ([`String!`](/v1/scalars/string))
+
+#### `alternativeText` ([`String`](/v1/scalars/string))
+
+#### `caption` ([`String`](/v1/scalars/string))
+
+#### `width` ([`Int`](/v1/scalars/int))
+
+#### `height` ([`Int`](/v1/scalars/int))
+
+#### `formats` ([`JSON`](/v1/scalars/json))
+
+#### `hash` ([`String!`](/v1/scalars/string))
+
+#### `ext` ([`String`](/v1/scalars/string))
+
+#### `mime` ([`String!`](/v1/scalars/string))
+
+#### `size` ([`Float!`](/v1/scalars/float))
+
+#### `url` ([`String!`](/v1/scalars/string))
+
+#### `previewUrl` ([`String`](/v1/scalars/string))
+
+#### `provider` ([`String!`](/v1/scalars/string))
+
+#### `provider_metadata` ([`JSON`](/v1/scalars/json))
+
+#### `related` ([`[ID]`](/v1/scalars/id))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

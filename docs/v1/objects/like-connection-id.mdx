@@ -1,0 +1,31 @@
+---
+id: like-connection-id
+title: LikeConnection_id
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LikeConnection_id {
+  key: ID
+  connection: LikeConnection
+}
+```
+
+### Fields
+
+#### `key` ([`ID`](/v1/scalars/id))
+
+#### `connection` ([`LikeConnection`](/v1/objects/like-connection))

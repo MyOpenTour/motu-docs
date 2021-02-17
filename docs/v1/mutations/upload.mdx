@@ -1,0 +1,45 @@
+---
+id: upload
+title: upload
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+upload(
+  refId: ID = 0
+  ref: String
+  field: String
+  source: String
+  file: Upload!
+): UploadFile!
+
+```
+
+### Arguments
+
+#### `refId` ([`ID`](/v1/scalars/id))
+
+#### `ref` ([`String`](/v1/scalars/string))
+
+#### `field` ([`String`](/v1/scalars/string))
+
+#### `source` ([`String`](/v1/scalars/string))
+
+#### `file` ([`Upload!`](/v1/scalars/upload))
+
+### Type
+
+#### [`UploadFile`](/v1/objects/upload-file)

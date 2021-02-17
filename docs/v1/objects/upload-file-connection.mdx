@@ -1,0 +1,34 @@
+---
+id: upload-file-connection
+title: UploadFileConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UploadFileConnection {
+  values: [UploadFile]
+  groupBy: UploadFileGroupBy
+  aggregate: UploadFileAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[UploadFile]`](/v1/objects/upload-file))
+
+#### `groupBy` ([`UploadFileGroupBy`](/v1/objects/upload-file-group-by))
+
+#### `aggregate` ([`UploadFileAggregator`](/v1/objects/upload-file-aggregator))

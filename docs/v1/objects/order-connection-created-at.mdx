@@ -1,0 +1,31 @@
+---
+id: order-connection-created-at
+title: OrderConnectionCreatedAt
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OrderConnectionCreatedAt {
+  key: DateTime
+  connection: OrderConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`OrderConnection`](/v1/objects/order-connection))

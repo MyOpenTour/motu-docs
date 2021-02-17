@@ -1,0 +1,33 @@
+---
+id: delete-activity
+title: deleteActivity
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+deleteActivity(
+  input: deleteActivityInput
+): deleteActivityPayload
+
+```
+
+### Arguments
+
+#### `input` ([`deleteActivityInput`](/v1/inputs/delete-activity-input))
+
+### Type
+
+#### [`deleteActivityPayload`](/v1/objects/delete-activity-payload)

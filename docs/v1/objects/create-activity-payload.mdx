@@ -1,0 +1,28 @@
+---
+id: create-activity-payload
+title: createActivityPayload
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type createActivityPayload {
+  activity: Activity
+}
+```
+
+### Fields
+
+#### `activity` ([`Activity`](/v1/objects/activity))

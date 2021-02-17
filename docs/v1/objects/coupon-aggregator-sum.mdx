@@ -1,0 +1,40 @@
+---
+id: coupon-aggregator-sum
+title: CouponAggregatorSum
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CouponAggregatorSum {
+  amount_off: Float
+  duration_in_months: Float
+  percent_off: Float
+  max_redemptions: Float
+  times_redeemed: Float
+}
+```
+
+### Fields
+
+#### `amount_off` ([`Float`](/v1/scalars/float))
+
+#### `duration_in_months` ([`Float`](/v1/scalars/float))
+
+#### `percent_off` ([`Float`](/v1/scalars/float))
+
+#### `max_redemptions` ([`Float`](/v1/scalars/float))
+
+#### `times_redeemed` ([`Float`](/v1/scalars/float))

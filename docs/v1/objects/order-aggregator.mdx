@@ -1,0 +1,43 @@
+---
+id: order-aggregator
+title: OrderAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OrderAggregator {
+  count: Int
+  totalCount: Int
+  sum: OrderAggregatorSum
+  avg: OrderAggregatorAvg
+  min: OrderAggregatorMin
+  max: OrderAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`OrderAggregatorSum`](/v1/objects/order-aggregator-sum))
+
+#### `avg` ([`OrderAggregatorAvg`](/v1/objects/order-aggregator-avg))
+
+#### `min` ([`OrderAggregatorMin`](/v1/objects/order-aggregator-min))
+
+#### `max` ([`OrderAggregatorMax`](/v1/objects/order-aggregator-max))

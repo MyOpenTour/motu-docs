@@ -1,0 +1,43 @@
+---
+id: review-aggregator
+title: ReviewAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ReviewAggregator {
+  count: Int
+  totalCount: Int
+  sum: ReviewAggregatorSum
+  avg: ReviewAggregatorAvg
+  min: ReviewAggregatorMin
+  max: ReviewAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`ReviewAggregatorSum`](/v1/objects/review-aggregator-sum))
+
+#### `avg` ([`ReviewAggregatorAvg`](/v1/objects/review-aggregator-avg))
+
+#### `min` ([`ReviewAggregatorMin`](/v1/objects/review-aggregator-min))
+
+#### `max` ([`ReviewAggregatorMax`](/v1/objects/review-aggregator-max))

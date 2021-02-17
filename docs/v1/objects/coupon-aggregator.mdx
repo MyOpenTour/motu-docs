@@ -1,0 +1,43 @@
+---
+id: coupon-aggregator
+title: CouponAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CouponAggregator {
+  count: Int
+  totalCount: Int
+  sum: CouponAggregatorSum
+  avg: CouponAggregatorAvg
+  min: CouponAggregatorMin
+  max: CouponAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`CouponAggregatorSum`](/v1/objects/coupon-aggregator-sum))
+
+#### `avg` ([`CouponAggregatorAvg`](/v1/objects/coupon-aggregator-avg))
+
+#### `min` ([`CouponAggregatorMin`](/v1/objects/coupon-aggregator-min))
+
+#### `max` ([`CouponAggregatorMax`](/v1/objects/coupon-aggregator-max))

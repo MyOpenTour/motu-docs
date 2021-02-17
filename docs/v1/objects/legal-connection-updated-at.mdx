@@ -1,0 +1,31 @@
+---
+id: legal-connection-updated-at
+title: LegalConnectionUpdatedAt
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegalConnectionUpdatedAt {
+  key: DateTime
+  connection: LegalConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`LegalConnection`](/v1/objects/legal-connection))

@@ -1,0 +1,31 @@
+---
+id: legal-connection-legal-address
+title: LegalConnectionLegal_address
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegalConnectionLegal_address {
+  key: String
+  connection: LegalConnection
+}
+```
+
+### Fields
+
+#### `key` ([`String`](/v1/scalars/string))
+
+#### `connection` ([`LegalConnection`](/v1/objects/legal-connection))

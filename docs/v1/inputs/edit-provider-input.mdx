@@ -1,0 +1,115 @@
+---
+id: edit-provider-input
+title: editProviderInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type editProviderInput {
+  name: String
+  description: String
+  web: String
+  image: [ID]
+  address: String
+  phone: String
+  price: ENUM_PROVIDER_PRICE
+  category: ID
+  reviews: [ID]
+  hours: String
+  geometry: JSON
+  activities: [ID]
+  location: editComponentLocationLocationInput
+  user: ID
+  legal: ID
+  rating: Float
+  discount: Float
+  average_price: Int
+  from_operation_hour: Int
+  to_operation_hour: Int
+  opening_hours: editComponentOpeningHoursOpeningHourInput
+  description_ru: String
+  description_en: String
+  name_ru: String
+  name_en: String
+  providers_to_property: ID
+  features: [ID]
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `name` ([`String`](/v1/scalars/string))
+
+#### `description` ([`String`](/v1/scalars/string))
+
+#### `web` ([`String`](/v1/scalars/string))
+
+#### `image` ([`[ID]`](/v1/scalars/id))
+
+#### `address` ([`String`](/v1/scalars/string))
+
+#### `phone` ([`String`](/v1/scalars/string))
+
+#### `price` ([`ENUM_PROVIDER_PRICE`](/v1/enums/enum-provider-price))
+
+#### `category` ([`ID`](/v1/scalars/id))
+
+#### `reviews` ([`[ID]`](/v1/scalars/id))
+
+#### `hours` ([`String`](/v1/scalars/string))
+
+#### `geometry` ([`JSON`](/v1/scalars/json))
+
+#### `activities` ([`[ID]`](/v1/scalars/id))
+
+#### `location` ([`editComponentLocationLocationInput`](/v1/inputs/edit-component-location-location-input))
+
+#### `user` ([`ID`](/v1/scalars/id))
+
+#### `legal` ([`ID`](/v1/scalars/id))
+
+#### `rating` ([`Float`](/v1/scalars/float))
+
+#### `discount` ([`Float`](/v1/scalars/float))
+
+#### `average_price` ([`Int`](/v1/scalars/int))
+
+#### `from_operation_hour` ([`Int`](/v1/scalars/int))
+
+#### `to_operation_hour` ([`Int`](/v1/scalars/int))
+
+#### `opening_hours` ([`editComponentOpeningHoursOpeningHourInput`](/v1/inputs/edit-component-opening-hours-opening-hour-input))
+
+#### `description_ru` ([`String`](/v1/scalars/string))
+
+#### `description_en` ([`String`](/v1/scalars/string))
+
+#### `name_ru` ([`String`](/v1/scalars/string))
+
+#### `name_en` ([`String`](/v1/scalars/string))
+
+#### `providers_to_property` ([`ID`](/v1/scalars/id))
+
+#### `features` ([`[ID]`](/v1/scalars/id))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

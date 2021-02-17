@@ -1,0 +1,64 @@
+---
+id: activity-group-by
+title: ActivityGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ActivityGroupBy {
+  id: [ActivityConnectionId]
+  _id: [ActivityConnection_id]
+  createdAt: [ActivityConnectionCreatedAt]
+  updatedAt: [ActivityConnectionUpdatedAt]
+  name: [ActivityConnectionName]
+  description: [ActivityConnectionDescription]
+  price: [ActivityConnectionPrice]
+  provider: [ActivityConnectionProvider]
+  name_ru: [ActivityConnectionName_ru]
+  name_en: [ActivityConnectionName_en]
+  description_ru: [ActivityConnectionDescription_ru]
+  description_en: [ActivityConnectionDescription_en]
+  published_at: [ActivityConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[ActivityConnectionId]`](/v1/objects/activity-connection-id))
+
+#### `_id` ([`[ActivityConnection_id]`](/v1/objects/activity-connection-id))
+
+#### `createdAt` ([`[ActivityConnectionCreatedAt]`](/v1/objects/activity-connection-created-at))
+
+#### `updatedAt` ([`[ActivityConnectionUpdatedAt]`](/v1/objects/activity-connection-updated-at))
+
+#### `name` ([`[ActivityConnectionName]`](/v1/objects/activity-connection-name))
+
+#### `description` ([`[ActivityConnectionDescription]`](/v1/objects/activity-connection-description))
+
+#### `price` ([`[ActivityConnectionPrice]`](/v1/objects/activity-connection-price))
+
+#### `provider` ([`[ActivityConnectionProvider]`](/v1/objects/activity-connection-provider))
+
+#### `name_ru` ([`[ActivityConnectionName_ru]`](/v1/objects/activity-connection-name-ru))
+
+#### `name_en` ([`[ActivityConnectionName_en]`](/v1/objects/activity-connection-name-en))
+
+#### `description_ru` ([`[ActivityConnectionDescription_ru]`](/v1/objects/activity-connection-description-ru))
+
+#### `description_en` ([`[ActivityConnectionDescription_en]`](/v1/objects/activity-connection-description-en))
+
+#### `published_at` ([`[ActivityConnectionPublished_at]`](/v1/objects/activity-connection-published-at))

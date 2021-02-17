@@ -1,0 +1,33 @@
+---
+id: create-user
+title: createUser
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+Create a new user
+
+```graphql
+createUser(
+  input: createUserInput
+): createUserPayload
+
+```
+
+### Arguments
+
+#### `input` ([`createUserInput`](/v1/inputs/create-user-input))
+
+### Type
+
+#### [`createUserPayload`](/v1/objects/create-user-payload)

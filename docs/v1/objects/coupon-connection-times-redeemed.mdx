@@ -1,0 +1,31 @@
+---
+id: coupon-connection-times-redeemed
+title: CouponConnectionTimes_redeemed
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CouponConnectionTimes_redeemed {
+  key: Int
+  connection: CouponConnection
+}
+```
+
+### Fields
+
+#### `key` ([`Int`](/v1/scalars/int))
+
+#### `connection` ([`CouponConnection`](/v1/objects/coupon-connection))

@@ -1,0 +1,31 @@
+---
+id: coupon-connection-updated-at
+title: CouponConnectionUpdatedAt
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CouponConnectionUpdatedAt {
+  key: DateTime
+  connection: CouponConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`CouponConnection`](/v1/objects/coupon-connection))

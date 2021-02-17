@@ -1,0 +1,31 @@
+---
+id: review-connection-created-at
+title: ReviewConnectionCreatedAt
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ReviewConnectionCreatedAt {
+  key: DateTime
+  connection: ReviewConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`ReviewConnection`](/v1/objects/review-connection))

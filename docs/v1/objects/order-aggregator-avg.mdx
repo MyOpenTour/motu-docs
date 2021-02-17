@@ -1,0 +1,28 @@
+---
+id: order-aggregator-avg
+title: OrderAggregatorAvg
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OrderAggregatorAvg {
+  amount: Float
+}
+```
+
+### Fields
+
+#### `amount` ([`Float`](/v1/scalars/float))

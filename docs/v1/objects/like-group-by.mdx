@@ -1,0 +1,46 @@
+---
+id: like-group-by
+title: LikeGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LikeGroupBy {
+  id: [LikeConnectionId]
+  _id: [LikeConnection_id]
+  createdAt: [LikeConnectionCreatedAt]
+  updatedAt: [LikeConnectionUpdatedAt]
+  author: [LikeConnectionAuthor]
+  review: [LikeConnectionReview]
+  published_at: [LikeConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[LikeConnectionId]`](/v1/objects/like-connection-id))
+
+#### `_id` ([`[LikeConnection_id]`](/v1/objects/like-connection-id))
+
+#### `createdAt` ([`[LikeConnectionCreatedAt]`](/v1/objects/like-connection-created-at))
+
+#### `updatedAt` ([`[LikeConnectionUpdatedAt]`](/v1/objects/like-connection-updated-at))
+
+#### `author` ([`[LikeConnectionAuthor]`](/v1/objects/like-connection-author))
+
+#### `review` ([`[LikeConnectionReview]`](/v1/objects/like-connection-review))
+
+#### `published_at` ([`[LikeConnectionPublished_at]`](/v1/objects/like-connection-published-at))

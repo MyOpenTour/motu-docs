@@ -1,0 +1,34 @@
+---
+id: feature-connection
+title: FeatureConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type FeatureConnection {
+  values: [Feature]
+  groupBy: FeatureGroupBy
+  aggregate: FeatureAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Feature]`](/v1/objects/feature))
+
+#### `groupBy` ([`FeatureGroupBy`](/v1/objects/feature-group-by))
+
+#### `aggregate` ([`FeatureAggregator`](/v1/objects/feature-aggregator))

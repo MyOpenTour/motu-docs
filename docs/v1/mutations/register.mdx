@@ -1,0 +1,33 @@
+---
+id: register
+title: register
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+register(
+  input: UsersPermissionsRegisterInput!
+): UsersPermissionsLoginPayload!
+
+```
+
+### Arguments
+
+#### `input` ([`UsersPermissionsRegisterInput!`](/v1/inputs/users-permissions-register-input))
+
+### Type
+
+#### [`UsersPermissionsLoginPayload`](/v1/objects/users-permissions-login-payload)

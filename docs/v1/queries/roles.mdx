@@ -1,0 +1,45 @@
+---
+id: roles
+title: roles
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+Retrieve all the existing roles. You can't apply filters on this query.
+
+```graphql
+roles(
+  sort: String
+  limit: Int = 0
+  start: Int = 0
+  where: JSON
+  publicationState: PublicationState
+): [UsersPermissionsRole]
+
+```
+
+### Arguments
+
+#### `sort` ([`String`](/v1/scalars/string))
+
+#### `limit` ([`Int`](/v1/scalars/int))
+
+#### `start` ([`Int`](/v1/scalars/int))
+
+#### `where` ([`JSON`](/v1/scalars/json))
+
+#### `publicationState` ([`PublicationState`](/v1/enums/publication-state))
+
+### Type
+
+#### [`UsersPermissionsRole`](/v1/objects/users-permissions-role)

@@ -1,0 +1,52 @@
+---
+id: review-group-by
+title: ReviewGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ReviewGroupBy {
+  id: [ReviewConnectionId]
+  _id: [ReviewConnection_id]
+  createdAt: [ReviewConnectionCreatedAt]
+  updatedAt: [ReviewConnectionUpdatedAt]
+  content: [ReviewConnectionContent]
+  note: [ReviewConnectionNote]
+  author: [ReviewConnectionAuthor]
+  provider: [ReviewConnectionProvider]
+  published_at: [ReviewConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[ReviewConnectionId]`](/v1/objects/review-connection-id))
+
+#### `_id` ([`[ReviewConnection_id]`](/v1/objects/review-connection-id))
+
+#### `createdAt` ([`[ReviewConnectionCreatedAt]`](/v1/objects/review-connection-created-at))
+
+#### `updatedAt` ([`[ReviewConnectionUpdatedAt]`](/v1/objects/review-connection-updated-at))
+
+#### `content` ([`[ReviewConnectionContent]`](/v1/objects/review-connection-content))
+
+#### `note` ([`[ReviewConnectionNote]`](/v1/objects/review-connection-note))
+
+#### `author` ([`[ReviewConnectionAuthor]`](/v1/objects/review-connection-author))
+
+#### `provider` ([`[ReviewConnectionProvider]`](/v1/objects/review-connection-provider))
+
+#### `published_at` ([`[ReviewConnectionPublished_at]`](/v1/objects/review-connection-published-at))

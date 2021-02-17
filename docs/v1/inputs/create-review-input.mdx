@@ -1,0 +1,28 @@
+---
+id: create-review-input
+title: createReviewInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type createReviewInput {
+  data: ReviewInput
+}
+```
+
+### Fields
+
+#### `data` ([`ReviewInput`](/v1/inputs/review-input))

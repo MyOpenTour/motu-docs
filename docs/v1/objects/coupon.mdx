@@ -1,0 +1,92 @@
+---
+id: coupon
+title: Coupon
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Coupon {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  amount_off: Float
+  duration: ENUM_COUPON_DURATION
+  duration_in_months: Int
+  name: String
+  percent_off: Float
+  max_redemptions: Int
+  redeem_by: Date
+  times_redeemed: Int
+  valid: Boolean
+  currency: Currency
+  name_ru: String
+  name_en: String
+  published_at: DateTime
+  activities(
+    sort: String
+    limit: Int = 0
+    start: Int = 0
+    where: JSON
+  ): [Activity]
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `amount_off` ([`Float`](/v1/scalars/float))
+
+#### `duration` ([`ENUM_COUPON_DURATION`](/v1/enums/enum-coupon-duration))
+
+#### `duration_in_months` ([`Int`](/v1/scalars/int))
+
+#### `name` ([`String`](/v1/scalars/string))
+
+#### `percent_off` ([`Float`](/v1/scalars/float))
+
+#### `max_redemptions` ([`Int`](/v1/scalars/int))
+
+#### `redeem_by` ([`Date`](/v1/scalars/date))
+
+#### `times_redeemed` ([`Int`](/v1/scalars/int))
+
+#### `valid` ([`Boolean`](/v1/scalars/boolean))
+
+#### `currency` ([`Currency`](/v1/objects/currency))
+
+#### `name_ru` ([`String`](/v1/scalars/string))
+
+#### `name_en` ([`String`](/v1/scalars/string))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `activities` ([`[Activity]`](/v1/objects/activity))
+
+- ##### `sort` ([`String`](/v1/scalars/string))
+
+- ##### `limit` ([`Int`](/v1/scalars/int))
+
+- ##### `start` ([`Int`](/v1/scalars/int))
+
+- ##### `where` ([`JSON`](/v1/scalars/json))

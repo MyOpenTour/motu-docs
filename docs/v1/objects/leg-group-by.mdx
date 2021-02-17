@@ -1,0 +1,64 @@
+---
+id: leg-group-by
+title: LegGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegGroupBy {
+  id: [LegConnectionId]
+  _id: [LegConnection_id]
+  createdAt: [LegConnectionCreatedAt]
+  updatedAt: [LegConnectionUpdatedAt]
+  from: [LegConnectionFrom]
+  to: [LegConnectionTo]
+  startTime: [LegConnectionStartTime]
+  endTime: [LegConnectionEndTime]
+  mode: [LegConnectionMode]
+  radius: [LegConnectionRadius]
+  travellers: [LegConnectionTravellers]
+  legState: [LegConnectionLegState]
+  published_at: [LegConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[LegConnectionId]`](/v1/objects/leg-connection-id))
+
+#### `_id` ([`[LegConnection_id]`](/v1/objects/leg-connection-id))
+
+#### `createdAt` ([`[LegConnectionCreatedAt]`](/v1/objects/leg-connection-created-at))
+
+#### `updatedAt` ([`[LegConnectionUpdatedAt]`](/v1/objects/leg-connection-updated-at))
+
+#### `from` ([`[LegConnectionFrom]`](/v1/objects/leg-connection-from))
+
+#### `to` ([`[LegConnectionTo]`](/v1/objects/leg-connection-to))
+
+#### `startTime` ([`[LegConnectionStartTime]`](/v1/objects/leg-connection-start-time))
+
+#### `endTime` ([`[LegConnectionEndTime]`](/v1/objects/leg-connection-end-time))
+
+#### `mode` ([`[LegConnectionMode]`](/v1/objects/leg-connection-mode))
+
+#### `radius` ([`[LegConnectionRadius]`](/v1/objects/leg-connection-radius))
+
+#### `travellers` ([`[LegConnectionTravellers]`](/v1/objects/leg-connection-travellers))
+
+#### `legState` ([`[LegConnectionLegState]`](/v1/objects/leg-connection-leg-state))
+
+#### `published_at` ([`[LegConnectionPublished_at]`](/v1/objects/leg-connection-published-at))

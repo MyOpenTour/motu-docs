@@ -1,0 +1,43 @@
+---
+id: activity-aggregator
+title: ActivityAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ActivityAggregator {
+  count: Int
+  totalCount: Int
+  sum: ActivityAggregatorSum
+  avg: ActivityAggregatorAvg
+  min: ActivityAggregatorMin
+  max: ActivityAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`ActivityAggregatorSum`](/v1/objects/activity-aggregator-sum))
+
+#### `avg` ([`ActivityAggregatorAvg`](/v1/objects/activity-aggregator-avg))
+
+#### `min` ([`ActivityAggregatorMin`](/v1/objects/activity-aggregator-min))
+
+#### `max` ([`ActivityAggregatorMax`](/v1/objects/activity-aggregator-max))

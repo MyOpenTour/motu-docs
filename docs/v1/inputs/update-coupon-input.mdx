@@ -1,0 +1,31 @@
+---
+id: update-coupon-input
+title: updateCouponInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateCouponInput {
+  where: InputID
+  data: editCouponInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editCouponInput`](/v1/inputs/edit-coupon-input))

@@ -1,0 +1,49 @@
+---
+id: itinerary-group-by
+title: ItineraryGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ItineraryGroupBy {
+  id: [ItineraryConnectionId]
+  _id: [ItineraryConnection_id]
+  createdAt: [ItineraryConnectionCreatedAt]
+  updatedAt: [ItineraryConnectionUpdatedAt]
+  itineraryState: [ItineraryConnectionItineraryState]
+  startTime: [ItineraryConnectionStartTime]
+  endTime: [ItineraryConnectionEndTime]
+  published_at: [ItineraryConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[ItineraryConnectionId]`](/v1/objects/itinerary-connection-id))
+
+#### `_id` ([`[ItineraryConnection_id]`](/v1/objects/itinerary-connection-id))
+
+#### `createdAt` ([`[ItineraryConnectionCreatedAt]`](/v1/objects/itinerary-connection-created-at))
+
+#### `updatedAt` ([`[ItineraryConnectionUpdatedAt]`](/v1/objects/itinerary-connection-updated-at))
+
+#### `itineraryState` ([`[ItineraryConnectionItineraryState]`](/v1/objects/itinerary-connection-itinerary-state))
+
+#### `startTime` ([`[ItineraryConnectionStartTime]`](/v1/objects/itinerary-connection-start-time))
+
+#### `endTime` ([`[ItineraryConnectionEndTime]`](/v1/objects/itinerary-connection-end-time))
+
+#### `published_at` ([`[ItineraryConnectionPublished_at]`](/v1/objects/itinerary-connection-published-at))

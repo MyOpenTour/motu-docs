@@ -1,0 +1,61 @@
+---
+id: edit-activity-input
+title: editActivityInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type editActivityInput {
+  name: String
+  description: String
+  image: [ID]
+  price: Float
+  provider: ID
+  name_ru: String
+  name_en: String
+  description_ru: String
+  description_en: String
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `name` ([`String`](/v1/scalars/string))
+
+#### `description` ([`String`](/v1/scalars/string))
+
+#### `image` ([`[ID]`](/v1/scalars/id))
+
+#### `price` ([`Float`](/v1/scalars/float))
+
+#### `provider` ([`ID`](/v1/scalars/id))
+
+#### `name_ru` ([`String`](/v1/scalars/string))
+
+#### `name_en` ([`String`](/v1/scalars/string))
+
+#### `description_ru` ([`String`](/v1/scalars/string))
+
+#### `description_en` ([`String`](/v1/scalars/string))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

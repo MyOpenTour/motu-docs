@@ -1,0 +1,31 @@
+---
+id: questionary-connection-users-permissions-user
+title: QuestionaryConnectionUsers_permissions_user
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type QuestionaryConnectionUsers_permissions_user {
+  key: ID
+  connection: QuestionaryConnection
+}
+```
+
+### Fields
+
+#### `key` ([`ID`](/v1/scalars/id))
+
+#### `connection` ([`QuestionaryConnection`](/v1/objects/questionary-connection))

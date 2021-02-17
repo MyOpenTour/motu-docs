@@ -1,0 +1,31 @@
+---
+id: coupon-connection-amount-off
+title: CouponConnectionAmount_off
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CouponConnectionAmount_off {
+  key: Float
+  connection: CouponConnection
+}
+```
+
+### Fields
+
+#### `key` ([`Float`](/v1/scalars/float))
+
+#### `connection` ([`CouponConnection`](/v1/objects/coupon-connection))

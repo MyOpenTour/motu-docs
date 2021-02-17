@@ -1,0 +1,34 @@
+---
+id: questionary-connection
+title: QuestionaryConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type QuestionaryConnection {
+  values: [Questionary]
+  groupBy: QuestionaryGroupBy
+  aggregate: QuestionaryAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Questionary]`](/v1/objects/questionary))
+
+#### `groupBy` ([`QuestionaryGroupBy`](/v1/objects/questionary-group-by))
+
+#### `aggregate` ([`QuestionaryAggregator`](/v1/objects/questionary-aggregator))

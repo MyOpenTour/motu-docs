@@ -1,0 +1,76 @@
+---
+id: coupon-group-by
+title: CouponGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CouponGroupBy {
+  id: [CouponConnectionId]
+  _id: [CouponConnection_id]
+  createdAt: [CouponConnectionCreatedAt]
+  updatedAt: [CouponConnectionUpdatedAt]
+  amount_off: [CouponConnectionAmount_off]
+  duration: [CouponConnectionDuration]
+  duration_in_months: [CouponConnectionDuration_in_months]
+  name: [CouponConnectionName]
+  percent_off: [CouponConnectionPercent_off]
+  max_redemptions: [CouponConnectionMax_redemptions]
+  redeem_by: [CouponConnectionRedeem_by]
+  times_redeemed: [CouponConnectionTimes_redeemed]
+  valid: [CouponConnectionValid]
+  currency: [CouponConnectionCurrency]
+  name_ru: [CouponConnectionName_ru]
+  name_en: [CouponConnectionName_en]
+  published_at: [CouponConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[CouponConnectionId]`](/v1/objects/coupon-connection-id))
+
+#### `_id` ([`[CouponConnection_id]`](/v1/objects/coupon-connection-id))
+
+#### `createdAt` ([`[CouponConnectionCreatedAt]`](/v1/objects/coupon-connection-created-at))
+
+#### `updatedAt` ([`[CouponConnectionUpdatedAt]`](/v1/objects/coupon-connection-updated-at))
+
+#### `amount_off` ([`[CouponConnectionAmount_off]`](/v1/objects/coupon-connection-amount-off))
+
+#### `duration` ([`[CouponConnectionDuration]`](/v1/objects/coupon-connection-duration))
+
+#### `duration_in_months` ([`[CouponConnectionDuration_in_months]`](/v1/objects/coupon-connection-duration-in-months))
+
+#### `name` ([`[CouponConnectionName]`](/v1/objects/coupon-connection-name))
+
+#### `percent_off` ([`[CouponConnectionPercent_off]`](/v1/objects/coupon-connection-percent-off))
+
+#### `max_redemptions` ([`[CouponConnectionMax_redemptions]`](/v1/objects/coupon-connection-max-redemptions))
+
+#### `redeem_by` ([`[CouponConnectionRedeem_by]`](/v1/objects/coupon-connection-redeem-by))
+
+#### `times_redeemed` ([`[CouponConnectionTimes_redeemed]`](/v1/objects/coupon-connection-times-redeemed))
+
+#### `valid` ([`[CouponConnectionValid]`](/v1/objects/coupon-connection-valid))
+
+#### `currency` ([`[CouponConnectionCurrency]`](/v1/objects/coupon-connection-currency))
+
+#### `name_ru` ([`[CouponConnectionName_ru]`](/v1/objects/coupon-connection-name-ru))
+
+#### `name_en` ([`[CouponConnectionName_en]`](/v1/objects/coupon-connection-name-en))
+
+#### `published_at` ([`[CouponConnectionPublished_at]`](/v1/objects/coupon-connection-published-at))

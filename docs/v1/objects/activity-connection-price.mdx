@@ -1,0 +1,31 @@
+---
+id: activity-connection-price
+title: ActivityConnectionPrice
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ActivityConnectionPrice {
+  key: Float
+  connection: ActivityConnection
+}
+```
+
+### Fields
+
+#### `key` ([`Float`](/v1/scalars/float))
+
+#### `connection` ([`ActivityConnection`](/v1/objects/activity-connection))

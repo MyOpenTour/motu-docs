@@ -1,0 +1,28 @@
+---
+id: create-review-payload
+title: createReviewPayload
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type createReviewPayload {
+  review: Review
+}
+```
+
+### Fields
+
+#### `review` ([`Review`](/v1/objects/review))

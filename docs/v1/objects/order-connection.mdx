@@ -1,0 +1,34 @@
+---
+id: order-connection
+title: OrderConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OrderConnection {
+  values: [Order]
+  groupBy: OrderGroupBy
+  aggregate: OrderAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Order]`](/v1/objects/order))
+
+#### `groupBy` ([`OrderGroupBy`](/v1/objects/order-group-by))
+
+#### `aggregate` ([`OrderAggregator`](/v1/objects/order-aggregator))

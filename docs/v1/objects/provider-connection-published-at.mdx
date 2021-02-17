@@ -1,0 +1,31 @@
+---
+id: provider-connection-published-at
+title: ProviderConnectionPublished_at
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ProviderConnectionPublished_at {
+  key: DateTime
+  connection: ProviderConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`ProviderConnection`](/v1/objects/provider-connection))

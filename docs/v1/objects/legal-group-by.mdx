@@ -1,0 +1,67 @@
+---
+id: legal-group-by
+title: LegalGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegalGroupBy {
+  id: [LegalConnectionId]
+  _id: [LegalConnection_id]
+  createdAt: [LegalConnectionCreatedAt]
+  updatedAt: [LegalConnectionUpdatedAt]
+  legal_address: [LegalConnectionLegal_address]
+  mailing_address: [LegalConnectionMailing_address]
+  legal_name: [LegalConnectionLegal_name]
+  tax_id: [LegalConnectionTax_id]
+  registration_id: [LegalConnectionRegistration_id]
+  registration_cause_id: [LegalConnectionRegistration_cause_id]
+  bank_id: [LegalConnectionBank_id]
+  checking_account: [LegalConnectionChecking_account]
+  provider: [LegalConnectionProvider]
+  published_at: [LegalConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[LegalConnectionId]`](/v1/objects/legal-connection-id))
+
+#### `_id` ([`[LegalConnection_id]`](/v1/objects/legal-connection-id))
+
+#### `createdAt` ([`[LegalConnectionCreatedAt]`](/v1/objects/legal-connection-created-at))
+
+#### `updatedAt` ([`[LegalConnectionUpdatedAt]`](/v1/objects/legal-connection-updated-at))
+
+#### `legal_address` ([`[LegalConnectionLegal_address]`](/v1/objects/legal-connection-legal-address))
+
+#### `mailing_address` ([`[LegalConnectionMailing_address]`](/v1/objects/legal-connection-mailing-address))
+
+#### `legal_name` ([`[LegalConnectionLegal_name]`](/v1/objects/legal-connection-legal-name))
+
+#### `tax_id` ([`[LegalConnectionTax_id]`](/v1/objects/legal-connection-tax-id))
+
+#### `registration_id` ([`[LegalConnectionRegistration_id]`](/v1/objects/legal-connection-registration-id))
+
+#### `registration_cause_id` ([`[LegalConnectionRegistration_cause_id]`](/v1/objects/legal-connection-registration-cause-id))
+
+#### `bank_id` ([`[LegalConnectionBank_id]`](/v1/objects/legal-connection-bank-id))
+
+#### `checking_account` ([`[LegalConnectionChecking_account]`](/v1/objects/legal-connection-checking-account))
+
+#### `provider` ([`[LegalConnectionProvider]`](/v1/objects/legal-connection-provider))
+
+#### `published_at` ([`[LegalConnectionPublished_at]`](/v1/objects/legal-connection-published-at))

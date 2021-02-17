@@ -1,0 +1,43 @@
+---
+id: legal-aggregator
+title: LegalAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegalAggregator {
+  count: Int
+  totalCount: Int
+  sum: LegalAggregatorSum
+  avg: LegalAggregatorAvg
+  min: LegalAggregatorMin
+  max: LegalAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`LegalAggregatorSum`](/v1/objects/legal-aggregator-sum))
+
+#### `avg` ([`LegalAggregatorAvg`](/v1/objects/legal-aggregator-avg))
+
+#### `min` ([`LegalAggregatorMin`](/v1/objects/legal-aggregator-min))
+
+#### `max` ([`LegalAggregatorMax`](/v1/objects/legal-aggregator-max))

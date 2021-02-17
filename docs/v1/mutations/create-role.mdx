@@ -1,0 +1,33 @@
+---
+id: create-role
+title: createRole
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+Create a new role
+
+```graphql
+createRole(
+  input: createRoleInput
+): createRolePayload
+
+```
+
+### Arguments
+
+#### `input` ([`createRoleInput`](/v1/inputs/create-role-input))
+
+### Type
+
+#### [`createRolePayload`](/v1/objects/create-role-payload)

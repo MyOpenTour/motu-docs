@@ -1,0 +1,36 @@
+---
+id: feature
+title: feature
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+feature(
+  id: ID!
+  publicationState: PublicationState
+): Feature
+
+```
+
+### Arguments
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `publicationState` ([`PublicationState`](/v1/enums/publication-state))
+
+### Type
+
+#### [`Feature`](/v1/objects/feature)

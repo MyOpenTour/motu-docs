@@ -1,0 +1,31 @@
+---
+id: cache-control-scope
+title: CacheControlScope
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+enum CacheControlScope {
+  PUBLIC
+  PRIVATE
+}
+```
+
+### Values
+
+#### `PUBLIC`
+
+#### `PRIVATE`

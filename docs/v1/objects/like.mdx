@@ -1,0 +1,46 @@
+---
+id: like
+title: Like
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Like {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  author: UsersPermissionsUser
+  review: Review
+  published_at: DateTime
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `author` ([`UsersPermissionsUser`](/v1/objects/users-permissions-user))
+
+#### `review` ([`Review`](/v1/objects/review))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))

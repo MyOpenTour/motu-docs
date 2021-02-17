@@ -1,0 +1,31 @@
+---
+id: users-permissions-user-connection-blocked
+title: UsersPermissionsUserConnectionBlocked
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UsersPermissionsUserConnectionBlocked {
+  key: Boolean
+  connection: UsersPermissionsUserConnection
+}
+```
+
+### Fields
+
+#### `key` ([`Boolean`](/v1/scalars/boolean))
+
+#### `connection` ([`UsersPermissionsUserConnection`](/v1/objects/users-permissions-user-connection))

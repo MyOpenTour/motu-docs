@@ -1,0 +1,43 @@
+---
+id: leg-aggregator
+title: LegAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegAggregator {
+  count: Int
+  totalCount: Int
+  sum: LegAggregatorSum
+  avg: LegAggregatorAvg
+  min: LegAggregatorMin
+  max: LegAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`LegAggregatorSum`](/v1/objects/leg-aggregator-sum))
+
+#### `avg` ([`LegAggregatorAvg`](/v1/objects/leg-aggregator-avg))
+
+#### `min` ([`LegAggregatorMin`](/v1/objects/leg-aggregator-min))
+
+#### `max` ([`LegAggregatorMax`](/v1/objects/leg-aggregator-max))

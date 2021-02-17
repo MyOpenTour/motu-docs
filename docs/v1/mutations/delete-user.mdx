@@ -1,0 +1,33 @@
+---
+id: delete-user
+title: deleteUser
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+Delete an existing user
+
+```graphql
+deleteUser(
+  input: deleteUserInput
+): deleteUserPayload
+
+```
+
+### Arguments
+
+#### `input` ([`deleteUserInput`](/v1/inputs/delete-user-input))
+
+### Type
+
+#### [`deleteUserPayload`](/v1/objects/delete-user-payload)

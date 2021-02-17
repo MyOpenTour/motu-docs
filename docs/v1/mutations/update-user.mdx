@@ -1,0 +1,33 @@
+---
+id: update-user
+title: updateUser
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+Update an existing user
+
+```graphql
+updateUser(
+  input: updateUserInput
+): updateUserPayload
+
+```
+
+### Arguments
+
+#### `input` ([`updateUserInput`](/v1/inputs/update-user-input))
+
+### Type
+
+#### [`updateUserPayload`](/v1/objects/update-user-payload)

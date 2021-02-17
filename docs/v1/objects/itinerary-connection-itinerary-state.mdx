@@ -1,0 +1,31 @@
+---
+id: itinerary-connection-itinerary-state
+title: ItineraryConnectionItineraryState
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ItineraryConnectionItineraryState {
+  key: String
+  connection: ItineraryConnection
+}
+```
+
+### Fields
+
+#### `key` ([`String`](/v1/scalars/string))
+
+#### `connection` ([`ItineraryConnection`](/v1/objects/itinerary-connection))

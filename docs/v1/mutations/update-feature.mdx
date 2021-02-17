@@ -1,0 +1,33 @@
+---
+id: update-feature
+title: updateFeature
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+updateFeature(
+  input: updateFeatureInput
+): updateFeaturePayload
+
+```
+
+### Arguments
+
+#### `input` ([`updateFeatureInput`](/v1/inputs/update-feature-input))
+
+### Type
+
+#### [`updateFeaturePayload`](/v1/objects/update-feature-payload)

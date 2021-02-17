@@ -1,0 +1,61 @@
+---
+id: edit-questionary-input
+title: editQuestionaryInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type editQuestionaryInput {
+  users_permissions_user: ID
+  sex: ENUM_QUESTIONARY_SEX
+  bdate: Date
+  city: String
+  education: ENUM_QUESTIONARY_EDUCATION
+  interests: String
+  career_industry: String
+  career_position: ENUM_QUESTIONARY_CAREER_POSITION
+  purpose_of_visit: String
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `users_permissions_user` ([`ID`](/v1/scalars/id))
+
+#### `sex` ([`ENUM_QUESTIONARY_SEX`](/v1/enums/enum-questionary-sex))
+
+#### `bdate` ([`Date`](/v1/scalars/date))
+
+#### `city` ([`String`](/v1/scalars/string))
+
+#### `education` ([`ENUM_QUESTIONARY_EDUCATION`](/v1/enums/enum-questionary-education))
+
+#### `interests` ([`String`](/v1/scalars/string))
+
+#### `career_industry` ([`String`](/v1/scalars/string))
+
+#### `career_position` ([`ENUM_QUESTIONARY_CAREER_POSITION`](/v1/enums/enum-questionary-career-position))
+
+#### `purpose_of_visit` ([`String`](/v1/scalars/string))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

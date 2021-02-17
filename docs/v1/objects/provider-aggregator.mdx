@@ -1,0 +1,43 @@
+---
+id: provider-aggregator
+title: ProviderAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ProviderAggregator {
+  count: Int
+  totalCount: Int
+  sum: ProviderAggregatorSum
+  avg: ProviderAggregatorAvg
+  min: ProviderAggregatorMin
+  max: ProviderAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`ProviderAggregatorSum`](/v1/objects/provider-aggregator-sum))
+
+#### `avg` ([`ProviderAggregatorAvg`](/v1/objects/provider-aggregator-avg))
+
+#### `min` ([`ProviderAggregatorMin`](/v1/objects/provider-aggregator-min))
+
+#### `max` ([`ProviderAggregatorMax`](/v1/objects/provider-aggregator-max))

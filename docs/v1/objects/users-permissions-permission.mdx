@@ -1,0 +1,49 @@
+---
+id: users-permissions-permission
+title: UsersPermissionsPermission
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type UsersPermissionsPermission {
+  id: ID!
+  _id: ID!
+  type: String!
+  controller: String!
+  action: String!
+  enabled: Boolean!
+  policy: String
+  role: UsersPermissionsRole
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `type` ([`String!`](/v1/scalars/string))
+
+#### `controller` ([`String!`](/v1/scalars/string))
+
+#### `action` ([`String!`](/v1/scalars/string))
+
+#### `enabled` ([`Boolean!`](/v1/scalars/boolean))
+
+#### `policy` ([`String`](/v1/scalars/string))
+
+#### `role` ([`UsersPermissionsRole`](/v1/objects/users-permissions-role))

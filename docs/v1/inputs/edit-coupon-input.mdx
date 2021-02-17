@@ -1,0 +1,73 @@
+---
+id: edit-coupon-input
+title: editCouponInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type editCouponInput {
+  amount_off: Float
+  duration: ENUM_COUPON_DURATION
+  duration_in_months: Int
+  name: String
+  percent_off: Float
+  max_redemptions: Int
+  redeem_by: Date
+  times_redeemed: Int
+  valid: Boolean
+  currency: ID
+  activities: [ID]
+  name_ru: String
+  name_en: String
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `amount_off` ([`Float`](/v1/scalars/float))
+
+#### `duration` ([`ENUM_COUPON_DURATION`](/v1/enums/enum-coupon-duration))
+
+#### `duration_in_months` ([`Int`](/v1/scalars/int))
+
+#### `name` ([`String`](/v1/scalars/string))
+
+#### `percent_off` ([`Float`](/v1/scalars/float))
+
+#### `max_redemptions` ([`Int`](/v1/scalars/int))
+
+#### `redeem_by` ([`Date`](/v1/scalars/date))
+
+#### `times_redeemed` ([`Int`](/v1/scalars/int))
+
+#### `valid` ([`Boolean`](/v1/scalars/boolean))
+
+#### `currency` ([`ID`](/v1/scalars/id))
+
+#### `activities` ([`[ID]`](/v1/scalars/id))
+
+#### `name_ru` ([`String`](/v1/scalars/string))
+
+#### `name_en` ([`String`](/v1/scalars/string))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

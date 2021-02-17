@@ -1,0 +1,31 @@
+---
+id: coupon-connection-valid
+title: CouponConnectionValid
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CouponConnectionValid {
+  key: Boolean
+  connection: CouponConnection
+}
+```
+
+### Fields
+
+#### `key` ([`Boolean`](/v1/scalars/boolean))
+
+#### `connection` ([`CouponConnection`](/v1/objects/coupon-connection))

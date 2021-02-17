@@ -1,0 +1,42 @@
+---
+id: likes-connection
+title: likesConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+likesConnection(
+  sort: String
+  limit: Int = 0
+  start: Int = 0
+  where: JSON
+): LikeConnection
+
+```
+
+### Arguments
+
+#### `sort` ([`String`](/v1/scalars/string))
+
+#### `limit` ([`Int`](/v1/scalars/int))
+
+#### `start` ([`Int`](/v1/scalars/int))
+
+#### `where` ([`JSON`](/v1/scalars/json))
+
+### Type
+
+#### [`LikeConnection`](/v1/objects/like-connection)

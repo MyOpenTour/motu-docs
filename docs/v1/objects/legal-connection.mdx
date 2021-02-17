@@ -1,0 +1,34 @@
+---
+id: legal-connection
+title: LegalConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegalConnection {
+  values: [Legal]
+  groupBy: LegalGroupBy
+  aggregate: LegalAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Legal]`](/v1/objects/legal))
+
+#### `groupBy` ([`LegalGroupBy`](/v1/objects/legal-group-by))
+
+#### `aggregate` ([`LegalAggregator`](/v1/objects/legal-aggregator))

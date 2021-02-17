@@ -1,0 +1,31 @@
+---
+id: order-connection-id
+title: OrderConnection_id
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OrderConnection_id {
+  key: ID
+  connection: OrderConnection
+}
+```
+
+### Fields
+
+#### `key` ([`ID`](/v1/scalars/id))
+
+#### `connection` ([`OrderConnection`](/v1/objects/order-connection))

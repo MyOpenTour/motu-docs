@@ -1,0 +1,31 @@
+---
+id: update-like-input
+title: updateLikeInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateLikeInput {
+  where: InputID
+  data: editLikeInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editLikeInput`](/v1/inputs/edit-like-input))

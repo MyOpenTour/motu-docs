@@ -1,0 +1,33 @@
+---
+id: login
+title: login
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+login(
+  input: UsersPermissionsLoginInput!
+): UsersPermissionsLoginPayload!
+
+```
+
+### Arguments
+
+#### `input` ([`UsersPermissionsLoginInput!`](/v1/inputs/users-permissions-login-input))
+
+### Type
+
+#### [`UsersPermissionsLoginPayload`](/v1/objects/users-permissions-login-payload)

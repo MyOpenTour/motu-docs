@@ -1,0 +1,61 @@
+---
+id: currency
+title: Currency
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Currency {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String
+  symbol: String
+  code: String
+  decimal_digits: Int
+  rounding: Int
+  name_ru: String
+  name_en: String
+  published_at: DateTime
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `name` ([`String`](/v1/scalars/string))
+
+#### `symbol` ([`String`](/v1/scalars/string))
+
+#### `code` ([`String`](/v1/scalars/string))
+
+#### `decimal_digits` ([`Int`](/v1/scalars/int))
+
+#### `rounding` ([`Int`](/v1/scalars/int))
+
+#### `name_ru` ([`String`](/v1/scalars/string))
+
+#### `name_en` ([`String`](/v1/scalars/string))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))

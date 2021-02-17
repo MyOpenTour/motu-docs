@@ -1,0 +1,43 @@
+---
+id: currency-aggregator
+title: CurrencyAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CurrencyAggregator {
+  count: Int
+  totalCount: Int
+  sum: CurrencyAggregatorSum
+  avg: CurrencyAggregatorAvg
+  min: CurrencyAggregatorMin
+  max: CurrencyAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`CurrencyAggregatorSum`](/v1/objects/currency-aggregator-sum))
+
+#### `avg` ([`CurrencyAggregatorAvg`](/v1/objects/currency-aggregator-avg))
+
+#### `min` ([`CurrencyAggregatorMin`](/v1/objects/currency-aggregator-min))
+
+#### `max` ([`CurrencyAggregatorMax`](/v1/objects/currency-aggregator-max))

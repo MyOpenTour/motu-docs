@@ -1,0 +1,1155 @@
+---
+id: morph
+title: Morph
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+union Morph =
+    UsersPermissionsMe
+  | UsersPermissionsMeRole
+  | UsersPermissionsLoginPayload
+  | UserPermissionsPasswordPayload
+  | Activity
+  | ActivityConnection
+  | ActivityAggregator
+  | ActivityAggregatorSum
+  | ActivityAggregatorAvg
+  | ActivityAggregatorMin
+  | ActivityAggregatorMax
+  | ActivityGroupBy
+  | ActivityConnectionId
+  | ActivityConnection_id
+  | ActivityConnectionCreatedAt
+  | ActivityConnectionUpdatedAt
+  | ActivityConnectionName
+  | ActivityConnectionDescription
+  | ActivityConnectionPrice
+  | ActivityConnectionProvider
+  | ActivityConnectionName_ru
+  | ActivityConnectionName_en
+  | ActivityConnectionDescription_ru
+  | ActivityConnectionDescription_en
+  | ActivityConnectionPublished_at
+  | createActivityPayload
+  | updateActivityPayload
+  | deleteActivityPayload
+  | Category
+  | CategoryConnection
+  | CategoryAggregator
+  | CategoryGroupBy
+  | CategoryConnectionId
+  | CategoryConnection_id
+  | CategoryConnectionCreatedAt
+  | CategoryConnectionUpdatedAt
+  | CategoryConnectionName
+  | CategoryConnectionTag
+  | CategoryConnectionName_ru
+  | CategoryConnectionName_en
+  | CategoryConnectionPublished_at
+  | createCategoryPayload
+  | updateCategoryPayload
+  | deleteCategoryPayload
+  | Coupon
+  | CouponConnection
+  | CouponAggregator
+  | CouponAggregatorSum
+  | CouponAggregatorAvg
+  | CouponAggregatorMin
+  | CouponAggregatorMax
+  | CouponGroupBy
+  | CouponConnectionId
+  | CouponConnection_id
+  | CouponConnectionCreatedAt
+  | CouponConnectionUpdatedAt
+  | CouponConnectionAmount_off
+  | CouponConnectionDuration
+  | CouponConnectionDuration_in_months
+  | CouponConnectionName
+  | CouponConnectionPercent_off
+  | CouponConnectionMax_redemptions
+  | CouponConnectionRedeem_by
+  | CouponConnectionTimes_redeemed
+  | CouponConnectionValid
+  | CouponConnectionCurrency
+  | CouponConnectionName_ru
+  | CouponConnectionName_en
+  | CouponConnectionPublished_at
+  | createCouponPayload
+  | updateCouponPayload
+  | deleteCouponPayload
+  | Currency
+  | CurrencyConnection
+  | CurrencyAggregator
+  | CurrencyAggregatorSum
+  | CurrencyAggregatorAvg
+  | CurrencyAggregatorMin
+  | CurrencyAggregatorMax
+  | CurrencyGroupBy
+  | CurrencyConnectionId
+  | CurrencyConnection_id
+  | CurrencyConnectionCreatedAt
+  | CurrencyConnectionUpdatedAt
+  | CurrencyConnectionName
+  | CurrencyConnectionSymbol
+  | CurrencyConnectionCode
+  | CurrencyConnectionDecimal_digits
+  | CurrencyConnectionRounding
+  | CurrencyConnectionName_ru
+  | CurrencyConnectionName_en
+  | CurrencyConnectionPublished_at
+  | createCurrencyPayload
+  | updateCurrencyPayload
+  | deleteCurrencyPayload
+  | Feature
+  | FeatureConnection
+  | FeatureAggregator
+  | FeatureGroupBy
+  | FeatureConnectionId
+  | FeatureConnection_id
+  | FeatureConnectionCreatedAt
+  | FeatureConnectionUpdatedAt
+  | FeatureConnectionName_ru
+  | FeatureConnectionName_en
+  | FeatureConnectionCategory
+  | FeatureConnectionPublished_at
+  | createFeaturePayload
+  | updateFeaturePayload
+  | deleteFeaturePayload
+  | Itinerary
+  | ItineraryConnection
+  | ItineraryAggregator
+  | ItineraryGroupBy
+  | ItineraryConnectionId
+  | ItineraryConnection_id
+  | ItineraryConnectionCreatedAt
+  | ItineraryConnectionUpdatedAt
+  | ItineraryConnectionItineraryState
+  | ItineraryConnectionStartTime
+  | ItineraryConnectionEndTime
+  | ItineraryConnectionPublished_at
+  | createItineraryPayload
+  | updateItineraryPayload
+  | deleteItineraryPayload
+  | Leg
+  | LegConnection
+  | LegAggregator
+  | LegAggregatorSum
+  | LegAggregatorAvg
+  | LegAggregatorMin
+  | LegAggregatorMax
+  | LegGroupBy
+  | LegConnectionId
+  | LegConnection_id
+  | LegConnectionCreatedAt
+  | LegConnectionUpdatedAt
+  | LegConnectionFrom
+  | LegConnectionTo
+  | LegConnectionStartTime
+  | LegConnectionEndTime
+  | LegConnectionMode
+  | LegConnectionRadius
+  | LegConnectionTravellers
+  | LegConnectionLegState
+  | LegConnectionPublished_at
+  | createLegPayload
+  | updateLegPayload
+  | deleteLegPayload
+  | Legal
+  | LegalConnection
+  | LegalAggregator
+  | LegalAggregatorSum
+  | LegalAggregatorAvg
+  | LegalAggregatorMin
+  | LegalAggregatorMax
+  | LegalGroupBy
+  | LegalConnectionId
+  | LegalConnection_id
+  | LegalConnectionCreatedAt
+  | LegalConnectionUpdatedAt
+  | LegalConnectionLegal_address
+  | LegalConnectionMailing_address
+  | LegalConnectionLegal_name
+  | LegalConnectionTax_id
+  | LegalConnectionRegistration_id
+  | LegalConnectionRegistration_cause_id
+  | LegalConnectionBank_id
+  | LegalConnectionChecking_account
+  | LegalConnectionProvider
+  | LegalConnectionPublished_at
+  | createLegalPayload
+  | updateLegalPayload
+  | deleteLegalPayload
+  | Like
+  | LikeConnection
+  | LikeAggregator
+  | LikeGroupBy
+  | LikeConnectionId
+  | LikeConnection_id
+  | LikeConnectionCreatedAt
+  | LikeConnectionUpdatedAt
+  | LikeConnectionAuthor
+  | LikeConnectionReview
+  | LikeConnectionPublished_at
+  | createLikePayload
+  | updateLikePayload
+  | deleteLikePayload
+  | Order
+  | OrderConnection
+  | OrderAggregator
+  | OrderAggregatorSum
+  | OrderAggregatorAvg
+  | OrderAggregatorMin
+  | OrderAggregatorMax
+  | OrderGroupBy
+  | OrderConnectionId
+  | OrderConnection_id
+  | OrderConnectionCreatedAt
+  | OrderConnectionUpdatedAt
+  | OrderConnectionAddress
+  | OrderConnectionCity
+  | OrderConnectionDishes
+  | OrderConnectionAmount
+  | OrderConnectionPublished_at
+  | createOrderPayload
+  | updateOrderPayload
+  | deleteOrderPayload
+  | Provider
+  | ProviderConnection
+  | ProviderAggregator
+  | ProviderAggregatorSum
+  | ProviderAggregatorAvg
+  | ProviderAggregatorMin
+  | ProviderAggregatorMax
+  | ProviderGroupBy
+  | ProviderConnectionId
+  | ProviderConnection_id
+  | ProviderConnectionCreatedAt
+  | ProviderConnectionUpdatedAt
+  | ProviderConnectionName
+  | ProviderConnectionDescription
+  | ProviderConnectionWeb
+  | ProviderConnectionAddress
+  | ProviderConnectionPhone
+  | ProviderConnectionPrice
+  | ProviderConnectionCategory
+  | ProviderConnectionHours
+  | ProviderConnectionGeometry
+  | ProviderConnectionLocation
+  | ProviderConnectionUser
+  | ProviderConnectionLegal
+  | ProviderConnectionRating
+  | ProviderConnectionDiscount
+  | ProviderConnectionAverage_price
+  | ProviderConnectionFrom_operation_hour
+  | ProviderConnectionTo_operation_hour
+  | ProviderConnectionOpening_hours
+  | ProviderConnectionDescription_ru
+  | ProviderConnectionDescription_en
+  | ProviderConnectionName_ru
+  | ProviderConnectionName_en
+  | ProviderConnectionProviders_to_property
+  | ProviderConnectionPublished_at
+  | createProviderPayload
+  | updateProviderPayload
+  | deleteProviderPayload
+  | ProvidersProperties
+  | ProvidersPropertiesConnection
+  | ProvidersPropertiesAggregator
+  | ProvidersPropertiesGroupBy
+  | ProvidersPropertiesConnectionId
+  | ProvidersPropertiesConnection_id
+  | ProvidersPropertiesConnectionCreatedAt
+  | ProvidersPropertiesConnectionUpdatedAt
+  | ProvidersPropertiesConnectionFeature
+  | ProvidersPropertiesConnectionCategory
+  | ProvidersPropertiesConnectionPublished_at
+  | createProvidersPropertyPayload
+  | updateProvidersPropertyPayload
+  | deleteProvidersPropertyPayload
+  | ProvidersToProperties
+  | ProvidersToPropertiesConnection
+  | ProvidersToPropertiesAggregator
+  | ProvidersToPropertiesGroupBy
+  | ProvidersToPropertiesConnectionId
+  | ProvidersToPropertiesConnection_id
+  | ProvidersToPropertiesConnectionCreatedAt
+  | ProvidersToPropertiesConnectionUpdatedAt
+  | ProvidersToPropertiesConnectionProvider
+  | ProvidersToPropertiesConnectionPublished_at
+  | createProvidersToPropertyPayload
+  | updateProvidersToPropertyPayload
+  | deleteProvidersToPropertyPayload
+  | Questionary
+  | QuestionaryConnection
+  | QuestionaryAggregator
+  | QuestionaryGroupBy
+  | QuestionaryConnectionId
+  | QuestionaryConnection_id
+  | QuestionaryConnectionCreatedAt
+  | QuestionaryConnectionUpdatedAt
+  | QuestionaryConnectionUsers_permissions_user
+  | QuestionaryConnectionSex
+  | QuestionaryConnectionBdate
+  | QuestionaryConnectionCity
+  | QuestionaryConnectionEducation
+  | QuestionaryConnectionInterests
+  | QuestionaryConnectionCareer_industry
+  | QuestionaryConnectionCareer_position
+  | QuestionaryConnectionPurpose_of_visit
+  | QuestionaryConnectionPublished_at
+  | createQuestionaryPayload
+  | updateQuestionaryPayload
+  | deleteQuestionaryPayload
+  | Review
+  | ReviewConnection
+  | ReviewAggregator
+  | ReviewAggregatorSum
+  | ReviewAggregatorAvg
+  | ReviewAggregatorMin
+  | ReviewAggregatorMax
+  | ReviewGroupBy
+  | ReviewConnectionId
+  | ReviewConnection_id
+  | ReviewConnectionCreatedAt
+  | ReviewConnectionUpdatedAt
+  | ReviewConnectionContent
+  | ReviewConnectionNote
+  | ReviewConnectionAuthor
+  | ReviewConnectionProvider
+  | ReviewConnectionPublished_at
+  | createReviewPayload
+  | updateReviewPayload
+  | deleteReviewPayload
+  | UploadFile
+  | UploadFileConnection
+  | UploadFileAggregator
+  | UploadFileAggregatorSum
+  | UploadFileAggregatorAvg
+  | UploadFileAggregatorMin
+  | UploadFileAggregatorMax
+  | UploadFileGroupBy
+  | UploadFileConnectionId
+  | UploadFileConnection_id
+  | UploadFileConnectionCreatedAt
+  | UploadFileConnectionUpdatedAt
+  | UploadFileConnectionName
+  | UploadFileConnectionAlternativeText
+  | UploadFileConnectionCaption
+  | UploadFileConnectionWidth
+  | UploadFileConnectionHeight
+  | UploadFileConnectionFormats
+  | UploadFileConnectionHash
+  | UploadFileConnectionExt
+  | UploadFileConnectionMime
+  | UploadFileConnectionSize
+  | UploadFileConnectionUrl
+  | UploadFileConnectionPreviewUrl
+  | UploadFileConnectionProvider
+  | UploadFileConnectionProvider_metadata
+  | deleteFilePayload
+  | UsersPermissionsPermission
+  | UsersPermissionsRole
+  | UsersPermissionsRoleConnection
+  | UsersPermissionsRoleAggregator
+  | UsersPermissionsRoleGroupBy
+  | UsersPermissionsRoleConnectionId
+  | UsersPermissionsRoleConnection_id
+  | UsersPermissionsRoleConnectionName
+  | UsersPermissionsRoleConnectionDescription
+  | UsersPermissionsRoleConnectionType
+  | createRolePayload
+  | updateRolePayload
+  | deleteRolePayload
+  | UsersPermissionsUser
+  | UsersPermissionsUserConnection
+  | UsersPermissionsUserAggregator
+  | UsersPermissionsUserGroupBy
+  | UsersPermissionsUserConnectionId
+  | UsersPermissionsUserConnection_id
+  | UsersPermissionsUserConnectionCreatedAt
+  | UsersPermissionsUserConnectionUpdatedAt
+  | UsersPermissionsUserConnectionUsername
+  | UsersPermissionsUserConnectionEmail
+  | UsersPermissionsUserConnectionProvider
+  | UsersPermissionsUserConnectionConfirmed
+  | UsersPermissionsUserConnectionBlocked
+  | UsersPermissionsUserConnectionRole
+  | UsersPermissionsUserConnectionLocation
+  | UsersPermissionsUserConnectionQuestionary
+  | UsersPermissionsUserConnectionUser_category
+  | createUserPayload
+  | updateUserPayload
+  | deleteUserPayload
+  | ComponentLocationLocation
+  | ComponentOpeningHoursOpeningHours
+```
+
+### Possible types
+
+#### [`UsersPermissionsMe`](/v1/objects/users-permissions-me)
+
+#### [`UsersPermissionsMeRole`](/v1/objects/users-permissions-me-role)
+
+#### [`UsersPermissionsLoginPayload`](/v1/objects/users-permissions-login-payload)
+
+#### [`UserPermissionsPasswordPayload`](/v1/objects/user-permissions-password-payload)
+
+#### [`Activity`](/v1/objects/activity)
+
+#### [`ActivityConnection`](/v1/objects/activity-connection)
+
+#### [`ActivityAggregator`](/v1/objects/activity-aggregator)
+
+#### [`ActivityAggregatorSum`](/v1/objects/activity-aggregator-sum)
+
+#### [`ActivityAggregatorAvg`](/v1/objects/activity-aggregator-avg)
+
+#### [`ActivityAggregatorMin`](/v1/objects/activity-aggregator-min)
+
+#### [`ActivityAggregatorMax`](/v1/objects/activity-aggregator-max)
+
+#### [`ActivityGroupBy`](/v1/objects/activity-group-by)
+
+#### [`ActivityConnectionId`](/v1/objects/activity-connection-id)
+
+#### [`ActivityConnection_id`](/v1/objects/activity-connection-id)
+
+#### [`ActivityConnectionCreatedAt`](/v1/objects/activity-connection-created-at)
+
+#### [`ActivityConnectionUpdatedAt`](/v1/objects/activity-connection-updated-at)
+
+#### [`ActivityConnectionName`](/v1/objects/activity-connection-name)
+
+#### [`ActivityConnectionDescription`](/v1/objects/activity-connection-description)
+
+#### [`ActivityConnectionPrice`](/v1/objects/activity-connection-price)
+
+#### [`ActivityConnectionProvider`](/v1/objects/activity-connection-provider)
+
+#### [`ActivityConnectionName_ru`](/v1/objects/activity-connection-name-ru)
+
+#### [`ActivityConnectionName_en`](/v1/objects/activity-connection-name-en)
+
+#### [`ActivityConnectionDescription_ru`](/v1/objects/activity-connection-description-ru)
+
+#### [`ActivityConnectionDescription_en`](/v1/objects/activity-connection-description-en)
+
+#### [`ActivityConnectionPublished_at`](/v1/objects/activity-connection-published-at)
+
+#### [`createActivityPayload`](/v1/objects/create-activity-payload)
+
+#### [`updateActivityPayload`](/v1/objects/update-activity-payload)
+
+#### [`deleteActivityPayload`](/v1/objects/delete-activity-payload)
+
+#### [`Category`](/v1/objects/category)
+
+#### [`CategoryConnection`](/v1/objects/category-connection)
+
+#### [`CategoryAggregator`](/v1/objects/category-aggregator)
+
+#### [`CategoryGroupBy`](/v1/objects/category-group-by)
+
+#### [`CategoryConnectionId`](/v1/objects/category-connection-id)
+
+#### [`CategoryConnection_id`](/v1/objects/category-connection-id)
+
+#### [`CategoryConnectionCreatedAt`](/v1/objects/category-connection-created-at)
+
+#### [`CategoryConnectionUpdatedAt`](/v1/objects/category-connection-updated-at)
+
+#### [`CategoryConnectionName`](/v1/objects/category-connection-name)
+
+#### [`CategoryConnectionTag`](/v1/objects/category-connection-tag)
+
+#### [`CategoryConnectionName_ru`](/v1/objects/category-connection-name-ru)
+
+#### [`CategoryConnectionName_en`](/v1/objects/category-connection-name-en)
+
+#### [`CategoryConnectionPublished_at`](/v1/objects/category-connection-published-at)
+
+#### [`createCategoryPayload`](/v1/objects/create-category-payload)
+
+#### [`updateCategoryPayload`](/v1/objects/update-category-payload)
+
+#### [`deleteCategoryPayload`](/v1/objects/delete-category-payload)
+
+#### [`Coupon`](/v1/objects/coupon)
+
+#### [`CouponConnection`](/v1/objects/coupon-connection)
+
+#### [`CouponAggregator`](/v1/objects/coupon-aggregator)
+
+#### [`CouponAggregatorSum`](/v1/objects/coupon-aggregator-sum)
+
+#### [`CouponAggregatorAvg`](/v1/objects/coupon-aggregator-avg)
+
+#### [`CouponAggregatorMin`](/v1/objects/coupon-aggregator-min)
+
+#### [`CouponAggregatorMax`](/v1/objects/coupon-aggregator-max)
+
+#### [`CouponGroupBy`](/v1/objects/coupon-group-by)
+
+#### [`CouponConnectionId`](/v1/objects/coupon-connection-id)
+
+#### [`CouponConnection_id`](/v1/objects/coupon-connection-id)
+
+#### [`CouponConnectionCreatedAt`](/v1/objects/coupon-connection-created-at)
+
+#### [`CouponConnectionUpdatedAt`](/v1/objects/coupon-connection-updated-at)
+
+#### [`CouponConnectionAmount_off`](/v1/objects/coupon-connection-amount-off)
+
+#### [`CouponConnectionDuration`](/v1/objects/coupon-connection-duration)
+
+#### [`CouponConnectionDuration_in_months`](/v1/objects/coupon-connection-duration-in-months)
+
+#### [`CouponConnectionName`](/v1/objects/coupon-connection-name)
+
+#### [`CouponConnectionPercent_off`](/v1/objects/coupon-connection-percent-off)
+
+#### [`CouponConnectionMax_redemptions`](/v1/objects/coupon-connection-max-redemptions)
+
+#### [`CouponConnectionRedeem_by`](/v1/objects/coupon-connection-redeem-by)
+
+#### [`CouponConnectionTimes_redeemed`](/v1/objects/coupon-connection-times-redeemed)
+
+#### [`CouponConnectionValid`](/v1/objects/coupon-connection-valid)
+
+#### [`CouponConnectionCurrency`](/v1/objects/coupon-connection-currency)
+
+#### [`CouponConnectionName_ru`](/v1/objects/coupon-connection-name-ru)
+
+#### [`CouponConnectionName_en`](/v1/objects/coupon-connection-name-en)
+
+#### [`CouponConnectionPublished_at`](/v1/objects/coupon-connection-published-at)
+
+#### [`createCouponPayload`](/v1/objects/create-coupon-payload)
+
+#### [`updateCouponPayload`](/v1/objects/update-coupon-payload)
+
+#### [`deleteCouponPayload`](/v1/objects/delete-coupon-payload)
+
+#### [`Currency`](/v1/objects/currency)
+
+#### [`CurrencyConnection`](/v1/objects/currency-connection)
+
+#### [`CurrencyAggregator`](/v1/objects/currency-aggregator)
+
+#### [`CurrencyAggregatorSum`](/v1/objects/currency-aggregator-sum)
+
+#### [`CurrencyAggregatorAvg`](/v1/objects/currency-aggregator-avg)
+
+#### [`CurrencyAggregatorMin`](/v1/objects/currency-aggregator-min)
+
+#### [`CurrencyAggregatorMax`](/v1/objects/currency-aggregator-max)
+
+#### [`CurrencyGroupBy`](/v1/objects/currency-group-by)
+
+#### [`CurrencyConnectionId`](/v1/objects/currency-connection-id)
+
+#### [`CurrencyConnection_id`](/v1/objects/currency-connection-id)
+
+#### [`CurrencyConnectionCreatedAt`](/v1/objects/currency-connection-created-at)
+
+#### [`CurrencyConnectionUpdatedAt`](/v1/objects/currency-connection-updated-at)
+
+#### [`CurrencyConnectionName`](/v1/objects/currency-connection-name)
+
+#### [`CurrencyConnectionSymbol`](/v1/objects/currency-connection-symbol)
+
+#### [`CurrencyConnectionCode`](/v1/objects/currency-connection-code)
+
+#### [`CurrencyConnectionDecimal_digits`](/v1/objects/currency-connection-decimal-digits)
+
+#### [`CurrencyConnectionRounding`](/v1/objects/currency-connection-rounding)
+
+#### [`CurrencyConnectionName_ru`](/v1/objects/currency-connection-name-ru)
+
+#### [`CurrencyConnectionName_en`](/v1/objects/currency-connection-name-en)
+
+#### [`CurrencyConnectionPublished_at`](/v1/objects/currency-connection-published-at)
+
+#### [`createCurrencyPayload`](/v1/objects/create-currency-payload)
+
+#### [`updateCurrencyPayload`](/v1/objects/update-currency-payload)
+
+#### [`deleteCurrencyPayload`](/v1/objects/delete-currency-payload)
+
+#### [`Feature`](/v1/objects/feature)
+
+#### [`FeatureConnection`](/v1/objects/feature-connection)
+
+#### [`FeatureAggregator`](/v1/objects/feature-aggregator)
+
+#### [`FeatureGroupBy`](/v1/objects/feature-group-by)
+
+#### [`FeatureConnectionId`](/v1/objects/feature-connection-id)
+
+#### [`FeatureConnection_id`](/v1/objects/feature-connection-id)
+
+#### [`FeatureConnectionCreatedAt`](/v1/objects/feature-connection-created-at)
+
+#### [`FeatureConnectionUpdatedAt`](/v1/objects/feature-connection-updated-at)
+
+#### [`FeatureConnectionName_ru`](/v1/objects/feature-connection-name-ru)
+
+#### [`FeatureConnectionName_en`](/v1/objects/feature-connection-name-en)
+
+#### [`FeatureConnectionCategory`](/v1/objects/feature-connection-category)
+
+#### [`FeatureConnectionPublished_at`](/v1/objects/feature-connection-published-at)
+
+#### [`createFeaturePayload`](/v1/objects/create-feature-payload)
+
+#### [`updateFeaturePayload`](/v1/objects/update-feature-payload)
+
+#### [`deleteFeaturePayload`](/v1/objects/delete-feature-payload)
+
+#### [`Itinerary`](/v1/objects/itinerary)
+
+#### [`ItineraryConnection`](/v1/objects/itinerary-connection)
+
+#### [`ItineraryAggregator`](/v1/objects/itinerary-aggregator)
+
+#### [`ItineraryGroupBy`](/v1/objects/itinerary-group-by)
+
+#### [`ItineraryConnectionId`](/v1/objects/itinerary-connection-id)
+
+#### [`ItineraryConnection_id`](/v1/objects/itinerary-connection-id)
+
+#### [`ItineraryConnectionCreatedAt`](/v1/objects/itinerary-connection-created-at)
+
+#### [`ItineraryConnectionUpdatedAt`](/v1/objects/itinerary-connection-updated-at)
+
+#### [`ItineraryConnectionItineraryState`](/v1/objects/itinerary-connection-itinerary-state)
+
+#### [`ItineraryConnectionStartTime`](/v1/objects/itinerary-connection-start-time)
+
+#### [`ItineraryConnectionEndTime`](/v1/objects/itinerary-connection-end-time)
+
+#### [`ItineraryConnectionPublished_at`](/v1/objects/itinerary-connection-published-at)
+
+#### [`createItineraryPayload`](/v1/objects/create-itinerary-payload)
+
+#### [`updateItineraryPayload`](/v1/objects/update-itinerary-payload)
+
+#### [`deleteItineraryPayload`](/v1/objects/delete-itinerary-payload)
+
+#### [`Leg`](/v1/objects/leg)
+
+#### [`LegConnection`](/v1/objects/leg-connection)
+
+#### [`LegAggregator`](/v1/objects/leg-aggregator)
+
+#### [`LegAggregatorSum`](/v1/objects/leg-aggregator-sum)
+
+#### [`LegAggregatorAvg`](/v1/objects/leg-aggregator-avg)
+
+#### [`LegAggregatorMin`](/v1/objects/leg-aggregator-min)
+
+#### [`LegAggregatorMax`](/v1/objects/leg-aggregator-max)
+
+#### [`LegGroupBy`](/v1/objects/leg-group-by)
+
+#### [`LegConnectionId`](/v1/objects/leg-connection-id)
+
+#### [`LegConnection_id`](/v1/objects/leg-connection-id)
+
+#### [`LegConnectionCreatedAt`](/v1/objects/leg-connection-created-at)
+
+#### [`LegConnectionUpdatedAt`](/v1/objects/leg-connection-updated-at)
+
+#### [`LegConnectionFrom`](/v1/objects/leg-connection-from)
+
+#### [`LegConnectionTo`](/v1/objects/leg-connection-to)
+
+#### [`LegConnectionStartTime`](/v1/objects/leg-connection-start-time)
+
+#### [`LegConnectionEndTime`](/v1/objects/leg-connection-end-time)
+
+#### [`LegConnectionMode`](/v1/objects/leg-connection-mode)
+
+#### [`LegConnectionRadius`](/v1/objects/leg-connection-radius)
+
+#### [`LegConnectionTravellers`](/v1/objects/leg-connection-travellers)
+
+#### [`LegConnectionLegState`](/v1/objects/leg-connection-leg-state)
+
+#### [`LegConnectionPublished_at`](/v1/objects/leg-connection-published-at)
+
+#### [`createLegPayload`](/v1/objects/create-leg-payload)
+
+#### [`updateLegPayload`](/v1/objects/update-leg-payload)
+
+#### [`deleteLegPayload`](/v1/objects/delete-leg-payload)
+
+#### [`Legal`](/v1/objects/legal)
+
+#### [`LegalConnection`](/v1/objects/legal-connection)
+
+#### [`LegalAggregator`](/v1/objects/legal-aggregator)
+
+#### [`LegalAggregatorSum`](/v1/objects/legal-aggregator-sum)
+
+#### [`LegalAggregatorAvg`](/v1/objects/legal-aggregator-avg)
+
+#### [`LegalAggregatorMin`](/v1/objects/legal-aggregator-min)
+
+#### [`LegalAggregatorMax`](/v1/objects/legal-aggregator-max)
+
+#### [`LegalGroupBy`](/v1/objects/legal-group-by)
+
+#### [`LegalConnectionId`](/v1/objects/legal-connection-id)
+
+#### [`LegalConnection_id`](/v1/objects/legal-connection-id)
+
+#### [`LegalConnectionCreatedAt`](/v1/objects/legal-connection-created-at)
+
+#### [`LegalConnectionUpdatedAt`](/v1/objects/legal-connection-updated-at)
+
+#### [`LegalConnectionLegal_address`](/v1/objects/legal-connection-legal-address)
+
+#### [`LegalConnectionMailing_address`](/v1/objects/legal-connection-mailing-address)
+
+#### [`LegalConnectionLegal_name`](/v1/objects/legal-connection-legal-name)
+
+#### [`LegalConnectionTax_id`](/v1/objects/legal-connection-tax-id)
+
+#### [`LegalConnectionRegistration_id`](/v1/objects/legal-connection-registration-id)
+
+#### [`LegalConnectionRegistration_cause_id`](/v1/objects/legal-connection-registration-cause-id)
+
+#### [`LegalConnectionBank_id`](/v1/objects/legal-connection-bank-id)
+
+#### [`LegalConnectionChecking_account`](/v1/objects/legal-connection-checking-account)
+
+#### [`LegalConnectionProvider`](/v1/objects/legal-connection-provider)
+
+#### [`LegalConnectionPublished_at`](/v1/objects/legal-connection-published-at)
+
+#### [`createLegalPayload`](/v1/objects/create-legal-payload)
+
+#### [`updateLegalPayload`](/v1/objects/update-legal-payload)
+
+#### [`deleteLegalPayload`](/v1/objects/delete-legal-payload)
+
+#### [`Like`](/v1/objects/like)
+
+#### [`LikeConnection`](/v1/objects/like-connection)
+
+#### [`LikeAggregator`](/v1/objects/like-aggregator)
+
+#### [`LikeGroupBy`](/v1/objects/like-group-by)
+
+#### [`LikeConnectionId`](/v1/objects/like-connection-id)
+
+#### [`LikeConnection_id`](/v1/objects/like-connection-id)
+
+#### [`LikeConnectionCreatedAt`](/v1/objects/like-connection-created-at)
+
+#### [`LikeConnectionUpdatedAt`](/v1/objects/like-connection-updated-at)
+
+#### [`LikeConnectionAuthor`](/v1/objects/like-connection-author)
+
+#### [`LikeConnectionReview`](/v1/objects/like-connection-review)
+
+#### [`LikeConnectionPublished_at`](/v1/objects/like-connection-published-at)
+
+#### [`createLikePayload`](/v1/objects/create-like-payload)
+
+#### [`updateLikePayload`](/v1/objects/update-like-payload)
+
+#### [`deleteLikePayload`](/v1/objects/delete-like-payload)
+
+#### [`Order`](/v1/objects/order)
+
+#### [`OrderConnection`](/v1/objects/order-connection)
+
+#### [`OrderAggregator`](/v1/objects/order-aggregator)
+
+#### [`OrderAggregatorSum`](/v1/objects/order-aggregator-sum)
+
+#### [`OrderAggregatorAvg`](/v1/objects/order-aggregator-avg)
+
+#### [`OrderAggregatorMin`](/v1/objects/order-aggregator-min)
+
+#### [`OrderAggregatorMax`](/v1/objects/order-aggregator-max)
+
+#### [`OrderGroupBy`](/v1/objects/order-group-by)
+
+#### [`OrderConnectionId`](/v1/objects/order-connection-id)
+
+#### [`OrderConnection_id`](/v1/objects/order-connection-id)
+
+#### [`OrderConnectionCreatedAt`](/v1/objects/order-connection-created-at)
+
+#### [`OrderConnectionUpdatedAt`](/v1/objects/order-connection-updated-at)
+
+#### [`OrderConnectionAddress`](/v1/objects/order-connection-address)
+
+#### [`OrderConnectionCity`](/v1/objects/order-connection-city)
+
+#### [`OrderConnectionDishes`](/v1/objects/order-connection-dishes)
+
+#### [`OrderConnectionAmount`](/v1/objects/order-connection-amount)
+
+#### [`OrderConnectionPublished_at`](/v1/objects/order-connection-published-at)
+
+#### [`createOrderPayload`](/v1/objects/create-order-payload)
+
+#### [`updateOrderPayload`](/v1/objects/update-order-payload)
+
+#### [`deleteOrderPayload`](/v1/objects/delete-order-payload)
+
+#### [`Provider`](/v1/objects/provider)
+
+#### [`ProviderConnection`](/v1/objects/provider-connection)
+
+#### [`ProviderAggregator`](/v1/objects/provider-aggregator)
+
+#### [`ProviderAggregatorSum`](/v1/objects/provider-aggregator-sum)
+
+#### [`ProviderAggregatorAvg`](/v1/objects/provider-aggregator-avg)
+
+#### [`ProviderAggregatorMin`](/v1/objects/provider-aggregator-min)
+
+#### [`ProviderAggregatorMax`](/v1/objects/provider-aggregator-max)
+
+#### [`ProviderGroupBy`](/v1/objects/provider-group-by)
+
+#### [`ProviderConnectionId`](/v1/objects/provider-connection-id)
+
+#### [`ProviderConnection_id`](/v1/objects/provider-connection-id)
+
+#### [`ProviderConnectionCreatedAt`](/v1/objects/provider-connection-created-at)
+
+#### [`ProviderConnectionUpdatedAt`](/v1/objects/provider-connection-updated-at)
+
+#### [`ProviderConnectionName`](/v1/objects/provider-connection-name)
+
+#### [`ProviderConnectionDescription`](/v1/objects/provider-connection-description)
+
+#### [`ProviderConnectionWeb`](/v1/objects/provider-connection-web)
+
+#### [`ProviderConnectionAddress`](/v1/objects/provider-connection-address)
+
+#### [`ProviderConnectionPhone`](/v1/objects/provider-connection-phone)
+
+#### [`ProviderConnectionPrice`](/v1/objects/provider-connection-price)
+
+#### [`ProviderConnectionCategory`](/v1/objects/provider-connection-category)
+
+#### [`ProviderConnectionHours`](/v1/objects/provider-connection-hours)
+
+#### [`ProviderConnectionGeometry`](/v1/objects/provider-connection-geometry)
+
+#### [`ProviderConnectionLocation`](/v1/objects/provider-connection-location)
+
+#### [`ProviderConnectionUser`](/v1/objects/provider-connection-user)
+
+#### [`ProviderConnectionLegal`](/v1/objects/provider-connection-legal)
+
+#### [`ProviderConnectionRating`](/v1/objects/provider-connection-rating)
+
+#### [`ProviderConnectionDiscount`](/v1/objects/provider-connection-discount)
+
+#### [`ProviderConnectionAverage_price`](/v1/objects/provider-connection-average-price)
+
+#### [`ProviderConnectionFrom_operation_hour`](/v1/objects/provider-connection-from-operation-hour)
+
+#### [`ProviderConnectionTo_operation_hour`](/v1/objects/provider-connection-to-operation-hour)
+
+#### [`ProviderConnectionOpening_hours`](/v1/objects/provider-connection-opening-hours)
+
+#### [`ProviderConnectionDescription_ru`](/v1/objects/provider-connection-description-ru)
+
+#### [`ProviderConnectionDescription_en`](/v1/objects/provider-connection-description-en)
+
+#### [`ProviderConnectionName_ru`](/v1/objects/provider-connection-name-ru)
+
+#### [`ProviderConnectionName_en`](/v1/objects/provider-connection-name-en)
+
+#### [`ProviderConnectionProviders_to_property`](/v1/objects/provider-connection-providers-to-property)
+
+#### [`ProviderConnectionPublished_at`](/v1/objects/provider-connection-published-at)
+
+#### [`createProviderPayload`](/v1/objects/create-provider-payload)
+
+#### [`updateProviderPayload`](/v1/objects/update-provider-payload)
+
+#### [`deleteProviderPayload`](/v1/objects/delete-provider-payload)
+
+#### [`ProvidersProperties`](/v1/objects/providers-properties)
+
+#### [`ProvidersPropertiesConnection`](/v1/objects/providers-properties-connection)
+
+#### [`ProvidersPropertiesAggregator`](/v1/objects/providers-properties-aggregator)
+
+#### [`ProvidersPropertiesGroupBy`](/v1/objects/providers-properties-group-by)
+
+#### [`ProvidersPropertiesConnectionId`](/v1/objects/providers-properties-connection-id)
+
+#### [`ProvidersPropertiesConnection_id`](/v1/objects/providers-properties-connection-id)
+
+#### [`ProvidersPropertiesConnectionCreatedAt`](/v1/objects/providers-properties-connection-created-at)
+
+#### [`ProvidersPropertiesConnectionUpdatedAt`](/v1/objects/providers-properties-connection-updated-at)
+
+#### [`ProvidersPropertiesConnectionFeature`](/v1/objects/providers-properties-connection-feature)
+
+#### [`ProvidersPropertiesConnectionCategory`](/v1/objects/providers-properties-connection-category)
+
+#### [`ProvidersPropertiesConnectionPublished_at`](/v1/objects/providers-properties-connection-published-at)
+
+#### [`createProvidersPropertyPayload`](/v1/objects/create-providers-property-payload)
+
+#### [`updateProvidersPropertyPayload`](/v1/objects/update-providers-property-payload)
+
+#### [`deleteProvidersPropertyPayload`](/v1/objects/delete-providers-property-payload)
+
+#### [`ProvidersToProperties`](/v1/objects/providers-to-properties)
+
+#### [`ProvidersToPropertiesConnection`](/v1/objects/providers-to-properties-connection)
+
+#### [`ProvidersToPropertiesAggregator`](/v1/objects/providers-to-properties-aggregator)
+
+#### [`ProvidersToPropertiesGroupBy`](/v1/objects/providers-to-properties-group-by)
+
+#### [`ProvidersToPropertiesConnectionId`](/v1/objects/providers-to-properties-connection-id)
+
+#### [`ProvidersToPropertiesConnection_id`](/v1/objects/providers-to-properties-connection-id)
+
+#### [`ProvidersToPropertiesConnectionCreatedAt`](/v1/objects/providers-to-properties-connection-created-at)
+
+#### [`ProvidersToPropertiesConnectionUpdatedAt`](/v1/objects/providers-to-properties-connection-updated-at)
+
+#### [`ProvidersToPropertiesConnectionProvider`](/v1/objects/providers-to-properties-connection-provider)
+
+#### [`ProvidersToPropertiesConnectionPublished_at`](/v1/objects/providers-to-properties-connection-published-at)
+
+#### [`createProvidersToPropertyPayload`](/v1/objects/create-providers-to-property-payload)
+
+#### [`updateProvidersToPropertyPayload`](/v1/objects/update-providers-to-property-payload)
+
+#### [`deleteProvidersToPropertyPayload`](/v1/objects/delete-providers-to-property-payload)
+
+#### [`Questionary`](/v1/objects/questionary)
+
+#### [`QuestionaryConnection`](/v1/objects/questionary-connection)
+
+#### [`QuestionaryAggregator`](/v1/objects/questionary-aggregator)
+
+#### [`QuestionaryGroupBy`](/v1/objects/questionary-group-by)
+
+#### [`QuestionaryConnectionId`](/v1/objects/questionary-connection-id)
+
+#### [`QuestionaryConnection_id`](/v1/objects/questionary-connection-id)
+
+#### [`QuestionaryConnectionCreatedAt`](/v1/objects/questionary-connection-created-at)
+
+#### [`QuestionaryConnectionUpdatedAt`](/v1/objects/questionary-connection-updated-at)
+
+#### [`QuestionaryConnectionUsers_permissions_user`](/v1/objects/questionary-connection-users-permissions-user)
+
+#### [`QuestionaryConnectionSex`](/v1/objects/questionary-connection-sex)
+
+#### [`QuestionaryConnectionBdate`](/v1/objects/questionary-connection-bdate)
+
+#### [`QuestionaryConnectionCity`](/v1/objects/questionary-connection-city)
+
+#### [`QuestionaryConnectionEducation`](/v1/objects/questionary-connection-education)
+
+#### [`QuestionaryConnectionInterests`](/v1/objects/questionary-connection-interests)
+
+#### [`QuestionaryConnectionCareer_industry`](/v1/objects/questionary-connection-career-industry)
+
+#### [`QuestionaryConnectionCareer_position`](/v1/objects/questionary-connection-career-position)
+
+#### [`QuestionaryConnectionPurpose_of_visit`](/v1/objects/questionary-connection-purpose-of-visit)
+
+#### [`QuestionaryConnectionPublished_at`](/v1/objects/questionary-connection-published-at)
+
+#### [`createQuestionaryPayload`](/v1/objects/create-questionary-payload)
+
+#### [`updateQuestionaryPayload`](/v1/objects/update-questionary-payload)
+
+#### [`deleteQuestionaryPayload`](/v1/objects/delete-questionary-payload)
+
+#### [`Review`](/v1/objects/review)
+
+#### [`ReviewConnection`](/v1/objects/review-connection)
+
+#### [`ReviewAggregator`](/v1/objects/review-aggregator)
+
+#### [`ReviewAggregatorSum`](/v1/objects/review-aggregator-sum)
+
+#### [`ReviewAggregatorAvg`](/v1/objects/review-aggregator-avg)
+
+#### [`ReviewAggregatorMin`](/v1/objects/review-aggregator-min)
+
+#### [`ReviewAggregatorMax`](/v1/objects/review-aggregator-max)
+
+#### [`ReviewGroupBy`](/v1/objects/review-group-by)
+
+#### [`ReviewConnectionId`](/v1/objects/review-connection-id)
+
+#### [`ReviewConnection_id`](/v1/objects/review-connection-id)
+
+#### [`ReviewConnectionCreatedAt`](/v1/objects/review-connection-created-at)
+
+#### [`ReviewConnectionUpdatedAt`](/v1/objects/review-connection-updated-at)
+
+#### [`ReviewConnectionContent`](/v1/objects/review-connection-content)
+
+#### [`ReviewConnectionNote`](/v1/objects/review-connection-note)
+
+#### [`ReviewConnectionAuthor`](/v1/objects/review-connection-author)
+
+#### [`ReviewConnectionProvider`](/v1/objects/review-connection-provider)
+
+#### [`ReviewConnectionPublished_at`](/v1/objects/review-connection-published-at)
+
+#### [`createReviewPayload`](/v1/objects/create-review-payload)
+
+#### [`updateReviewPayload`](/v1/objects/update-review-payload)
+
+#### [`deleteReviewPayload`](/v1/objects/delete-review-payload)
+
+#### [`UploadFile`](/v1/objects/upload-file)
+
+#### [`UploadFileConnection`](/v1/objects/upload-file-connection)
+
+#### [`UploadFileAggregator`](/v1/objects/upload-file-aggregator)
+
+#### [`UploadFileAggregatorSum`](/v1/objects/upload-file-aggregator-sum)
+
+#### [`UploadFileAggregatorAvg`](/v1/objects/upload-file-aggregator-avg)
+
+#### [`UploadFileAggregatorMin`](/v1/objects/upload-file-aggregator-min)
+
+#### [`UploadFileAggregatorMax`](/v1/objects/upload-file-aggregator-max)
+
+#### [`UploadFileGroupBy`](/v1/objects/upload-file-group-by)
+
+#### [`UploadFileConnectionId`](/v1/objects/upload-file-connection-id)
+
+#### [`UploadFileConnection_id`](/v1/objects/upload-file-connection-id)
+
+#### [`UploadFileConnectionCreatedAt`](/v1/objects/upload-file-connection-created-at)
+
+#### [`UploadFileConnectionUpdatedAt`](/v1/objects/upload-file-connection-updated-at)
+
+#### [`UploadFileConnectionName`](/v1/objects/upload-file-connection-name)
+
+#### [`UploadFileConnectionAlternativeText`](/v1/objects/upload-file-connection-alternative-text)
+
+#### [`UploadFileConnectionCaption`](/v1/objects/upload-file-connection-caption)
+
+#### [`UploadFileConnectionWidth`](/v1/objects/upload-file-connection-width)
+
+#### [`UploadFileConnectionHeight`](/v1/objects/upload-file-connection-height)
+
+#### [`UploadFileConnectionFormats`](/v1/objects/upload-file-connection-formats)
+
+#### [`UploadFileConnectionHash`](/v1/objects/upload-file-connection-hash)
+
+#### [`UploadFileConnectionExt`](/v1/objects/upload-file-connection-ext)
+
+#### [`UploadFileConnectionMime`](/v1/objects/upload-file-connection-mime)
+
+#### [`UploadFileConnectionSize`](/v1/objects/upload-file-connection-size)
+
+#### [`UploadFileConnectionUrl`](/v1/objects/upload-file-connection-url)
+
+#### [`UploadFileConnectionPreviewUrl`](/v1/objects/upload-file-connection-preview-url)
+
+#### [`UploadFileConnectionProvider`](/v1/objects/upload-file-connection-provider)
+
+#### [`UploadFileConnectionProvider_metadata`](/v1/objects/upload-file-connection-provider-metadata)
+
+#### [`deleteFilePayload`](/v1/objects/delete-file-payload)
+
+#### [`UsersPermissionsPermission`](/v1/objects/users-permissions-permission)
+
+#### [`UsersPermissionsRole`](/v1/objects/users-permissions-role)
+
+#### [`UsersPermissionsRoleConnection`](/v1/objects/users-permissions-role-connection)
+
+#### [`UsersPermissionsRoleAggregator`](/v1/objects/users-permissions-role-aggregator)
+
+#### [`UsersPermissionsRoleGroupBy`](/v1/objects/users-permissions-role-group-by)
+
+#### [`UsersPermissionsRoleConnectionId`](/v1/objects/users-permissions-role-connection-id)
+
+#### [`UsersPermissionsRoleConnection_id`](/v1/objects/users-permissions-role-connection-id)
+
+#### [`UsersPermissionsRoleConnectionName`](/v1/objects/users-permissions-role-connection-name)
+
+#### [`UsersPermissionsRoleConnectionDescription`](/v1/objects/users-permissions-role-connection-description)
+
+#### [`UsersPermissionsRoleConnectionType`](/v1/objects/users-permissions-role-connection-type)
+
+#### [`createRolePayload`](/v1/objects/create-role-payload)
+
+#### [`updateRolePayload`](/v1/objects/update-role-payload)
+
+#### [`deleteRolePayload`](/v1/objects/delete-role-payload)
+
+#### [`UsersPermissionsUser`](/v1/objects/users-permissions-user)
+
+#### [`UsersPermissionsUserConnection`](/v1/objects/users-permissions-user-connection)
+
+#### [`UsersPermissionsUserAggregator`](/v1/objects/users-permissions-user-aggregator)
+
+#### [`UsersPermissionsUserGroupBy`](/v1/objects/users-permissions-user-group-by)
+
+#### [`UsersPermissionsUserConnectionId`](/v1/objects/users-permissions-user-connection-id)
+
+#### [`UsersPermissionsUserConnection_id`](/v1/objects/users-permissions-user-connection-id)
+
+#### [`UsersPermissionsUserConnectionCreatedAt`](/v1/objects/users-permissions-user-connection-created-at)
+
+#### [`UsersPermissionsUserConnectionUpdatedAt`](/v1/objects/users-permissions-user-connection-updated-at)
+
+#### [`UsersPermissionsUserConnectionUsername`](/v1/objects/users-permissions-user-connection-username)
+
+#### [`UsersPermissionsUserConnectionEmail`](/v1/objects/users-permissions-user-connection-email)
+
+#### [`UsersPermissionsUserConnectionProvider`](/v1/objects/users-permissions-user-connection-provider)
+
+#### [`UsersPermissionsUserConnectionConfirmed`](/v1/objects/users-permissions-user-connection-confirmed)
+
+#### [`UsersPermissionsUserConnectionBlocked`](/v1/objects/users-permissions-user-connection-blocked)
+
+#### [`UsersPermissionsUserConnectionRole`](/v1/objects/users-permissions-user-connection-role)
+
+#### [`UsersPermissionsUserConnectionLocation`](/v1/objects/users-permissions-user-connection-location)
+
+#### [`UsersPermissionsUserConnectionQuestionary`](/v1/objects/users-permissions-user-connection-questionary)
+
+#### [`UsersPermissionsUserConnectionUser_category`](/v1/objects/users-permissions-user-connection-user-category)
+
+#### [`createUserPayload`](/v1/objects/create-user-payload)
+
+#### [`updateUserPayload`](/v1/objects/update-user-payload)
+
+#### [`deleteUserPayload`](/v1/objects/delete-user-payload)
+
+#### [`ComponentLocationLocation`](/v1/objects/component-location-location)
+
+#### [`ComponentOpeningHoursOpeningHours`](/v1/objects/component-opening-hours-opening-hours)

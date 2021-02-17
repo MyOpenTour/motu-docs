@@ -1,0 +1,33 @@
+---
+id: create-activity
+title: createActivity
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createActivity(
+  input: createActivityInput
+): createActivityPayload
+
+```
+
+### Arguments
+
+#### `input` ([`createActivityInput`](/v1/inputs/create-activity-input))
+
+### Type
+
+#### [`createActivityPayload`](/v1/objects/create-activity-payload)

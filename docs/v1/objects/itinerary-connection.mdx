@@ -1,0 +1,34 @@
+---
+id: itinerary-connection
+title: ItineraryConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ItineraryConnection {
+  values: [Itinerary]
+  groupBy: ItineraryGroupBy
+  aggregate: ItineraryAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Itinerary]`](/v1/objects/itinerary))
+
+#### `groupBy` ([`ItineraryGroupBy`](/v1/objects/itinerary-group-by))
+
+#### `aggregate` ([`ItineraryAggregator`](/v1/objects/itinerary-aggregator))

@@ -1,0 +1,61 @@
+---
+id: edit-leg-input
+title: editLegInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type editLegInput {
+  from: ID
+  to: ID
+  startTime: DateTime
+  endTime: DateTime
+  mode: ENUM_LEG_MODE
+  radius: Int
+  travellers: Int
+  users: [ID]
+  legState: ENUM_LEG_LEGSTATE
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `from` ([`ID`](/v1/scalars/id))
+
+#### `to` ([`ID`](/v1/scalars/id))
+
+#### `startTime` ([`DateTime`](/v1/scalars/date-time))
+
+#### `endTime` ([`DateTime`](/v1/scalars/date-time))
+
+#### `mode` ([`ENUM_LEG_MODE`](/v1/enums/enum-leg-mode))
+
+#### `radius` ([`Int`](/v1/scalars/int))
+
+#### `travellers` ([`Int`](/v1/scalars/int))
+
+#### `users` ([`[ID]`](/v1/scalars/id))
+
+#### `legState` ([`ENUM_LEG_LEGSTATE`](/v1/enums/enum-leg-legstate))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

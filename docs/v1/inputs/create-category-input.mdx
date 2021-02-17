@@ -1,0 +1,28 @@
+---
+id: create-category-input
+title: createCategoryInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type createCategoryInput {
+  data: CategoryInput
+}
+```
+
+### Fields
+
+#### `data` ([`CategoryInput`](/v1/inputs/category-input))

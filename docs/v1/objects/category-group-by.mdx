@@ -1,0 +1,52 @@
+---
+id: category-group-by
+title: CategoryGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type CategoryGroupBy {
+  id: [CategoryConnectionId]
+  _id: [CategoryConnection_id]
+  createdAt: [CategoryConnectionCreatedAt]
+  updatedAt: [CategoryConnectionUpdatedAt]
+  name: [CategoryConnectionName]
+  tag: [CategoryConnectionTag]
+  name_ru: [CategoryConnectionName_ru]
+  name_en: [CategoryConnectionName_en]
+  published_at: [CategoryConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[CategoryConnectionId]`](/v1/objects/category-connection-id))
+
+#### `_id` ([`[CategoryConnection_id]`](/v1/objects/category-connection-id))
+
+#### `createdAt` ([`[CategoryConnectionCreatedAt]`](/v1/objects/category-connection-created-at))
+
+#### `updatedAt` ([`[CategoryConnectionUpdatedAt]`](/v1/objects/category-connection-updated-at))
+
+#### `name` ([`[CategoryConnectionName]`](/v1/objects/category-connection-name))
+
+#### `tag` ([`[CategoryConnectionTag]`](/v1/objects/category-connection-tag))
+
+#### `name_ru` ([`[CategoryConnectionName_ru]`](/v1/objects/category-connection-name-ru))
+
+#### `name_en` ([`[CategoryConnectionName_en]`](/v1/objects/category-connection-name-en))
+
+#### `published_at` ([`[CategoryConnectionPublished_at]`](/v1/objects/category-connection-published-at))

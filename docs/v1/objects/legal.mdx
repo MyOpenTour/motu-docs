@@ -1,0 +1,67 @@
+---
+id: legal
+title: Legal
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Legal {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  legal_address: String
+  mailing_address: String
+  legal_name: String
+  tax_id: Int
+  registration_id: Int
+  registration_cause_id: Int
+  bank_id: Int
+  checking_account: Int
+  provider: Provider
+  published_at: DateTime
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `legal_address` ([`String`](/v1/scalars/string))
+
+#### `mailing_address` ([`String`](/v1/scalars/string))
+
+#### `legal_name` ([`String`](/v1/scalars/string))
+
+#### `tax_id` ([`Int`](/v1/scalars/int))
+
+#### `registration_id` ([`Int`](/v1/scalars/int))
+
+#### `registration_cause_id` ([`Int`](/v1/scalars/int))
+
+#### `bank_id` ([`Int`](/v1/scalars/int))
+
+#### `checking_account` ([`Int`](/v1/scalars/int))
+
+#### `provider` ([`Provider`](/v1/objects/provider))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))

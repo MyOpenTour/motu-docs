@@ -1,0 +1,49 @@
+---
+id: feature-group-by
+title: FeatureGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type FeatureGroupBy {
+  id: [FeatureConnectionId]
+  _id: [FeatureConnection_id]
+  createdAt: [FeatureConnectionCreatedAt]
+  updatedAt: [FeatureConnectionUpdatedAt]
+  name_ru: [FeatureConnectionName_ru]
+  name_en: [FeatureConnectionName_en]
+  category: [FeatureConnectionCategory]
+  published_at: [FeatureConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[FeatureConnectionId]`](/v1/objects/feature-connection-id))
+
+#### `_id` ([`[FeatureConnection_id]`](/v1/objects/feature-connection-id))
+
+#### `createdAt` ([`[FeatureConnectionCreatedAt]`](/v1/objects/feature-connection-created-at))
+
+#### `updatedAt` ([`[FeatureConnectionUpdatedAt]`](/v1/objects/feature-connection-updated-at))
+
+#### `name_ru` ([`[FeatureConnectionName_ru]`](/v1/objects/feature-connection-name-ru))
+
+#### `name_en` ([`[FeatureConnectionName_en]`](/v1/objects/feature-connection-name-en))
+
+#### `category` ([`[FeatureConnectionCategory]`](/v1/objects/feature-connection-category))
+
+#### `published_at` ([`[FeatureConnectionPublished_at]`](/v1/objects/feature-connection-published-at))

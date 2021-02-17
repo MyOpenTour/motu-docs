@@ -1,0 +1,33 @@
+---
+id: create-itinerary
+title: createItinerary
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createItinerary(
+  input: createItineraryInput
+): createItineraryPayload
+
+```
+
+### Arguments
+
+#### `input` ([`createItineraryInput`](/v1/inputs/create-itinerary-input))
+
+### Type
+
+#### [`createItineraryPayload`](/v1/objects/create-itinerary-payload)

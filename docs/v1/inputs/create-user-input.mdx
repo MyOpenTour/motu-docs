@@ -1,0 +1,28 @@
+---
+id: create-user-input
+title: createUserInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type createUserInput {
+  data: UserInput
+}
+```
+
+### Fields
+
+#### `data` ([`UserInput`](/v1/inputs/user-input))

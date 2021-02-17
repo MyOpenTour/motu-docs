@@ -1,0 +1,67 @@
+---
+id: questionary-group-by
+title: QuestionaryGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type QuestionaryGroupBy {
+  id: [QuestionaryConnectionId]
+  _id: [QuestionaryConnection_id]
+  createdAt: [QuestionaryConnectionCreatedAt]
+  updatedAt: [QuestionaryConnectionUpdatedAt]
+  users_permissions_user: [QuestionaryConnectionUsers_permissions_user]
+  sex: [QuestionaryConnectionSex]
+  bdate: [QuestionaryConnectionBdate]
+  city: [QuestionaryConnectionCity]
+  education: [QuestionaryConnectionEducation]
+  interests: [QuestionaryConnectionInterests]
+  career_industry: [QuestionaryConnectionCareer_industry]
+  career_position: [QuestionaryConnectionCareer_position]
+  purpose_of_visit: [QuestionaryConnectionPurpose_of_visit]
+  published_at: [QuestionaryConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[QuestionaryConnectionId]`](/v1/objects/questionary-connection-id))
+
+#### `_id` ([`[QuestionaryConnection_id]`](/v1/objects/questionary-connection-id))
+
+#### `createdAt` ([`[QuestionaryConnectionCreatedAt]`](/v1/objects/questionary-connection-created-at))
+
+#### `updatedAt` ([`[QuestionaryConnectionUpdatedAt]`](/v1/objects/questionary-connection-updated-at))
+
+#### `users_permissions_user` ([`[QuestionaryConnectionUsers_permissions_user]`](/v1/objects/questionary-connection-users-permissions-user))
+
+#### `sex` ([`[QuestionaryConnectionSex]`](/v1/objects/questionary-connection-sex))
+
+#### `bdate` ([`[QuestionaryConnectionBdate]`](/v1/objects/questionary-connection-bdate))
+
+#### `city` ([`[QuestionaryConnectionCity]`](/v1/objects/questionary-connection-city))
+
+#### `education` ([`[QuestionaryConnectionEducation]`](/v1/objects/questionary-connection-education))
+
+#### `interests` ([`[QuestionaryConnectionInterests]`](/v1/objects/questionary-connection-interests))
+
+#### `career_industry` ([`[QuestionaryConnectionCareer_industry]`](/v1/objects/questionary-connection-career-industry))
+
+#### `career_position` ([`[QuestionaryConnectionCareer_position]`](/v1/objects/questionary-connection-career-position))
+
+#### `purpose_of_visit` ([`[QuestionaryConnectionPurpose_of_visit]`](/v1/objects/questionary-connection-purpose-of-visit))
+
+#### `published_at` ([`[QuestionaryConnectionPublished_at]`](/v1/objects/questionary-connection-published-at))

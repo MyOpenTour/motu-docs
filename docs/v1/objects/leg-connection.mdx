@@ -1,0 +1,34 @@
+---
+id: leg-connection
+title: LegConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegConnection {
+  values: [Leg]
+  groupBy: LegGroupBy
+  aggregate: LegAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Leg]`](/v1/objects/leg))
+
+#### `groupBy` ([`LegGroupBy`](/v1/objects/leg-group-by))
+
+#### `aggregate` ([`LegAggregator`](/v1/objects/leg-aggregator))

@@ -1,0 +1,31 @@
+---
+id: legal-connection-tax-id
+title: LegalConnectionTax_id
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LegalConnectionTax_id {
+  key: Int
+  connection: LegalConnection
+}
+```
+
+### Fields
+
+#### `key` ([`Int`](/v1/scalars/int))
+
+#### `connection` ([`LegalConnection`](/v1/objects/legal-connection))

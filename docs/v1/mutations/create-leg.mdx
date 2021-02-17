@@ -1,0 +1,33 @@
+---
+id: create-leg
+title: createLeg
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createLeg(
+  input: createLegInput
+): createLegPayload
+
+```
+
+### Arguments
+
+#### `input` ([`createLegInput`](/v1/inputs/create-leg-input))
+
+### Type
+
+#### [`createLegPayload`](/v1/objects/create-leg-payload)
