@@ -1,0 +1,33 @@
+---
+id: create-notification
+title: createNotification
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createNotification(
+  input: createNotificationInput
+): createNotificationPayload
+
+```
+
+### Arguments
+
+#### `input` ([`createNotificationInput`](/v1/inputs/create-notification-input))
+
+### Type
+
+#### [`createNotificationPayload`](/v1/objects/create-notification-payload)

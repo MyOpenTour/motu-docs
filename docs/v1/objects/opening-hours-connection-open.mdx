@@ -1,0 +1,31 @@
+---
+id: opening-hours-connection-open
+title: OpeningHoursConnectionOpen
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OpeningHoursConnectionOpen {
+  key: ID
+  connection: OpeningHoursConnection
+}
+```
+
+### Fields
+
+#### `key` ([`ID`](/v1/scalars/id))
+
+#### `connection` ([`OpeningHoursConnection`](/v1/objects/opening-hours-connection))

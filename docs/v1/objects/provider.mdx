@@ -26,26 +26,25 @@ type Provider {
   name: String
   description: String
   web: String
-  address: String
   phone: String
   price: ENUM_PROVIDER_PRICE
   category: Category
-  hours: String
-  geometry: JSON
-  location: ComponentLocationLocation
   user: UsersPermissionsUser
   legal: Legal
   rating: Float
   discount: Float
   average_price: Int
-  from_operation_hour: Int
-  to_operation_hour: Int
-  opening_hours: ComponentOpeningHoursOpeningHours
   description_ru: String
   description_en: String
   name_ru: String
   name_en: String
-  providers_to_property: ProvidersToProperties
+  vk_url: String
+  fb_url: String
+  instagram_url: String
+  num_reviews: Int
+  brandname_ru: String
+  brandname_en: String
+  location: Location
   published_at: DateTime
   image(sort: String, limit: Int = 0, start: Int = 0, where: JSON): [UploadFile]
   reviews(sort: String, limit: Int = 0, start: Int = 0, where: JSON): [Review]
@@ -56,6 +55,12 @@ type Provider {
     where: JSON
   ): [Activity]
   features(sort: String, limit: Int = 0, start: Int = 0, where: JSON): [Feature]
+  opening_hours_specifications(
+    sort: String
+    limit: Int = 0
+    start: Int = 0
+    where: JSON
+  ): [OpeningHours]
 }
 ```
 
@@ -75,19 +80,11 @@ type Provider {
 
 #### `web` ([`String`](/v1/scalars/string))
 
-#### `address` ([`String`](/v1/scalars/string))
-
 #### `phone` ([`String`](/v1/scalars/string))
 
 #### `price` ([`ENUM_PROVIDER_PRICE`](/v1/enums/enum-provider-price))
 
 #### `category` ([`Category`](/v1/objects/category))
-
-#### `hours` ([`String`](/v1/scalars/string))
-
-#### `geometry` ([`JSON`](/v1/scalars/json))
-
-#### `location` ([`ComponentLocationLocation`](/v1/objects/component-location-location))
 
 #### `user` ([`UsersPermissionsUser`](/v1/objects/users-permissions-user))
 
@@ -99,12 +96,6 @@ type Provider {
 
 #### `average_price` ([`Int`](/v1/scalars/int))
 
-#### `from_operation_hour` ([`Int`](/v1/scalars/int))
-
-#### `to_operation_hour` ([`Int`](/v1/scalars/int))
-
-#### `opening_hours` ([`ComponentOpeningHoursOpeningHours`](/v1/objects/component-opening-hours-opening-hours))
-
 #### `description_ru` ([`String`](/v1/scalars/string))
 
 #### `description_en` ([`String`](/v1/scalars/string))
@@ -113,7 +104,19 @@ type Provider {
 
 #### `name_en` ([`String`](/v1/scalars/string))
 
-#### `providers_to_property` ([`ProvidersToProperties`](/v1/objects/providers-to-properties))
+#### `vk_url` ([`String`](/v1/scalars/string))
+
+#### `fb_url` ([`String`](/v1/scalars/string))
+
+#### `instagram_url` ([`String`](/v1/scalars/string))
+
+#### `num_reviews` ([`Int`](/v1/scalars/int))
+
+#### `brandname_ru` ([`String`](/v1/scalars/string))
+
+#### `brandname_en` ([`String`](/v1/scalars/string))
+
+#### `location` ([`Location`](/v1/objects/location))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 
@@ -148,6 +151,16 @@ type Provider {
 - ##### `where` ([`JSON`](/v1/scalars/json))
 
 #### `features` ([`[Feature]`](/v1/objects/feature))
+
+- ##### `sort` ([`String`](/v1/scalars/string))
+
+- ##### `limit` ([`Int`](/v1/scalars/int))
+
+- ##### `start` ([`Int`](/v1/scalars/int))
+
+- ##### `where` ([`JSON`](/v1/scalars/json))
+
+#### `opening_hours_specifications` ([`[OpeningHours]`](/v1/objects/opening-hours))
 
 - ##### `sort` ([`String`](/v1/scalars/string))
 

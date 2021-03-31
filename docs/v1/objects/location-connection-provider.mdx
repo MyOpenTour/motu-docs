@@ -1,0 +1,31 @@
+---
+id: location-connection-provider
+title: LocationConnectionProvider
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocationConnectionProvider {
+  key: ID
+  connection: LocationConnection
+}
+```
+
+### Fields
+
+#### `key` ([`ID`](/v1/scalars/id))
+
+#### `connection` ([`LocationConnection`](/v1/objects/location-connection))

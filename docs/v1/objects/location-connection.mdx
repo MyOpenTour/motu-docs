@@ -1,0 +1,34 @@
+---
+id: location-connection
+title: LocationConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocationConnection {
+  values: [Location]
+  groupBy: LocationGroupBy
+  aggregate: LocationAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Location]`](/v1/objects/location))
+
+#### `groupBy` ([`LocationGroupBy`](/v1/objects/location-group-by))
+
+#### `aggregate` ([`LocationAggregator`](/v1/objects/location-aggregator))

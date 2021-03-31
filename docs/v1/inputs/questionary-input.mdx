@@ -28,6 +28,9 @@ type QuestionaryInput {
   career_industry: String
   career_position: ENUM_QUESTIONARY_CAREER_POSITION
   purpose_of_visit: String
+  with_family: Boolean
+  with_children: Boolean
+  is_higher_education: Boolean
   published_at: DateTime
   created_by: ID
   updated_by: ID
@@ -53,6 +56,12 @@ type QuestionaryInput {
 #### `career_position` ([`ENUM_QUESTIONARY_CAREER_POSITION`](/v1/enums/enum-questionary-career-position))
 
 #### `purpose_of_visit` ([`String`](/v1/scalars/string))
+
+#### `with_family` ([`Boolean`](/v1/scalars/boolean))
+
+#### `with_children` ([`Boolean`](/v1/scalars/boolean))
+
+#### `is_higher_education` ([`Boolean`](/v1/scalars/boolean))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

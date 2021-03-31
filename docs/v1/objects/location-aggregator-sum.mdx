@@ -1,0 +1,34 @@
+---
+id: location-aggregator-sum
+title: LocationAggregatorSum
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocationAggregatorSum {
+  lat: Float
+  lng: Float
+  zipcode: Float
+}
+```
+
+### Fields
+
+#### `lat` ([`Float`](/v1/scalars/float))
+
+#### `lng` ([`Float`](/v1/scalars/float))
+
+#### `zipcode` ([`Float`](/v1/scalars/float))

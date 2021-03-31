@@ -1,0 +1,49 @@
+---
+id: edit-notification-input
+title: editNotificationInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type editNotificationInput {
+  sender: ID
+  receiver: ID
+  type: String
+  content: String
+  is_read: Boolean
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `sender` ([`ID`](/v1/scalars/id))
+
+#### `receiver` ([`ID`](/v1/scalars/id))
+
+#### `type` ([`String`](/v1/scalars/string))
+
+#### `content` ([`String`](/v1/scalars/string))
+
+#### `is_read` ([`Boolean`](/v1/scalars/boolean))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

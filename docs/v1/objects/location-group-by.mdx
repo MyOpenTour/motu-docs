@@ -1,0 +1,70 @@
+---
+id: location-group-by
+title: LocationGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocationGroupBy {
+  id: [LocationConnectionId]
+  _id: [LocationConnection_id]
+  createdAt: [LocationConnectionCreatedAt]
+  updatedAt: [LocationConnectionUpdatedAt]
+  lat: [LocationConnectionLat]
+  lng: [LocationConnectionLng]
+  streetAddress: [LocationConnectionStreetAddress]
+  formatedAddress: [LocationConnectionFormatedAddress]
+  zipcode: [LocationConnectionZipcode]
+  city: [LocationConnectionCity]
+  country: [LocationConnectionCountry]
+  district: [LocationConnectionDistrict]
+  nearestSubway: [LocationConnectionNearestSubway]
+  provider: [LocationConnectionProvider]
+  published_at: [LocationConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[LocationConnectionId]`](/v1/objects/location-connection-id))
+
+#### `_id` ([`[LocationConnection_id]`](/v1/objects/location-connection-id))
+
+#### `createdAt` ([`[LocationConnectionCreatedAt]`](/v1/objects/location-connection-created-at))
+
+#### `updatedAt` ([`[LocationConnectionUpdatedAt]`](/v1/objects/location-connection-updated-at))
+
+#### `lat` ([`[LocationConnectionLat]`](/v1/objects/location-connection-lat))
+
+#### `lng` ([`[LocationConnectionLng]`](/v1/objects/location-connection-lng))
+
+#### `streetAddress` ([`[LocationConnectionStreetAddress]`](/v1/objects/location-connection-street-address))
+
+#### `formatedAddress` ([`[LocationConnectionFormatedAddress]`](/v1/objects/location-connection-formated-address))
+
+#### `zipcode` ([`[LocationConnectionZipcode]`](/v1/objects/location-connection-zipcode))
+
+#### `city` ([`[LocationConnectionCity]`](/v1/objects/location-connection-city))
+
+#### `country` ([`[LocationConnectionCountry]`](/v1/objects/location-connection-country))
+
+#### `district` ([`[LocationConnectionDistrict]`](/v1/objects/location-connection-district))
+
+#### `nearestSubway` ([`[LocationConnectionNearestSubway]`](/v1/objects/location-connection-nearest-subway))
+
+#### `provider` ([`[LocationConnectionProvider]`](/v1/objects/location-connection-provider))
+
+#### `published_at` ([`[LocationConnectionPublished_at]`](/v1/objects/location-connection-published-at))

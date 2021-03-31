@@ -1,0 +1,43 @@
+---
+id: opening-hours-aggregator
+title: OpeningHoursAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OpeningHoursAggregator {
+  count: Int
+  totalCount: Int
+  sum: OpeningHoursAggregatorSum
+  avg: OpeningHoursAggregatorAvg
+  min: OpeningHoursAggregatorMin
+  max: OpeningHoursAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`OpeningHoursAggregatorSum`](/v1/objects/opening-hours-aggregator-sum))
+
+#### `avg` ([`OpeningHoursAggregatorAvg`](/v1/objects/opening-hours-aggregator-avg))
+
+#### `min` ([`OpeningHoursAggregatorMin`](/v1/objects/opening-hours-aggregator-min))
+
+#### `max` ([`OpeningHoursAggregatorMax`](/v1/objects/opening-hours-aggregator-max))

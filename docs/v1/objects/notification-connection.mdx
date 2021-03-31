@@ -1,0 +1,34 @@
+---
+id: notification-connection
+title: NotificationConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type NotificationConnection {
+  values: [Notification]
+  groupBy: NotificationGroupBy
+  aggregate: NotificationAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[Notification]`](/v1/objects/notification))
+
+#### `groupBy` ([`NotificationGroupBy`](/v1/objects/notification-group-by))
+
+#### `aggregate` ([`NotificationAggregator`](/v1/objects/notification-aggregator))

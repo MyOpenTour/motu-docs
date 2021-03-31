@@ -1,0 +1,28 @@
+---
+id: opening-hours-aggregator-max
+title: OpeningHoursAggregatorMax
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OpeningHoursAggregatorMax {
+  dayOfWeek: Float
+}
+```
+
+### Fields
+
+#### `dayOfWeek` ([`Float`](/v1/scalars/float))

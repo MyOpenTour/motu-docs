@@ -1,0 +1,55 @@
+---
+id: opening-hours-group-by
+title: OpeningHoursGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OpeningHoursGroupBy {
+  id: [OpeningHoursConnectionId]
+  _id: [OpeningHoursConnection_id]
+  createdAt: [OpeningHoursConnectionCreatedAt]
+  updatedAt: [OpeningHoursConnectionUpdatedAt]
+  dayOfWeek: [OpeningHoursConnectionDayOfWeek]
+  open: [OpeningHoursConnectionOpen]
+  close: [OpeningHoursConnectionClose]
+  validFrom: [OpeningHoursConnectionValidFrom]
+  validThrough: [OpeningHoursConnectionValidThrough]
+  published_at: [OpeningHoursConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[OpeningHoursConnectionId]`](/v1/objects/opening-hours-connection-id))
+
+#### `_id` ([`[OpeningHoursConnection_id]`](/v1/objects/opening-hours-connection-id))
+
+#### `createdAt` ([`[OpeningHoursConnectionCreatedAt]`](/v1/objects/opening-hours-connection-created-at))
+
+#### `updatedAt` ([`[OpeningHoursConnectionUpdatedAt]`](/v1/objects/opening-hours-connection-updated-at))
+
+#### `dayOfWeek` ([`[OpeningHoursConnectionDayOfWeek]`](/v1/objects/opening-hours-connection-day-of-week))
+
+#### `open` ([`[OpeningHoursConnectionOpen]`](/v1/objects/opening-hours-connection-open))
+
+#### `close` ([`[OpeningHoursConnectionClose]`](/v1/objects/opening-hours-connection-close))
+
+#### `validFrom` ([`[OpeningHoursConnectionValidFrom]`](/v1/objects/opening-hours-connection-valid-from))
+
+#### `validThrough` ([`[OpeningHoursConnectionValidThrough]`](/v1/objects/opening-hours-connection-valid-through))
+
+#### `published_at` ([`[OpeningHoursConnectionPublished_at]`](/v1/objects/opening-hours-connection-published-at))

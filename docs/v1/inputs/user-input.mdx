@@ -31,10 +31,10 @@ type UserInput {
   reviews: [ID]
   likes: [ID]
   img: [ID]
-  location: ComponentLocationLocationInput
   providers: [ID]
   questionary: ID
   user_category: ENUM_USERSPERMISSIONSUSER_USER_CATEGORY
+  favourites: [ID]
   created_by: ID
   updated_by: ID
 }
@@ -66,13 +66,13 @@ type UserInput {
 
 #### `img` ([`[ID]`](/v1/scalars/id))
 
-#### `location` ([`ComponentLocationLocationInput`](/v1/inputs/component-location-location-input))
-
 #### `providers` ([`[ID]`](/v1/scalars/id))
 
 #### `questionary` ([`ID`](/v1/scalars/id))
 
 #### `user_category` ([`ENUM_USERSPERMISSIONSUSER_USER_CATEGORY`](/v1/enums/enum-userspermissionsuser-user-category))
+
+#### `favourites` ([`[ID]`](/v1/scalars/id))
 
 #### `created_by` ([`ID`](/v1/scalars/id))
 

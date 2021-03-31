@@ -1,0 +1,33 @@
+---
+id: update-notification
+title: updateNotification
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+updateNotification(
+  input: updateNotificationInput
+): updateNotificationPayload
+
+```
+
+### Arguments
+
+#### `input` ([`updateNotificationInput`](/v1/inputs/update-notification-input))
+
+### Type
+
+#### [`updateNotificationPayload`](/v1/objects/update-notification-payload)

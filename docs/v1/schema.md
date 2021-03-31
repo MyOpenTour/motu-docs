@@ -1,39 +1,21 @@
 ---
 id: schema
-title: MyOpenTour GraphQL Schema
+title: GraphQL
 sidebar_label: Overview
 ---
 
-## Overview
+![GraphQL](/img/graphql.svg)
 
-A GraphQL schema is at the core of any GraphQL server implementation.
-It describes the functionality available to the client applications that connect to it.
+## Resources and tools to integrate
 
-The GraphQL runtime defines a generic graph-based schema to publish the capabilities of the data service it represents.
-Client applications can query the schema within its capabilities.
-This approach decouples clients from servers and allows both to evolve and scale independently.
+### MOTU GraphQL API
 
-## GraphQL IDE
+The new GraphQL API is the most flexible and powerful way to integrate MOTU into your app.
 
-[GraphQL IDE](https://beta.motu.world/graphql)
+[Read the launch article](/blog/motu-graphql)
 
-## Example
+### See what the API can do
 
-For example you try next query to get all theathers
+The GraphQL API schema defines all the features our API supports in one convenient place.
 
-```json
-{
-  providers(where: {category: {name_en: ["theatres"]}}) 
-  {
-    id
-    name
-    location{
-      city
-      district
-      formattedAddress
-      lat
-      lng
-    }
-  }
-}
-```
+[Explore the API](/v1/schema)

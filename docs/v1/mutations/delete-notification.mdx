@@ -1,0 +1,33 @@
+---
+id: delete-notification
+title: deleteNotification
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+deleteNotification(
+  input: deleteNotificationInput
+): deleteNotificationPayload
+
+```
+
+### Arguments
+
+#### `input` ([`deleteNotificationInput`](/v1/inputs/delete-notification-input))
+
+### Type
+
+#### [`deleteNotificationPayload`](/v1/objects/delete-notification-payload)

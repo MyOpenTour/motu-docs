@@ -1,0 +1,31 @@
+---
+id: notification-connection-receiver
+title: NotificationConnectionReceiver
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type NotificationConnectionReceiver {
+  key: ID
+  connection: NotificationConnection
+}
+```
+
+### Fields
+
+#### `key` ([`ID`](/v1/scalars/id))
+
+#### `connection` ([`NotificationConnection`](/v1/objects/notification-connection))

@@ -1,13 +1,13 @@
 module.exports = {
   title: 'motu-api',
   tagline: 'Documentation',
-  url: 'https://motu.world',
+  url: 'http://developer.motu.world',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'myopentour', // Usually your GitHub org/user name.
-  projectName: 'motu-api-docs', // Usually your repo name.
+  projectName: 'motu-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: '',
@@ -17,17 +17,36 @@ module.exports = {
       },
       items: [
         {
-          to: '/',
+          to: '/en/introduction',
           activeBasePath: 'docs',
-          label: 'MyOpenTour',
+          label: 'Docs',
+          position: 'left',
+        },
+        {
+          to: 'api',
+          label: 'API',
           position: 'left',
         },
         {
           to: '/v1/schema',
-          label: 'Schema',
+          label: 'GraphQL',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'sdk',
+          label: 'SDK',
+          position: 'left',
+        },
+        {
+          href: 'https://stats.motu.world',
+          label: 'Status',
+          position: 'right'
+        },
+        {
+          to: 'blog',
+          label: 'Blog',
+          position: 'right'
+        },
         {
           href: 'https://github.com/myopentour',
           label: 'GitHub',
@@ -39,15 +58,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
-              label: 'Style Guide',
-              to: '/',
+              label: 'English',
+              to: '/en/introduction',
             },
             {
-              label: 'Second Doc',
-              to: '/doc2/',
+              label: 'Russian',
+              to: '/ru/introduction',
             },
           ],
         },

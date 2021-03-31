@@ -1,0 +1,31 @@
+---
+id: update-location-input
+title: updateLocationInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateLocationInput {
+  where: InputID
+  data: editLocationInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editLocationInput`](/v1/inputs/edit-location-input))

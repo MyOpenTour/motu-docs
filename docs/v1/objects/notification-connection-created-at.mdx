@@ -1,0 +1,31 @@
+---
+id: notification-connection-created-at
+title: NotificationConnectionCreatedAt
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type NotificationConnectionCreatedAt {
+  key: DateTime
+  connection: NotificationConnection
+}
+```
+
+### Fields
+
+#### `key` ([`DateTime`](/v1/scalars/date-time))
+
+#### `connection` ([`NotificationConnection`](/v1/objects/notification-connection))

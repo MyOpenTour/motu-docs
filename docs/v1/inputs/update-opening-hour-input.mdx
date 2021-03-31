@@ -1,0 +1,31 @@
+---
+id: update-opening-hour-input
+title: updateOpeningHourInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type updateOpeningHourInput {
+  where: InputID
+  data: editOpeningHourInput
+}
+```
+
+### Fields
+
+#### `where` ([`InputID`](/v1/inputs/input-id))
+
+#### `data` ([`editOpeningHourInput`](/v1/inputs/edit-opening-hour-input))

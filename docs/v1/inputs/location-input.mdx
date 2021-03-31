@@ -1,0 +1,64 @@
+---
+id: location-input
+title: LocationInput
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocationInput {
+  lat: Float
+  lng: Float
+  streetAddress: String
+  formatedAddress: String
+  zipcode: Int
+  city: String
+  country: String
+  district: String
+  nearestSubway: String
+  provider: ID
+  published_at: DateTime
+  created_by: ID
+  updated_by: ID
+}
+```
+
+### Fields
+
+#### `lat` ([`Float`](/v1/scalars/float))
+
+#### `lng` ([`Float`](/v1/scalars/float))
+
+#### `streetAddress` ([`String`](/v1/scalars/string))
+
+#### `formatedAddress` ([`String`](/v1/scalars/string))
+
+#### `zipcode` ([`Int`](/v1/scalars/int))
+
+#### `city` ([`String`](/v1/scalars/string))
+
+#### `country` ([`String`](/v1/scalars/string))
+
+#### `district` ([`String`](/v1/scalars/string))
+
+#### `nearestSubway` ([`String`](/v1/scalars/string))
+
+#### `provider` ([`ID`](/v1/scalars/id))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
+
+#### `created_by` ([`ID`](/v1/scalars/id))
+
+#### `updated_by` ([`ID`](/v1/scalars/id))

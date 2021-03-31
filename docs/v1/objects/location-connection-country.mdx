@@ -1,0 +1,31 @@
+---
+id: location-connection-country
+title: LocationConnectionCountry
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocationConnectionCountry {
+  key: String
+  connection: LocationConnection
+}
+```
+
+### Fields
+
+#### `key` ([`String`](/v1/scalars/string))
+
+#### `connection` ([`LocationConnection`](/v1/objects/location-connection))

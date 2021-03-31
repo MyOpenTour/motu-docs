@@ -1,0 +1,55 @@
+---
+id: notification
+title: Notification
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type Notification {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  sender: UsersPermissionsUser
+  receiver: UsersPermissionsUser
+  type: String
+  content: String
+  is_read: Boolean
+  published_at: DateTime
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `sender` ([`UsersPermissionsUser`](/v1/objects/users-permissions-user))
+
+#### `receiver` ([`UsersPermissionsUser`](/v1/objects/users-permissions-user))
+
+#### `type` ([`String`](/v1/scalars/string))
+
+#### `content` ([`String`](/v1/scalars/string))
+
+#### `is_read` ([`Boolean`](/v1/scalars/boolean))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))

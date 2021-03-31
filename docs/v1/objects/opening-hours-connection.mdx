@@ -1,0 +1,34 @@
+---
+id: opening-hours-connection
+title: OpeningHoursConnection
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OpeningHoursConnection {
+  values: [OpeningHours]
+  groupBy: OpeningHoursGroupBy
+  aggregate: OpeningHoursAggregator
+}
+```
+
+### Fields
+
+#### `values` ([`[OpeningHours]`](/v1/objects/opening-hours))
+
+#### `groupBy` ([`OpeningHoursGroupBy`](/v1/objects/opening-hours-group-by))
+
+#### `aggregate` ([`OpeningHoursAggregator`](/v1/objects/opening-hours-aggregator))

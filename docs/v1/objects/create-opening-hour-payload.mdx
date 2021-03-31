@@ -1,0 +1,28 @@
+---
+id: create-opening-hour-payload
+title: createOpeningHourPayload
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type createOpeningHourPayload {
+  openingHour: OpeningHours
+}
+```
+
+### Fields
+
+#### `openingHour` ([`OpeningHours`](/v1/objects/opening-hours))

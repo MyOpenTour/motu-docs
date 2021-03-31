@@ -1,0 +1,55 @@
+---
+id: notification-group-by
+title: NotificationGroupBy
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type NotificationGroupBy {
+  id: [NotificationConnectionId]
+  _id: [NotificationConnection_id]
+  createdAt: [NotificationConnectionCreatedAt]
+  updatedAt: [NotificationConnectionUpdatedAt]
+  sender: [NotificationConnectionSender]
+  receiver: [NotificationConnectionReceiver]
+  type: [NotificationConnectionType]
+  content: [NotificationConnectionContent]
+  is_read: [NotificationConnectionIs_read]
+  published_at: [NotificationConnectionPublished_at]
+}
+```
+
+### Fields
+
+#### `id` ([`[NotificationConnectionId]`](/v1/objects/notification-connection-id))
+
+#### `_id` ([`[NotificationConnection_id]`](/v1/objects/notification-connection-id))
+
+#### `createdAt` ([`[NotificationConnectionCreatedAt]`](/v1/objects/notification-connection-created-at))
+
+#### `updatedAt` ([`[NotificationConnectionUpdatedAt]`](/v1/objects/notification-connection-updated-at))
+
+#### `sender` ([`[NotificationConnectionSender]`](/v1/objects/notification-connection-sender))
+
+#### `receiver` ([`[NotificationConnectionReceiver]`](/v1/objects/notification-connection-receiver))
+
+#### `type` ([`[NotificationConnectionType]`](/v1/objects/notification-connection-type))
+
+#### `content` ([`[NotificationConnectionContent]`](/v1/objects/notification-connection-content))
+
+#### `is_read` ([`[NotificationConnectionIs_read]`](/v1/objects/notification-connection-is-read))
+
+#### `published_at` ([`[NotificationConnectionPublished_at]`](/v1/objects/notification-connection-published-at))

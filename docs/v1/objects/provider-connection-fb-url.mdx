@@ -1,0 +1,31 @@
+---
+id: provider-connection-fb-url
+title: ProviderConnectionFb_url
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type ProviderConnectionFb_url {
+  key: String
+  connection: ProviderConnection
+}
+```
+
+### Fields
+
+#### `key` ([`String`](/v1/scalars/string))
+
+#### `connection` ([`ProviderConnection`](/v1/objects/provider-connection))

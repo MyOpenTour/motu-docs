@@ -1,0 +1,33 @@
+---
+id: create-location
+title: createLocation
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+createLocation(
+  input: createLocationInput
+): createLocationPayload
+
+```
+
+### Arguments
+
+#### `input` ([`createLocationInput`](/v1/inputs/create-location-input))
+
+### Type
+
+#### [`createLocationPayload`](/v1/objects/create-location-payload)

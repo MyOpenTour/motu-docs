@@ -23,9 +23,8 @@ type Order {
   _id: ID!
   createdAt: DateTime!
   updatedAt: DateTime!
-  address: String
   city: String
-  dishes: JSON
+  activities: JSON
   amount: Float
   published_at: DateTime
 }
@@ -41,11 +40,9 @@ type Order {
 
 #### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
 
-#### `address` ([`String`](/v1/scalars/string))
-
 #### `city` ([`String`](/v1/scalars/string))
 
-#### `dishes` ([`JSON`](/v1/scalars/json))
+#### `activities` ([`JSON`](/v1/scalars/json))
 
 #### `amount` ([`Float`](/v1/scalars/float))
 

@@ -43,6 +43,7 @@ union Morph =
   | ActivityConnectionName_en
   | ActivityConnectionDescription_ru
   | ActivityConnectionDescription_en
+  | ActivityConnectionSold_last_period
   | ActivityConnectionPublished_at
   | createActivityPayload
   | updateActivityPayload
@@ -207,6 +208,70 @@ union Morph =
   | createLikePayload
   | updateLikePayload
   | deleteLikePayload
+  | Location
+  | LocationConnection
+  | LocationAggregator
+  | LocationAggregatorSum
+  | LocationAggregatorAvg
+  | LocationAggregatorMin
+  | LocationAggregatorMax
+  | LocationGroupBy
+  | LocationConnectionId
+  | LocationConnection_id
+  | LocationConnectionCreatedAt
+  | LocationConnectionUpdatedAt
+  | LocationConnectionLat
+  | LocationConnectionLng
+  | LocationConnectionStreetAddress
+  | LocationConnectionFormatedAddress
+  | LocationConnectionZipcode
+  | LocationConnectionCity
+  | LocationConnectionCountry
+  | LocationConnectionDistrict
+  | LocationConnectionNearestSubway
+  | LocationConnectionProvider
+  | LocationConnectionPublished_at
+  | createLocationPayload
+  | updateLocationPayload
+  | deleteLocationPayload
+  | Notification
+  | NotificationConnection
+  | NotificationAggregator
+  | NotificationGroupBy
+  | NotificationConnectionId
+  | NotificationConnection_id
+  | NotificationConnectionCreatedAt
+  | NotificationConnectionUpdatedAt
+  | NotificationConnectionSender
+  | NotificationConnectionReceiver
+  | NotificationConnectionType
+  | NotificationConnectionContent
+  | NotificationConnectionIs_read
+  | NotificationConnectionPublished_at
+  | createNotificationPayload
+  | updateNotificationPayload
+  | deleteNotificationPayload
+  | OpeningHours
+  | OpeningHoursConnection
+  | OpeningHoursAggregator
+  | OpeningHoursAggregatorSum
+  | OpeningHoursAggregatorAvg
+  | OpeningHoursAggregatorMin
+  | OpeningHoursAggregatorMax
+  | OpeningHoursGroupBy
+  | OpeningHoursConnectionId
+  | OpeningHoursConnection_id
+  | OpeningHoursConnectionCreatedAt
+  | OpeningHoursConnectionUpdatedAt
+  | OpeningHoursConnectionDayOfWeek
+  | OpeningHoursConnectionOpen
+  | OpeningHoursConnectionClose
+  | OpeningHoursConnectionValidFrom
+  | OpeningHoursConnectionValidThrough
+  | OpeningHoursConnectionPublished_at
+  | createOpeningHourPayload
+  | updateOpeningHourPayload
+  | deleteOpeningHourPayload
   | Order
   | OrderConnection
   | OrderAggregator
@@ -219,9 +284,8 @@ union Morph =
   | OrderConnection_id
   | OrderConnectionCreatedAt
   | OrderConnectionUpdatedAt
-  | OrderConnectionAddress
   | OrderConnectionCity
-  | OrderConnectionDishes
+  | OrderConnectionActivities
   | OrderConnectionAmount
   | OrderConnectionPublished_at
   | createOrderPayload
@@ -242,57 +306,29 @@ union Morph =
   | ProviderConnectionName
   | ProviderConnectionDescription
   | ProviderConnectionWeb
-  | ProviderConnectionAddress
   | ProviderConnectionPhone
   | ProviderConnectionPrice
   | ProviderConnectionCategory
-  | ProviderConnectionHours
-  | ProviderConnectionGeometry
-  | ProviderConnectionLocation
   | ProviderConnectionUser
   | ProviderConnectionLegal
   | ProviderConnectionRating
   | ProviderConnectionDiscount
   | ProviderConnectionAverage_price
-  | ProviderConnectionFrom_operation_hour
-  | ProviderConnectionTo_operation_hour
-  | ProviderConnectionOpening_hours
   | ProviderConnectionDescription_ru
   | ProviderConnectionDescription_en
   | ProviderConnectionName_ru
   | ProviderConnectionName_en
-  | ProviderConnectionProviders_to_property
+  | ProviderConnectionVk_url
+  | ProviderConnectionFb_url
+  | ProviderConnectionInstagram_url
+  | ProviderConnectionNum_reviews
+  | ProviderConnectionBrandname_ru
+  | ProviderConnectionBrandname_en
+  | ProviderConnectionLocation
   | ProviderConnectionPublished_at
   | createProviderPayload
   | updateProviderPayload
   | deleteProviderPayload
-  | ProvidersProperties
-  | ProvidersPropertiesConnection
-  | ProvidersPropertiesAggregator
-  | ProvidersPropertiesGroupBy
-  | ProvidersPropertiesConnectionId
-  | ProvidersPropertiesConnection_id
-  | ProvidersPropertiesConnectionCreatedAt
-  | ProvidersPropertiesConnectionUpdatedAt
-  | ProvidersPropertiesConnectionFeature
-  | ProvidersPropertiesConnectionCategory
-  | ProvidersPropertiesConnectionPublished_at
-  | createProvidersPropertyPayload
-  | updateProvidersPropertyPayload
-  | deleteProvidersPropertyPayload
-  | ProvidersToProperties
-  | ProvidersToPropertiesConnection
-  | ProvidersToPropertiesAggregator
-  | ProvidersToPropertiesGroupBy
-  | ProvidersToPropertiesConnectionId
-  | ProvidersToPropertiesConnection_id
-  | ProvidersToPropertiesConnectionCreatedAt
-  | ProvidersToPropertiesConnectionUpdatedAt
-  | ProvidersToPropertiesConnectionProvider
-  | ProvidersToPropertiesConnectionPublished_at
-  | createProvidersToPropertyPayload
-  | updateProvidersToPropertyPayload
-  | deleteProvidersToPropertyPayload
   | Questionary
   | QuestionaryConnection
   | QuestionaryAggregator
@@ -310,6 +346,9 @@ union Morph =
   | QuestionaryConnectionCareer_industry
   | QuestionaryConnectionCareer_position
   | QuestionaryConnectionPurpose_of_visit
+  | QuestionaryConnectionWith_family
+  | QuestionaryConnectionWith_children
+  | QuestionaryConnectionIs_higher_education
   | QuestionaryConnectionPublished_at
   | createQuestionaryPayload
   | updateQuestionaryPayload
@@ -388,13 +427,11 @@ union Morph =
   | UsersPermissionsUserConnectionConfirmed
   | UsersPermissionsUserConnectionBlocked
   | UsersPermissionsUserConnectionRole
-  | UsersPermissionsUserConnectionLocation
   | UsersPermissionsUserConnectionQuestionary
   | UsersPermissionsUserConnectionUser_category
   | createUserPayload
   | updateUserPayload
   | deleteUserPayload
-  | ComponentLocationLocation
   | ComponentOpeningHoursOpeningHours
 ```
 
@@ -447,6 +484,8 @@ union Morph =
 #### [`ActivityConnectionDescription_ru`](/v1/objects/activity-connection-description-ru)
 
 #### [`ActivityConnectionDescription_en`](/v1/objects/activity-connection-description-en)
+
+#### [`ActivityConnectionSold_last_period`](/v1/objects/activity-connection-sold-last-period)
 
 #### [`ActivityConnectionPublished_at`](/v1/objects/activity-connection-published-at)
 
@@ -776,6 +815,134 @@ union Morph =
 
 #### [`deleteLikePayload`](/v1/objects/delete-like-payload)
 
+#### [`Location`](/v1/objects/location)
+
+#### [`LocationConnection`](/v1/objects/location-connection)
+
+#### [`LocationAggregator`](/v1/objects/location-aggregator)
+
+#### [`LocationAggregatorSum`](/v1/objects/location-aggregator-sum)
+
+#### [`LocationAggregatorAvg`](/v1/objects/location-aggregator-avg)
+
+#### [`LocationAggregatorMin`](/v1/objects/location-aggregator-min)
+
+#### [`LocationAggregatorMax`](/v1/objects/location-aggregator-max)
+
+#### [`LocationGroupBy`](/v1/objects/location-group-by)
+
+#### [`LocationConnectionId`](/v1/objects/location-connection-id)
+
+#### [`LocationConnection_id`](/v1/objects/location-connection-id)
+
+#### [`LocationConnectionCreatedAt`](/v1/objects/location-connection-created-at)
+
+#### [`LocationConnectionUpdatedAt`](/v1/objects/location-connection-updated-at)
+
+#### [`LocationConnectionLat`](/v1/objects/location-connection-lat)
+
+#### [`LocationConnectionLng`](/v1/objects/location-connection-lng)
+
+#### [`LocationConnectionStreetAddress`](/v1/objects/location-connection-street-address)
+
+#### [`LocationConnectionFormatedAddress`](/v1/objects/location-connection-formated-address)
+
+#### [`LocationConnectionZipcode`](/v1/objects/location-connection-zipcode)
+
+#### [`LocationConnectionCity`](/v1/objects/location-connection-city)
+
+#### [`LocationConnectionCountry`](/v1/objects/location-connection-country)
+
+#### [`LocationConnectionDistrict`](/v1/objects/location-connection-district)
+
+#### [`LocationConnectionNearestSubway`](/v1/objects/location-connection-nearest-subway)
+
+#### [`LocationConnectionProvider`](/v1/objects/location-connection-provider)
+
+#### [`LocationConnectionPublished_at`](/v1/objects/location-connection-published-at)
+
+#### [`createLocationPayload`](/v1/objects/create-location-payload)
+
+#### [`updateLocationPayload`](/v1/objects/update-location-payload)
+
+#### [`deleteLocationPayload`](/v1/objects/delete-location-payload)
+
+#### [`Notification`](/v1/objects/notification)
+
+#### [`NotificationConnection`](/v1/objects/notification-connection)
+
+#### [`NotificationAggregator`](/v1/objects/notification-aggregator)
+
+#### [`NotificationGroupBy`](/v1/objects/notification-group-by)
+
+#### [`NotificationConnectionId`](/v1/objects/notification-connection-id)
+
+#### [`NotificationConnection_id`](/v1/objects/notification-connection-id)
+
+#### [`NotificationConnectionCreatedAt`](/v1/objects/notification-connection-created-at)
+
+#### [`NotificationConnectionUpdatedAt`](/v1/objects/notification-connection-updated-at)
+
+#### [`NotificationConnectionSender`](/v1/objects/notification-connection-sender)
+
+#### [`NotificationConnectionReceiver`](/v1/objects/notification-connection-receiver)
+
+#### [`NotificationConnectionType`](/v1/objects/notification-connection-type)
+
+#### [`NotificationConnectionContent`](/v1/objects/notification-connection-content)
+
+#### [`NotificationConnectionIs_read`](/v1/objects/notification-connection-is-read)
+
+#### [`NotificationConnectionPublished_at`](/v1/objects/notification-connection-published-at)
+
+#### [`createNotificationPayload`](/v1/objects/create-notification-payload)
+
+#### [`updateNotificationPayload`](/v1/objects/update-notification-payload)
+
+#### [`deleteNotificationPayload`](/v1/objects/delete-notification-payload)
+
+#### [`OpeningHours`](/v1/objects/opening-hours)
+
+#### [`OpeningHoursConnection`](/v1/objects/opening-hours-connection)
+
+#### [`OpeningHoursAggregator`](/v1/objects/opening-hours-aggregator)
+
+#### [`OpeningHoursAggregatorSum`](/v1/objects/opening-hours-aggregator-sum)
+
+#### [`OpeningHoursAggregatorAvg`](/v1/objects/opening-hours-aggregator-avg)
+
+#### [`OpeningHoursAggregatorMin`](/v1/objects/opening-hours-aggregator-min)
+
+#### [`OpeningHoursAggregatorMax`](/v1/objects/opening-hours-aggregator-max)
+
+#### [`OpeningHoursGroupBy`](/v1/objects/opening-hours-group-by)
+
+#### [`OpeningHoursConnectionId`](/v1/objects/opening-hours-connection-id)
+
+#### [`OpeningHoursConnection_id`](/v1/objects/opening-hours-connection-id)
+
+#### [`OpeningHoursConnectionCreatedAt`](/v1/objects/opening-hours-connection-created-at)
+
+#### [`OpeningHoursConnectionUpdatedAt`](/v1/objects/opening-hours-connection-updated-at)
+
+#### [`OpeningHoursConnectionDayOfWeek`](/v1/objects/opening-hours-connection-day-of-week)
+
+#### [`OpeningHoursConnectionOpen`](/v1/objects/opening-hours-connection-open)
+
+#### [`OpeningHoursConnectionClose`](/v1/objects/opening-hours-connection-close)
+
+#### [`OpeningHoursConnectionValidFrom`](/v1/objects/opening-hours-connection-valid-from)
+
+#### [`OpeningHoursConnectionValidThrough`](/v1/objects/opening-hours-connection-valid-through)
+
+#### [`OpeningHoursConnectionPublished_at`](/v1/objects/opening-hours-connection-published-at)
+
+#### [`createOpeningHourPayload`](/v1/objects/create-opening-hour-payload)
+
+#### [`updateOpeningHourPayload`](/v1/objects/update-opening-hour-payload)
+
+#### [`deleteOpeningHourPayload`](/v1/objects/delete-opening-hour-payload)
+
 #### [`Order`](/v1/objects/order)
 
 #### [`OrderConnection`](/v1/objects/order-connection)
@@ -800,11 +967,9 @@ union Morph =
 
 #### [`OrderConnectionUpdatedAt`](/v1/objects/order-connection-updated-at)
 
-#### [`OrderConnectionAddress`](/v1/objects/order-connection-address)
-
 #### [`OrderConnectionCity`](/v1/objects/order-connection-city)
 
-#### [`OrderConnectionDishes`](/v1/objects/order-connection-dishes)
+#### [`OrderConnectionActivities`](/v1/objects/order-connection-activities)
 
 #### [`OrderConnectionAmount`](/v1/objects/order-connection-amount)
 
@@ -846,19 +1011,11 @@ union Morph =
 
 #### [`ProviderConnectionWeb`](/v1/objects/provider-connection-web)
 
-#### [`ProviderConnectionAddress`](/v1/objects/provider-connection-address)
-
 #### [`ProviderConnectionPhone`](/v1/objects/provider-connection-phone)
 
 #### [`ProviderConnectionPrice`](/v1/objects/provider-connection-price)
 
 #### [`ProviderConnectionCategory`](/v1/objects/provider-connection-category)
-
-#### [`ProviderConnectionHours`](/v1/objects/provider-connection-hours)
-
-#### [`ProviderConnectionGeometry`](/v1/objects/provider-connection-geometry)
-
-#### [`ProviderConnectionLocation`](/v1/objects/provider-connection-location)
 
 #### [`ProviderConnectionUser`](/v1/objects/provider-connection-user)
 
@@ -870,12 +1027,6 @@ union Morph =
 
 #### [`ProviderConnectionAverage_price`](/v1/objects/provider-connection-average-price)
 
-#### [`ProviderConnectionFrom_operation_hour`](/v1/objects/provider-connection-from-operation-hour)
-
-#### [`ProviderConnectionTo_operation_hour`](/v1/objects/provider-connection-to-operation-hour)
-
-#### [`ProviderConnectionOpening_hours`](/v1/objects/provider-connection-opening-hours)
-
 #### [`ProviderConnectionDescription_ru`](/v1/objects/provider-connection-description-ru)
 
 #### [`ProviderConnectionDescription_en`](/v1/objects/provider-connection-description-en)
@@ -884,7 +1035,19 @@ union Morph =
 
 #### [`ProviderConnectionName_en`](/v1/objects/provider-connection-name-en)
 
-#### [`ProviderConnectionProviders_to_property`](/v1/objects/provider-connection-providers-to-property)
+#### [`ProviderConnectionVk_url`](/v1/objects/provider-connection-vk-url)
+
+#### [`ProviderConnectionFb_url`](/v1/objects/provider-connection-fb-url)
+
+#### [`ProviderConnectionInstagram_url`](/v1/objects/provider-connection-instagram-url)
+
+#### [`ProviderConnectionNum_reviews`](/v1/objects/provider-connection-num-reviews)
+
+#### [`ProviderConnectionBrandname_ru`](/v1/objects/provider-connection-brandname-ru)
+
+#### [`ProviderConnectionBrandname_en`](/v1/objects/provider-connection-brandname-en)
+
+#### [`ProviderConnectionLocation`](/v1/objects/provider-connection-location)
 
 #### [`ProviderConnectionPublished_at`](/v1/objects/provider-connection-published-at)
 
@@ -893,60 +1056,6 @@ union Morph =
 #### [`updateProviderPayload`](/v1/objects/update-provider-payload)
 
 #### [`deleteProviderPayload`](/v1/objects/delete-provider-payload)
-
-#### [`ProvidersProperties`](/v1/objects/providers-properties)
-
-#### [`ProvidersPropertiesConnection`](/v1/objects/providers-properties-connection)
-
-#### [`ProvidersPropertiesAggregator`](/v1/objects/providers-properties-aggregator)
-
-#### [`ProvidersPropertiesGroupBy`](/v1/objects/providers-properties-group-by)
-
-#### [`ProvidersPropertiesConnectionId`](/v1/objects/providers-properties-connection-id)
-
-#### [`ProvidersPropertiesConnection_id`](/v1/objects/providers-properties-connection-id)
-
-#### [`ProvidersPropertiesConnectionCreatedAt`](/v1/objects/providers-properties-connection-created-at)
-
-#### [`ProvidersPropertiesConnectionUpdatedAt`](/v1/objects/providers-properties-connection-updated-at)
-
-#### [`ProvidersPropertiesConnectionFeature`](/v1/objects/providers-properties-connection-feature)
-
-#### [`ProvidersPropertiesConnectionCategory`](/v1/objects/providers-properties-connection-category)
-
-#### [`ProvidersPropertiesConnectionPublished_at`](/v1/objects/providers-properties-connection-published-at)
-
-#### [`createProvidersPropertyPayload`](/v1/objects/create-providers-property-payload)
-
-#### [`updateProvidersPropertyPayload`](/v1/objects/update-providers-property-payload)
-
-#### [`deleteProvidersPropertyPayload`](/v1/objects/delete-providers-property-payload)
-
-#### [`ProvidersToProperties`](/v1/objects/providers-to-properties)
-
-#### [`ProvidersToPropertiesConnection`](/v1/objects/providers-to-properties-connection)
-
-#### [`ProvidersToPropertiesAggregator`](/v1/objects/providers-to-properties-aggregator)
-
-#### [`ProvidersToPropertiesGroupBy`](/v1/objects/providers-to-properties-group-by)
-
-#### [`ProvidersToPropertiesConnectionId`](/v1/objects/providers-to-properties-connection-id)
-
-#### [`ProvidersToPropertiesConnection_id`](/v1/objects/providers-to-properties-connection-id)
-
-#### [`ProvidersToPropertiesConnectionCreatedAt`](/v1/objects/providers-to-properties-connection-created-at)
-
-#### [`ProvidersToPropertiesConnectionUpdatedAt`](/v1/objects/providers-to-properties-connection-updated-at)
-
-#### [`ProvidersToPropertiesConnectionProvider`](/v1/objects/providers-to-properties-connection-provider)
-
-#### [`ProvidersToPropertiesConnectionPublished_at`](/v1/objects/providers-to-properties-connection-published-at)
-
-#### [`createProvidersToPropertyPayload`](/v1/objects/create-providers-to-property-payload)
-
-#### [`updateProvidersToPropertyPayload`](/v1/objects/update-providers-to-property-payload)
-
-#### [`deleteProvidersToPropertyPayload`](/v1/objects/delete-providers-to-property-payload)
 
 #### [`Questionary`](/v1/objects/questionary)
 
@@ -981,6 +1090,12 @@ union Morph =
 #### [`QuestionaryConnectionCareer_position`](/v1/objects/questionary-connection-career-position)
 
 #### [`QuestionaryConnectionPurpose_of_visit`](/v1/objects/questionary-connection-purpose-of-visit)
+
+#### [`QuestionaryConnectionWith_family`](/v1/objects/questionary-connection-with-family)
+
+#### [`QuestionaryConnectionWith_children`](/v1/objects/questionary-connection-with-children)
+
+#### [`QuestionaryConnectionIs_higher_education`](/v1/objects/questionary-connection-is-higher-education)
 
 #### [`QuestionaryConnectionPublished_at`](/v1/objects/questionary-connection-published-at)
 
@@ -1138,8 +1253,6 @@ union Morph =
 
 #### [`UsersPermissionsUserConnectionRole`](/v1/objects/users-permissions-user-connection-role)
 
-#### [`UsersPermissionsUserConnectionLocation`](/v1/objects/users-permissions-user-connection-location)
-
 #### [`UsersPermissionsUserConnectionQuestionary`](/v1/objects/users-permissions-user-connection-questionary)
 
 #### [`UsersPermissionsUserConnectionUser_category`](/v1/objects/users-permissions-user-connection-user-category)
@@ -1149,7 +1262,5 @@ union Morph =
 #### [`updateUserPayload`](/v1/objects/update-user-payload)
 
 #### [`deleteUserPayload`](/v1/objects/delete-user-payload)
-
-#### [`ComponentLocationLocation`](/v1/objects/component-location-location)
 
 #### [`ComponentOpeningHoursOpeningHours`](/v1/objects/component-opening-hours-opening-hours)

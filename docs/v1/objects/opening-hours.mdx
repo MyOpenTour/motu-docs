@@ -1,0 +1,55 @@
+---
+id: opening-hours
+title: OpeningHours
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type OpeningHours {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  dayOfWeek: Int
+  open: Time
+  close: Time
+  validFrom: DateTime
+  validThrough: DateTime
+  published_at: DateTime
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `dayOfWeek` ([`Int`](/v1/scalars/int))
+
+#### `open` ([`Time`](/v1/scalars/time))
+
+#### `close` ([`Time`](/v1/scalars/time))
+
+#### `validFrom` ([`DateTime`](/v1/scalars/date-time))
+
+#### `validThrough` ([`DateTime`](/v1/scalars/date-time))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))

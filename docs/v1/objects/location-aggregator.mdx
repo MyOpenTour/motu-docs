@@ -1,0 +1,43 @@
+---
+id: location-aggregator
+title: LocationAggregator
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocationAggregator {
+  count: Int
+  totalCount: Int
+  sum: LocationAggregatorSum
+  avg: LocationAggregatorAvg
+  min: LocationAggregatorMin
+  max: LocationAggregatorMax
+}
+```
+
+### Fields
+
+#### `count` ([`Int`](/v1/scalars/int))
+
+#### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`LocationAggregatorSum`](/v1/objects/location-aggregator-sum))
+
+#### `avg` ([`LocationAggregatorAvg`](/v1/objects/location-aggregator-avg))
+
+#### `min` ([`LocationAggregatorMin`](/v1/objects/location-aggregator-min))
+
+#### `max` ([`LocationAggregatorMax`](/v1/objects/location-aggregator-max))
