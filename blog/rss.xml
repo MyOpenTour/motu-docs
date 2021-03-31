@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>motu-api Blog</title>
+        <link>http://developer.motu.world/blog</link>
+        <description>motu-api Blog</description>
+        <lastBuildDate>Tue, 31 Mar 2020 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Announcing General Availability of our GraphQL API]]></title>
+            <link>http://developer.motu.world/blog/motu-graphql</link>
+            <guid>motu-graphql</guid>
+            <pubDate>Tue, 31 Mar 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[MOTU GraphQL API can be used as an optional alternative to our server-side SDKs. This API is straightforward to integrate and offers great control, flexibility, and extensibility of MOTU platform.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Hello]]></title>
+            <link>http://developer.motu.world/blog/hello-world</link>
+            <guid>hello-world</guid>
+            <pubDate>Wed, 12 Feb 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to this blog. This blog is created to tell you more about MyOpenTour.]]></description>
+        </item>
+    </channel>
+</rss>
