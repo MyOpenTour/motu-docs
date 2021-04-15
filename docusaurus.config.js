@@ -112,16 +112,21 @@ module.exports = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/myopentour/motu-api-docs/edit/master/motu-api-docs/docs/',
+            'https://github.com/myopentour/motu-docs/edit/master/motu-docs/docs/',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/myopentour/motu-api-docs/edit/master/motu-api-docs/blog/',
+            'https://github.com/myopentour/motu-docs/edit/master/motu-docs/blog/',
         },
         api: {
           routeBasePath: '/api',
           // sidebarPath: require.resolve('./api/sidebar-schema.js'),
+        },
+        gtag: {
+          trackingID: 'UA-128220048-1',
+          // Optional fields.
+          anonymizeIP: true, // Should IPs be anonymized?
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
