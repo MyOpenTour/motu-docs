@@ -1,0 +1,31 @@
+---
+id: location-connection-sybway-line
+title: LocationConnectionSybwayLine
+---
+
+export const Tag = ({children, color}) => (
+<span
+style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+{children}
+</span>
+);
+
+No description
+
+```graphql
+type LocationConnectionSybwayLine {
+  key: String
+  connection: LocationConnection
+}
+```
+
+### Fields
+
+#### `key` ([`String`](/v1/scalars/string))
+
+#### `connection` ([`LocationConnection`](/v1/objects/location-connection))

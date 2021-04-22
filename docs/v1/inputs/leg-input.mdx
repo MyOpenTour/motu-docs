@@ -28,6 +28,7 @@ type LegInput {
   travellers: Int
   users: [ID]
   legState: ENUM_LEG_LEGSTATE
+  polyline: JSON
   published_at: DateTime
   created_by: ID
   updated_by: ID
@@ -53,6 +54,8 @@ type LegInput {
 #### `users` ([`[ID]`](/v1/scalars/id))
 
 #### `legState` ([`ENUM_LEG_LEGSTATE`](/v1/enums/enum-leg-legstate))
+
+#### `polyline` ([`JSON`](/v1/scalars/json))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

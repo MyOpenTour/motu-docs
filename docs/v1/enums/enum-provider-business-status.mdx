@@ -1,6 +1,6 @@
 ---
-id: cache-control-scope
-title: CacheControlScope
+id: enum-provider-business-status
+title: ENUM_PROVIDER_BUSINESS_STATUS
 ---
 
 export const Tag = ({children, color}) => (
@@ -18,14 +18,17 @@ style={{
 No description
 
 ```graphql
-enum CacheControlScope {
-  PUBLIC
-  PRIVATE
+enum ENUM_PROVIDER_BUSINESS_STATUS {
+  OPERATIONAL
+  CLOSED_TEMPORARILY
+  CLOSED_PERMANENTLY
 }
 ```
 
 ### Values
 
-#### `PUBLIC`
+#### `OPERATIONAL`
 
-#### `PRIVATE`
+#### `CLOSED_TEMPORARILY`
+
+#### `CLOSED_PERMANENTLY`

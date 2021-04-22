@@ -23,14 +23,15 @@ type Leg {
   _id: ID!
   createdAt: DateTime!
   updatedAt: DateTime!
-  from: Provider
-  to: Provider
+  from: Location
+  to: Location
   startTime: DateTime
   endTime: DateTime
   mode: ENUM_LEG_MODE
   radius: Int
   travellers: Int
   legState: ENUM_LEG_LEGSTATE
+  polyline: JSON
   published_at: DateTime
   users(
     sort: String
@@ -51,9 +52,9 @@ type Leg {
 
 #### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
 
-#### `from` ([`Provider`](/v1/objects/provider))
+#### `from` ([`Location`](/v1/objects/location))
 
-#### `to` ([`Provider`](/v1/objects/provider))
+#### `to` ([`Location`](/v1/objects/location))
 
 #### `startTime` ([`DateTime`](/v1/scalars/date-time))
 
@@ -66,6 +67,8 @@ type Leg {
 #### `travellers` ([`Int`](/v1/scalars/int))
 
 #### `legState` ([`ENUM_LEG_LEGSTATE`](/v1/enums/enum-leg-legstate))
+
+#### `polyline` ([`JSON`](/v1/scalars/json))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

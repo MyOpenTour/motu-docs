@@ -1,6 +1,6 @@
 {
   "name": "motu-api-docs",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

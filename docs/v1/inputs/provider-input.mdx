@@ -46,6 +46,9 @@ type ProviderInput {
   brandname_ru: String
   brandname_en: String
   location: ID
+  average_time: Int
+  business_status: ENUM_PROVIDER_BUSINESS_STATUS
+  similar: String
   published_at: DateTime
   created_by: ID
   updated_by: ID
@@ -107,6 +110,12 @@ type ProviderInput {
 #### `brandname_en` ([`String`](/v1/scalars/string))
 
 #### `location` ([`ID`](/v1/scalars/id))
+
+#### `average_time` ([`Int`](/v1/scalars/int))
+
+#### `business_status` ([`ENUM_PROVIDER_BUSINESS_STATUS`](/v1/enums/enum-provider-business-status))
+
+#### `similar` ([`String`](/v1/scalars/string))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

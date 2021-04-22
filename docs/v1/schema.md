@@ -1,6 +1,6 @@
 ---
 id: schema
-title: GraphQL
+title: MyOpenTour web api documentation
 sidebar_label: Overview
 ---
 
@@ -12,7 +12,7 @@ sidebar_label: Overview
 
 The new GraphQL API is the most flexible and powerful way to integrate MOTU into your app.
 
-[Read the launch article](/blog/motu-graphql)
+[Read the launch article](/blog/hello-world)
 
 ### See what the API can do
 

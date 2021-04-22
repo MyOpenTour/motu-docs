@@ -60,6 +60,8 @@ union Morph =
   | CategoryConnectionTag
   | CategoryConnectionName_ru
   | CategoryConnectionName_en
+  | CategoryConnectionBackground_color
+  | CategoryConnectionIcon
   | CategoryConnectionPublished_at
   | createCategoryPayload
   | updateCategoryPayload
@@ -165,6 +167,7 @@ union Morph =
   | LegConnectionRadius
   | LegConnectionTravellers
   | LegConnectionLegState
+  | LegConnectionPolyline
   | LegConnectionPublished_at
   | createLegPayload
   | updateLegPayload
@@ -230,6 +233,8 @@ union Morph =
   | LocationConnectionDistrict
   | LocationConnectionNearestSubway
   | LocationConnectionProvider
+  | LocationConnectionSubwayDistance
+  | LocationConnectionSybwayLine
   | LocationConnectionPublished_at
   | createLocationPayload
   | updateLocationPayload
@@ -325,6 +330,9 @@ union Morph =
   | ProviderConnectionBrandname_ru
   | ProviderConnectionBrandname_en
   | ProviderConnectionLocation
+  | ProviderConnectionAverage_time
+  | ProviderConnectionBusiness_status
+  | ProviderConnectionSimilar
   | ProviderConnectionPublished_at
   | createProviderPayload
   | updateProviderPayload
@@ -432,7 +440,6 @@ union Morph =
   | createUserPayload
   | updateUserPayload
   | deleteUserPayload
-  | ComponentOpeningHoursOpeningHours
 ```
 
 ### Possible types
@@ -518,6 +525,10 @@ union Morph =
 #### [`CategoryConnectionName_ru`](/v1/objects/category-connection-name-ru)
 
 #### [`CategoryConnectionName_en`](/v1/objects/category-connection-name-en)
+
+#### [`CategoryConnectionBackground_color`](/v1/objects/category-connection-background-color)
+
+#### [`CategoryConnectionIcon`](/v1/objects/category-connection-icon)
 
 #### [`CategoryConnectionPublished_at`](/v1/objects/category-connection-published-at)
 
@@ -729,6 +740,8 @@ union Morph =
 
 #### [`LegConnectionLegState`](/v1/objects/leg-connection-leg-state)
 
+#### [`LegConnectionPolyline`](/v1/objects/leg-connection-polyline)
+
 #### [`LegConnectionPublished_at`](/v1/objects/leg-connection-published-at)
 
 #### [`createLegPayload`](/v1/objects/create-leg-payload)
@@ -858,6 +871,10 @@ union Morph =
 #### [`LocationConnectionNearestSubway`](/v1/objects/location-connection-nearest-subway)
 
 #### [`LocationConnectionProvider`](/v1/objects/location-connection-provider)
+
+#### [`LocationConnectionSubwayDistance`](/v1/objects/location-connection-subway-distance)
+
+#### [`LocationConnectionSybwayLine`](/v1/objects/location-connection-sybway-line)
 
 #### [`LocationConnectionPublished_at`](/v1/objects/location-connection-published-at)
 
@@ -1048,6 +1065,12 @@ union Morph =
 #### [`ProviderConnectionBrandname_en`](/v1/objects/provider-connection-brandname-en)
 
 #### [`ProviderConnectionLocation`](/v1/objects/provider-connection-location)
+
+#### [`ProviderConnectionAverage_time`](/v1/objects/provider-connection-average-time)
+
+#### [`ProviderConnectionBusiness_status`](/v1/objects/provider-connection-business-status)
+
+#### [`ProviderConnectionSimilar`](/v1/objects/provider-connection-similar)
 
 #### [`ProviderConnectionPublished_at`](/v1/objects/provider-connection-published-at)
 
@@ -1262,5 +1285,3 @@ union Morph =
 #### [`updateUserPayload`](/v1/objects/update-user-payload)
 
 #### [`deleteUserPayload`](/v1/objects/delete-user-payload)
-
-#### [`ComponentOpeningHoursOpeningHours`](/v1/objects/component-opening-hours-opening-hours)
