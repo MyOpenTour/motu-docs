@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation Bug Report
+    url: https://github.com/MyOpenTour/motu-docs/issues/new?template=BUG_REPORT.md&title%5B%5D=BUG
+    about: Create a report to help us improve the MOTU documentation.
+  - name: Documentation Request
+    url: https://github.com/MyOpenTour/motu-docs/issues/new?template=FEATURE_REQUEST.md&title%5B%5D=REQUEST
+    about: Suggest a new part of the documentation we are missing!
+  - name: MOTU API Questions and Discussions
+    url: https://motuworld.slack.com
+    about: Please ask and answer questions on our slack server.
