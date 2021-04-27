@@ -103,6 +103,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} MyOpenTour.`,
     },
+    moesif: {
+      applicationId: 'eyJhcHAiOiIzNjU6MzMyIiwidmVyIjoiMi4wIiwib3JnIjoiNjkwOjI0NiIsImlhdCI6MTYxNzIzNTIwMH0.50hp7y1hYyw7ZfB5L1nbrDTh93eWThgNCK1Zwa729I8',
+      // Add other Moesif options here.
+    },
   },
   presets: [
     [
@@ -143,5 +147,7 @@ module.exports = {
         baseURL: "v1",
         homepage: "./docs/schema.md",
       },
-    ],],
+    ],
+    'docusaurus-plugin-moesif',
+  ],
 };
