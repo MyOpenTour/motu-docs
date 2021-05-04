@@ -38,7 +38,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://stats.motu.world',
+          href: 'https://stats.uptimerobot.com/w7wE4fLrnW',
           label: 'Status',
           position: 'right'
         },
