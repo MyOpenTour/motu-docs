@@ -1,0 +1,1 @@
+(self.webpackChunkmotu_api_docs=self.webpackChunkmotu_api_docs||[]).push([[42175],{82205:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"graphql","name":"graphql","count":1,"permalink":"/blog/tags/graphql"}')}}]);

@@ -1,0 +1,1 @@
+(self.webpackChunkmotu_api_docs=self.webpackChunkmotu_api_docs||[]).push([[14924],{28107:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"motu","name":"motu","count":2,"permalink":"/blog/tags/motu"}')}}]);

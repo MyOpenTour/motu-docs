@@ -1,0 +1,1 @@
+(self.webpackChunkmotu_api_docs=self.webpackChunkmotu_api_docs||[]).push([[30453],{60516:function(l){"use strict";l.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"hello","name":"hello","count":1,"permalink":"/blog/tags/hello"}')}}]);

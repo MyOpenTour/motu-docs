@@ -1,0 +1,1 @@
+(self.webpackChunkmotu_api_docs=self.webpackChunkmotu_api_docs||[]).push([[90533],{2383:function(e){"use strict";e.exports=JSON.parse('{"permalink":"/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

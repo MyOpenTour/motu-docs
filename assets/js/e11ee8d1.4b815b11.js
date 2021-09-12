@@ -1,0 +1,1 @@
+(self.webpackChunkmotu_api_docs=self.webpackChunkmotu_api_docs||[]).push([[60998],{66353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Announcing General Availability of our GraphQL API","permalink":"/blog/motu-graphql"},{"title":"Hello","permalink":"/blog/hello-world"}]}')}}]);
