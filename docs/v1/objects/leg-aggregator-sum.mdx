@@ -3,24 +3,13 @@ id: leg-aggregator-sum
 title: LegAggregatorSum
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
 type LegAggregatorSum {
   radius: Float
   travellers: Float
+  distance: Float
 }
 ```
 
@@ -29,3 +18,5 @@ type LegAggregatorSum {
 #### `radius` ([`Float`](/v1/scalars/float))
 
 #### `travellers` ([`Float`](/v1/scalars/float))
+
+#### `distance` ([`Float`](/v1/scalars/float))

@@ -3,18 +3,6 @@ id: review-group-by
 title: ReviewGroupBy
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -27,6 +15,7 @@ type ReviewGroupBy {
   note: [ReviewConnectionNote]
   author: [ReviewConnectionAuthor]
   provider: [ReviewConnectionProvider]
+  order: [ReviewConnectionOrder]
   published_at: [ReviewConnectionPublished_at]
 }
 ```
@@ -48,5 +37,7 @@ type ReviewGroupBy {
 #### `author` ([`[ReviewConnectionAuthor]`](/v1/objects/review-connection-author))
 
 #### `provider` ([`[ReviewConnectionProvider]`](/v1/objects/review-connection-provider))
+
+#### `order` ([`[ReviewConnectionOrder]`](/v1/objects/review-connection-order))
 
 #### `published_at` ([`[ReviewConnectionPublished_at]`](/v1/objects/review-connection-published-at))

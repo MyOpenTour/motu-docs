@@ -3,18 +3,6 @@ id: edit-provider-input
 title: editProviderInput
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -49,6 +37,10 @@ type editProviderInput {
   average_time: Int
   business_status: ENUM_PROVIDER_BUSINESS_STATUS
   similar: String
+  rank: Float
+  rank0: Float
+  rank1: Float
+  rank2: Float
   published_at: DateTime
   created_by: ID
   updated_by: ID
@@ -116,6 +108,14 @@ type editProviderInput {
 #### `business_status` ([`ENUM_PROVIDER_BUSINESS_STATUS`](/v1/enums/enum-provider-business-status))
 
 #### `similar` ([`String`](/v1/scalars/string))
+
+#### `rank` ([`Float`](/v1/scalars/float))
+
+#### `rank0` ([`Float`](/v1/scalars/float))
+
+#### `rank1` ([`Float`](/v1/scalars/float))
+
+#### `rank2` ([`Float`](/v1/scalars/float))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

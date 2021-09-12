@@ -3,18 +3,6 @@ id: leg
 title: Leg
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -32,6 +20,8 @@ type Leg {
   travellers: Int
   legState: ENUM_LEG_LEGSTATE
   polyline: JSON
+  distance: Float
+  duration: Time
   published_at: DateTime
   users(
     sort: String
@@ -69,6 +59,10 @@ type Leg {
 #### `legState` ([`ENUM_LEG_LEGSTATE`](/v1/enums/enum-leg-legstate))
 
 #### `polyline` ([`JSON`](/v1/scalars/json))
+
+#### `distance` ([`Float`](/v1/scalars/float))
+
+#### `duration` ([`Time`](/v1/scalars/time))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

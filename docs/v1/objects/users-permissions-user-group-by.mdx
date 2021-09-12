@@ -3,18 +3,6 @@ id: users-permissions-user-group-by
 title: UsersPermissionsUserGroupBy
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -31,6 +19,12 @@ type UsersPermissionsUserGroupBy {
   role: [UsersPermissionsUserConnectionRole]
   questionary: [UsersPermissionsUserConnectionQuestionary]
   user_category: [UsersPermissionsUserConnectionUser_category]
+  group_label: [UsersPermissionsUserConnectionGroup_label]
+  name: [UsersPermissionsUserConnectionName]
+  surname: [UsersPermissionsUserConnectionSurname]
+  phone: [UsersPermissionsUserConnectionPhone]
+  cash_back_level: [UsersPermissionsUserConnectionCash_back_level]
+  loyalty_account: [UsersPermissionsUserConnectionLoyalty_account]
 }
 ```
 
@@ -59,3 +53,15 @@ type UsersPermissionsUserGroupBy {
 #### `questionary` ([`[UsersPermissionsUserConnectionQuestionary]`](/v1/objects/users-permissions-user-connection-questionary))
 
 #### `user_category` ([`[UsersPermissionsUserConnectionUser_category]`](/v1/objects/users-permissions-user-connection-user-category))
+
+#### `group_label` ([`[UsersPermissionsUserConnectionGroup_label]`](/v1/objects/users-permissions-user-connection-group-label))
+
+#### `name` ([`[UsersPermissionsUserConnectionName]`](/v1/objects/users-permissions-user-connection-name))
+
+#### `surname` ([`[UsersPermissionsUserConnectionSurname]`](/v1/objects/users-permissions-user-connection-surname))
+
+#### `phone` ([`[UsersPermissionsUserConnectionPhone]`](/v1/objects/users-permissions-user-connection-phone))
+
+#### `cash_back_level` ([`[UsersPermissionsUserConnectionCash_back_level]`](/v1/objects/users-permissions-user-connection-cash-back-level))
+
+#### `loyalty_account` ([`[UsersPermissionsUserConnectionLoyalty_account]`](/v1/objects/users-permissions-user-connection-loyalty-account))

@@ -1,0 +1,37 @@
+---
+id: loyalty-transaction
+title: LoyaltyTransaction
+---
+
+No description
+
+```graphql
+type LoyaltyTransaction {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  points: Long
+  user: UsersPermissionsUser
+  email: String
+  published_at: DateTime
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `points` ([`Long`](/v1/scalars/long))
+
+#### `user` ([`UsersPermissionsUser`](/v1/objects/users-permissions-user))
+
+#### `email` ([`String`](/v1/scalars/string))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))

@@ -3,18 +3,6 @@ id: itinerary-group-by
 title: ItineraryGroupBy
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -26,6 +14,11 @@ type ItineraryGroupBy {
   itineraryState: [ItineraryConnectionItineraryState]
   startTime: [ItineraryConnectionStartTime]
   endTime: [ItineraryConnectionEndTime]
+  distance: [ItineraryConnectionDistance]
+  duration: [ItineraryConnectionDuration]
+  average_price: [ItineraryConnectionAverage_price]
+  bonus_amount: [ItineraryConnectionBonus_amount]
+  geometry: [ItineraryConnectionGeometry]
   published_at: [ItineraryConnectionPublished_at]
 }
 ```
@@ -45,5 +38,15 @@ type ItineraryGroupBy {
 #### `startTime` ([`[ItineraryConnectionStartTime]`](/v1/objects/itinerary-connection-start-time))
 
 #### `endTime` ([`[ItineraryConnectionEndTime]`](/v1/objects/itinerary-connection-end-time))
+
+#### `distance` ([`[ItineraryConnectionDistance]`](/v1/objects/itinerary-connection-distance))
+
+#### `duration` ([`[ItineraryConnectionDuration]`](/v1/objects/itinerary-connection-duration))
+
+#### `average_price` ([`[ItineraryConnectionAverage_price]`](/v1/objects/itinerary-connection-average-price))
+
+#### `bonus_amount` ([`[ItineraryConnectionBonus_amount]`](/v1/objects/itinerary-connection-bonus-amount))
+
+#### `geometry` ([`[ItineraryConnectionGeometry]`](/v1/objects/itinerary-connection-geometry))
 
 #### `published_at` ([`[ItineraryConnectionPublished_at]`](/v1/objects/itinerary-connection-published-at))

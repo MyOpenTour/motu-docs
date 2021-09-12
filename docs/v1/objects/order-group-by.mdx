@@ -3,18 +3,6 @@ id: order-group-by
 title: OrderGroupBy
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -23,9 +11,17 @@ type OrderGroupBy {
   _id: [OrderConnection_id]
   createdAt: [OrderConnectionCreatedAt]
   updatedAt: [OrderConnectionUpdatedAt]
-  city: [OrderConnectionCity]
-  activities: [OrderConnectionActivities]
-  amount: [OrderConnectionAmount]
+  activity: [OrderConnectionActivity]
+  provider: [OrderConnectionProvider]
+  user: [OrderConnectionUser]
+  date: [OrderConnectionDate]
+  status: [OrderConnectionStatus]
+  description: [OrderConnectionDescription]
+  provider_amount: [OrderConnectionProvider_amount]
+  user_amount: [OrderConnectionUser_amount]
+  kids: [OrderConnectionKids]
+  adults: [OrderConnectionAdults]
+  review: [OrderConnectionReview]
   published_at: [OrderConnectionPublished_at]
 }
 ```
@@ -40,10 +36,26 @@ type OrderGroupBy {
 
 #### `updatedAt` ([`[OrderConnectionUpdatedAt]`](/v1/objects/order-connection-updated-at))
 
-#### `city` ([`[OrderConnectionCity]`](/v1/objects/order-connection-city))
+#### `activity` ([`[OrderConnectionActivity]`](/v1/objects/order-connection-activity))
 
-#### `activities` ([`[OrderConnectionActivities]`](/v1/objects/order-connection-activities))
+#### `provider` ([`[OrderConnectionProvider]`](/v1/objects/order-connection-provider))
 
-#### `amount` ([`[OrderConnectionAmount]`](/v1/objects/order-connection-amount))
+#### `user` ([`[OrderConnectionUser]`](/v1/objects/order-connection-user))
+
+#### `date` ([`[OrderConnectionDate]`](/v1/objects/order-connection-date))
+
+#### `status` ([`[OrderConnectionStatus]`](/v1/objects/order-connection-status))
+
+#### `description` ([`[OrderConnectionDescription]`](/v1/objects/order-connection-description))
+
+#### `provider_amount` ([`[OrderConnectionProvider_amount]`](/v1/objects/order-connection-provider-amount))
+
+#### `user_amount` ([`[OrderConnectionUser_amount]`](/v1/objects/order-connection-user-amount))
+
+#### `kids` ([`[OrderConnectionKids]`](/v1/objects/order-connection-kids))
+
+#### `adults` ([`[OrderConnectionAdults]`](/v1/objects/order-connection-adults))
+
+#### `review` ([`[OrderConnectionReview]`](/v1/objects/order-connection-review))
 
 #### `published_at` ([`[OrderConnectionPublished_at]`](/v1/objects/order-connection-published-at))

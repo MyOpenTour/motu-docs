@@ -3,18 +3,6 @@ id: provider-group-by
 title: ProviderGroupBy
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -48,6 +36,10 @@ type ProviderGroupBy {
   average_time: [ProviderConnectionAverage_time]
   business_status: [ProviderConnectionBusiness_status]
   similar: [ProviderConnectionSimilar]
+  rank: [ProviderConnectionRank]
+  rank0: [ProviderConnectionRank0]
+  rank1: [ProviderConnectionRank1]
+  rank2: [ProviderConnectionRank2]
   published_at: [ProviderConnectionPublished_at]
 }
 ```
@@ -111,5 +103,13 @@ type ProviderGroupBy {
 #### `business_status` ([`[ProviderConnectionBusiness_status]`](/v1/objects/provider-connection-business-status))
 
 #### `similar` ([`[ProviderConnectionSimilar]`](/v1/objects/provider-connection-similar))
+
+#### `rank` ([`[ProviderConnectionRank]`](/v1/objects/provider-connection-rank))
+
+#### `rank0` ([`[ProviderConnectionRank0]`](/v1/objects/provider-connection-rank-0))
+
+#### `rank1` ([`[ProviderConnectionRank1]`](/v1/objects/provider-connection-rank-1))
+
+#### `rank2` ([`[ProviderConnectionRank2]`](/v1/objects/provider-connection-rank-2))
 
 #### `published_at` ([`[ProviderConnectionPublished_at]`](/v1/objects/provider-connection-published-at))

@@ -3,26 +3,23 @@ id: order-aggregator-max
 title: OrderAggregatorMax
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
 type OrderAggregatorMax {
-  amount: Float
+  provider_amount: Float
+  user_amount: Float
+  kids: Float
+  adults: Float
 }
 ```
 
 ### Fields
 
-#### `amount` ([`Float`](/v1/scalars/float))
+#### `provider_amount` ([`Float`](/v1/scalars/float))
+
+#### `user_amount` ([`Float`](/v1/scalars/float))
+
+#### `kids` ([`Float`](/v1/scalars/float))
+
+#### `adults` ([`Float`](/v1/scalars/float))

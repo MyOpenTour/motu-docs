@@ -3,18 +3,6 @@ id: leg-group-by
 title: LegGroupBy
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -32,6 +20,8 @@ type LegGroupBy {
   travellers: [LegConnectionTravellers]
   legState: [LegConnectionLegState]
   polyline: [LegConnectionPolyline]
+  distance: [LegConnectionDistance]
+  duration: [LegConnectionDuration]
   published_at: [LegConnectionPublished_at]
 }
 ```
@@ -63,5 +53,9 @@ type LegGroupBy {
 #### `legState` ([`[LegConnectionLegState]`](/v1/objects/leg-connection-leg-state))
 
 #### `polyline` ([`[LegConnectionPolyline]`](/v1/objects/leg-connection-polyline))
+
+#### `distance` ([`[LegConnectionDistance]`](/v1/objects/leg-connection-distance))
+
+#### `duration` ([`[LegConnectionDuration]`](/v1/objects/leg-connection-duration))
 
 #### `published_at` ([`[LegConnectionPublished_at]`](/v1/objects/leg-connection-published-at))

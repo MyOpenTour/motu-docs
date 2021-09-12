@@ -3,18 +3,6 @@ id: order
 title: Order
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -23,9 +11,17 @@ type Order {
   _id: ID!
   createdAt: DateTime!
   updatedAt: DateTime!
-  city: String
-  activities: JSON
-  amount: Float
+  activity: Activity
+  provider: Provider
+  user: UsersPermissionsUser
+  date: DateTime
+  status: ENUM_ORDER_STATUS
+  description: String
+  provider_amount: Float
+  user_amount: Float
+  kids: Int
+  adults: Int
+  review: Review
   published_at: DateTime
 }
 ```
@@ -40,10 +36,26 @@ type Order {
 
 #### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
 
-#### `city` ([`String`](/v1/scalars/string))
+#### `activity` ([`Activity`](/v1/objects/activity))
 
-#### `activities` ([`JSON`](/v1/scalars/json))
+#### `provider` ([`Provider`](/v1/objects/provider))
 
-#### `amount` ([`Float`](/v1/scalars/float))
+#### `user` ([`UsersPermissionsUser`](/v1/objects/users-permissions-user))
+
+#### `date` ([`DateTime`](/v1/scalars/date-time))
+
+#### `status` ([`ENUM_ORDER_STATUS`](/v1/enums/enum-order-status))
+
+#### `description` ([`String`](/v1/scalars/string))
+
+#### `provider_amount` ([`Float`](/v1/scalars/float))
+
+#### `user_amount` ([`Float`](/v1/scalars/float))
+
+#### `kids` ([`Int`](/v1/scalars/int))
+
+#### `adults` ([`Int`](/v1/scalars/int))
+
+#### `review` ([`Review`](/v1/objects/review))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))

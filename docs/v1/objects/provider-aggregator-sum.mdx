@@ -3,18 +3,6 @@ id: provider-aggregator-sum
 title: ProviderAggregatorSum
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -24,6 +12,10 @@ type ProviderAggregatorSum {
   average_price: Float
   num_reviews: Float
   average_time: Float
+  rank: Float
+  rank0: Float
+  rank1: Float
+  rank2: Float
 }
 ```
 
@@ -38,3 +30,11 @@ type ProviderAggregatorSum {
 #### `num_reviews` ([`Float`](/v1/scalars/float))
 
 #### `average_time` ([`Float`](/v1/scalars/float))
+
+#### `rank` ([`Float`](/v1/scalars/float))
+
+#### `rank0` ([`Float`](/v1/scalars/float))
+
+#### `rank1` ([`Float`](/v1/scalars/float))
+
+#### `rank2` ([`Float`](/v1/scalars/float))

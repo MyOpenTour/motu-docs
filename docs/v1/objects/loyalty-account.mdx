@@ -1,0 +1,40 @@
+---
+id: loyalty-account
+title: LoyaltyAccount
+---
+
+No description
+
+```graphql
+type LoyaltyAccount {
+  id: ID!
+  _id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  user: UsersPermissionsUser
+  points: Long
+  valid: Boolean
+  confirmed_points: Long
+  published_at: DateTime
+}
+```
+
+### Fields
+
+#### `id` ([`ID!`](/v1/scalars/id))
+
+#### `_id` ([`ID!`](/v1/scalars/id))
+
+#### `createdAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `updatedAt` ([`DateTime!`](/v1/scalars/date-time))
+
+#### `user` ([`UsersPermissionsUser`](/v1/objects/users-permissions-user))
+
+#### `points` ([`Long`](/v1/scalars/long))
+
+#### `valid` ([`Boolean`](/v1/scalars/boolean))
+
+#### `confirmed_points` ([`Long`](/v1/scalars/long))
+
+#### `published_at` ([`DateTime`](/v1/scalars/date-time))
