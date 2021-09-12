@@ -3,18 +3,6 @@ id: leg-input
 title: LegInput
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -29,6 +17,8 @@ type LegInput {
   users: [ID]
   legState: ENUM_LEG_LEGSTATE
   polyline: JSON
+  distance: Float
+  duration: Time
   published_at: DateTime
   created_by: ID
   updated_by: ID
@@ -56,6 +46,10 @@ type LegInput {
 #### `legState` ([`ENUM_LEG_LEGSTATE`](/v1/enums/enum-leg-legstate))
 
 #### `polyline` ([`JSON`](/v1/scalars/json))
+
+#### `distance` ([`Float`](/v1/scalars/float))
+
+#### `duration` ([`Time`](/v1/scalars/time))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

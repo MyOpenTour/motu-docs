@@ -7,7 +7,7 @@ title: Public offer
 
 ## In terms and conditions for providing MOTU services
 
-Version: 2020-02-17.
+Version: 2021-08-17.
 
 ### Lorem ipsum
 

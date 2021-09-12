@@ -3,18 +3,6 @@ id: review
 title: Review
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -27,6 +15,7 @@ type Review {
   note: Float
   author: UsersPermissionsUser
   provider: Provider
+  order: Order
   published_at: DateTime
   likes(sort: String, limit: Int = 0, start: Int = 0, where: JSON): [Like]
 }
@@ -49,6 +38,8 @@ type Review {
 #### `author` ([`UsersPermissionsUser`](/v1/objects/users-permissions-user))
 
 #### `provider` ([`Provider`](/v1/objects/provider))
+
+#### `order` ([`Order`](/v1/objects/order))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

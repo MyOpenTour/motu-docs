@@ -8,9 +8,9 @@ sidebar_label: Overview
 
 ## Resources and tools to integrate
 
-### MOTU GraphQL API
+### MyOpenTour GraphQL API
 
-The new GraphQL API is the most flexible and powerful way to integrate MOTU into your app.
+The new GraphQL API is the most flexible and powerful way to integrate MyOpenTour API into your app.
 
 [Read the launch article](/blog/hello-world)
 

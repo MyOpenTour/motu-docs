@@ -3,18 +3,6 @@ id: edit-user-input
 title: editUserInput
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -35,6 +23,13 @@ type editUserInput {
   questionary: ID
   user_category: ENUM_USERSPERMISSIONSUSER_USER_CATEGORY
   favourites: [ID]
+  group_label: Int
+  name: String
+  surname: String
+  phone: String
+  cash_back_level: Int
+  loyalty_account: ID
+  loyalty_transactions: [ID]
   created_by: ID
   updated_by: ID
 }
@@ -73,6 +68,20 @@ type editUserInput {
 #### `user_category` ([`ENUM_USERSPERMISSIONSUSER_USER_CATEGORY`](/v1/enums/enum-userspermissionsuser-user-category))
 
 #### `favourites` ([`[ID]`](/v1/scalars/id))
+
+#### `group_label` ([`Int`](/v1/scalars/int))
+
+#### `name` ([`String`](/v1/scalars/string))
+
+#### `surname` ([`String`](/v1/scalars/string))
+
+#### `phone` ([`String`](/v1/scalars/string))
+
+#### `cash_back_level` ([`Int`](/v1/scalars/int))
+
+#### `loyalty_account` ([`ID`](/v1/scalars/id))
+
+#### `loyalty_transactions` ([`[ID]`](/v1/scalars/id))
 
 #### `created_by` ([`ID`](/v1/scalars/id))
 

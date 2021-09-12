@@ -3,24 +3,16 @@ id: users-permissions-user-aggregator
 title: UsersPermissionsUserAggregator
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
 type UsersPermissionsUserAggregator {
   count: Int
   totalCount: Int
+  sum: UsersPermissionsUserAggregatorSum
+  avg: UsersPermissionsUserAggregatorAvg
+  min: UsersPermissionsUserAggregatorMin
+  max: UsersPermissionsUserAggregatorMax
 }
 ```
 
@@ -29,3 +21,11 @@ type UsersPermissionsUserAggregator {
 #### `count` ([`Int`](/v1/scalars/int))
 
 #### `totalCount` ([`Int`](/v1/scalars/int))
+
+#### `sum` ([`UsersPermissionsUserAggregatorSum`](/v1/objects/users-permissions-user-aggregator-sum))
+
+#### `avg` ([`UsersPermissionsUserAggregatorAvg`](/v1/objects/users-permissions-user-aggregator-avg))
+
+#### `min` ([`UsersPermissionsUserAggregatorMin`](/v1/objects/users-permissions-user-aggregator-min))
+
+#### `max` ([`UsersPermissionsUserAggregatorMax`](/v1/objects/users-permissions-user-aggregator-max))

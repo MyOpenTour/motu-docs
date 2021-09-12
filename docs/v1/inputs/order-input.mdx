@@ -3,25 +3,21 @@ id: order-input
 title: OrderInput
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
 type OrderInput {
-  city: String
-  activities: JSON
-  amount: Float
+  activity: ID
+  provider: ID
+  user: ID
+  date: DateTime
+  status: ENUM_ORDER_STATUS
+  description: String
+  provider_amount: Float
+  user_amount: Float
+  kids: Int
+  adults: Int
+  review: ID
   published_at: DateTime
   created_by: ID
   updated_by: ID
@@ -30,11 +26,27 @@ type OrderInput {
 
 ### Fields
 
-#### `city` ([`String`](/v1/scalars/string))
+#### `activity` ([`ID`](/v1/scalars/id))
 
-#### `activities` ([`JSON`](/v1/scalars/json))
+#### `provider` ([`ID`](/v1/scalars/id))
 
-#### `amount` ([`Float`](/v1/scalars/float))
+#### `user` ([`ID`](/v1/scalars/id))
+
+#### `date` ([`DateTime`](/v1/scalars/date-time))
+
+#### `status` ([`ENUM_ORDER_STATUS`](/v1/enums/enum-order-status))
+
+#### `description` ([`String`](/v1/scalars/string))
+
+#### `provider_amount` ([`Float`](/v1/scalars/float))
+
+#### `user_amount` ([`Float`](/v1/scalars/float))
+
+#### `kids` ([`Int`](/v1/scalars/int))
+
+#### `adults` ([`Int`](/v1/scalars/int))
+
+#### `review` ([`ID`](/v1/scalars/id))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

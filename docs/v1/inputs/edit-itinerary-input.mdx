@@ -3,18 +3,6 @@ id: edit-itinerary-input
 title: editItineraryInput
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -23,6 +11,12 @@ type editItineraryInput {
   itineraryState: ENUM_ITINERARY_ITINERARYSTATE
   startTime: DateTime
   endTime: DateTime
+  users: [ID]
+  distance: Float
+  duration: Time
+  average_price: Float
+  bonus_amount: Int
+  geometry: JSON
   published_at: DateTime
   created_by: ID
   updated_by: ID
@@ -38,6 +32,18 @@ type editItineraryInput {
 #### `startTime` ([`DateTime`](/v1/scalars/date-time))
 
 #### `endTime` ([`DateTime`](/v1/scalars/date-time))
+
+#### `users` ([`[ID]`](/v1/scalars/id))
+
+#### `distance` ([`Float`](/v1/scalars/float))
+
+#### `duration` ([`Time`](/v1/scalars/time))
+
+#### `average_price` ([`Float`](/v1/scalars/float))
+
+#### `bonus_amount` ([`Int`](/v1/scalars/int))
+
+#### `geometry` ([`JSON`](/v1/scalars/json))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

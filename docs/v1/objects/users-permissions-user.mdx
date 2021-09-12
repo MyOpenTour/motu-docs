@@ -3,18 +3,6 @@ id: users-permissions-user
 title: UsersPermissionsUser
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -31,6 +19,12 @@ type UsersPermissionsUser {
   role: UsersPermissionsRole
   questionary: Questionary
   user_category: ENUM_USERSPERMISSIONSUSER_USER_CATEGORY!
+  group_label: Int
+  name: String
+  surname: String
+  phone: String
+  cash_back_level: Int
+  loyalty_account: LoyaltyAccount
   reviews(sort: String, limit: Int = 0, start: Int = 0, where: JSON): [Review]
   likes(sort: String, limit: Int = 0, start: Int = 0, where: JSON): [Like]
   img(sort: String, limit: Int = 0, start: Int = 0, where: JSON): [UploadFile]
@@ -46,6 +40,12 @@ type UsersPermissionsUser {
     start: Int = 0
     where: JSON
   ): [Provider]
+  loyalty_transactions(
+    sort: String
+    limit: Int = 0
+    start: Int = 0
+    where: JSON
+  ): [LoyaltyTransaction]
 }
 ```
 
@@ -74,6 +74,18 @@ type UsersPermissionsUser {
 #### `questionary` ([`Questionary`](/v1/objects/questionary))
 
 #### `user_category` ([`ENUM_USERSPERMISSIONSUSER_USER_CATEGORY!`](/v1/enums/enum-userspermissionsuser-user-category))
+
+#### `group_label` ([`Int`](/v1/scalars/int))
+
+#### `name` ([`String`](/v1/scalars/string))
+
+#### `surname` ([`String`](/v1/scalars/string))
+
+#### `phone` ([`String`](/v1/scalars/string))
+
+#### `cash_back_level` ([`Int`](/v1/scalars/int))
+
+#### `loyalty_account` ([`LoyaltyAccount`](/v1/objects/loyalty-account))
 
 #### `reviews` ([`[Review]`](/v1/objects/review))
 
@@ -116,6 +128,16 @@ type UsersPermissionsUser {
 - ##### `where` ([`JSON`](/v1/scalars/json))
 
 #### `favourites` ([`[Provider]`](/v1/objects/provider))
+
+- ##### `sort` ([`String`](/v1/scalars/string))
+
+- ##### `limit` ([`Int`](/v1/scalars/int))
+
+- ##### `start` ([`Int`](/v1/scalars/int))
+
+- ##### `where` ([`JSON`](/v1/scalars/json))
+
+#### `loyalty_transactions` ([`[LoyaltyTransaction]`](/v1/objects/loyalty-transaction))
 
 - ##### `sort` ([`String`](/v1/scalars/string))
 

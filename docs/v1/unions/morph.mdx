@@ -3,18 +3,6 @@ id: morph
 title: Morph
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -135,6 +123,10 @@ union Morph =
   | Itinerary
   | ItineraryConnection
   | ItineraryAggregator
+  | ItineraryAggregatorSum
+  | ItineraryAggregatorAvg
+  | ItineraryAggregatorMin
+  | ItineraryAggregatorMax
   | ItineraryGroupBy
   | ItineraryConnectionId
   | ItineraryConnection_id
@@ -143,6 +135,11 @@ union Morph =
   | ItineraryConnectionItineraryState
   | ItineraryConnectionStartTime
   | ItineraryConnectionEndTime
+  | ItineraryConnectionDistance
+  | ItineraryConnectionDuration
+  | ItineraryConnectionAverage_price
+  | ItineraryConnectionBonus_amount
+  | ItineraryConnectionGeometry
   | ItineraryConnectionPublished_at
   | createItineraryPayload
   | updateItineraryPayload
@@ -168,6 +165,8 @@ union Morph =
   | LegConnectionTravellers
   | LegConnectionLegState
   | LegConnectionPolyline
+  | LegConnectionDistance
+  | LegConnectionDuration
   | LegConnectionPublished_at
   | createLegPayload
   | updateLegPayload
@@ -239,6 +238,37 @@ union Morph =
   | createLocationPayload
   | updateLocationPayload
   | deleteLocationPayload
+  | LoyaltyAccount
+  | LoyaltyAccountConnection
+  | LoyaltyAccountAggregator
+  | LoyaltyAccountGroupBy
+  | LoyaltyAccountConnectionId
+  | LoyaltyAccountConnection_id
+  | LoyaltyAccountConnectionCreatedAt
+  | LoyaltyAccountConnectionUpdatedAt
+  | LoyaltyAccountConnectionUser
+  | LoyaltyAccountConnectionPoints
+  | LoyaltyAccountConnectionValid
+  | LoyaltyAccountConnectionConfirmed_points
+  | LoyaltyAccountConnectionPublished_at
+  | createLoyaltyAccountPayload
+  | updateLoyaltyAccountPayload
+  | deleteLoyaltyAccountPayload
+  | LoyaltyTransaction
+  | LoyaltyTransactionConnection
+  | LoyaltyTransactionAggregator
+  | LoyaltyTransactionGroupBy
+  | LoyaltyTransactionConnectionId
+  | LoyaltyTransactionConnection_id
+  | LoyaltyTransactionConnectionCreatedAt
+  | LoyaltyTransactionConnectionUpdatedAt
+  | LoyaltyTransactionConnectionPoints
+  | LoyaltyTransactionConnectionUser
+  | LoyaltyTransactionConnectionEmail
+  | LoyaltyTransactionConnectionPublished_at
+  | createLoyaltyTransactionPayload
+  | updateLoyaltyTransactionPayload
+  | deleteLoyaltyTransactionPayload
   | Notification
   | NotificationConnection
   | NotificationAggregator
@@ -289,9 +319,17 @@ union Morph =
   | OrderConnection_id
   | OrderConnectionCreatedAt
   | OrderConnectionUpdatedAt
-  | OrderConnectionCity
-  | OrderConnectionActivities
-  | OrderConnectionAmount
+  | OrderConnectionActivity
+  | OrderConnectionProvider
+  | OrderConnectionUser
+  | OrderConnectionDate
+  | OrderConnectionStatus
+  | OrderConnectionDescription
+  | OrderConnectionProvider_amount
+  | OrderConnectionUser_amount
+  | OrderConnectionKids
+  | OrderConnectionAdults
+  | OrderConnectionReview
   | OrderConnectionPublished_at
   | createOrderPayload
   | updateOrderPayload
@@ -333,6 +371,10 @@ union Morph =
   | ProviderConnectionAverage_time
   | ProviderConnectionBusiness_status
   | ProviderConnectionSimilar
+  | ProviderConnectionRank
+  | ProviderConnectionRank0
+  | ProviderConnectionRank1
+  | ProviderConnectionRank2
   | ProviderConnectionPublished_at
   | createProviderPayload
   | updateProviderPayload
@@ -377,6 +419,7 @@ union Morph =
   | ReviewConnectionNote
   | ReviewConnectionAuthor
   | ReviewConnectionProvider
+  | ReviewConnectionOrder
   | ReviewConnectionPublished_at
   | createReviewPayload
   | updateReviewPayload
@@ -424,6 +467,10 @@ union Morph =
   | UsersPermissionsUser
   | UsersPermissionsUserConnection
   | UsersPermissionsUserAggregator
+  | UsersPermissionsUserAggregatorSum
+  | UsersPermissionsUserAggregatorAvg
+  | UsersPermissionsUserAggregatorMin
+  | UsersPermissionsUserAggregatorMax
   | UsersPermissionsUserGroupBy
   | UsersPermissionsUserConnectionId
   | UsersPermissionsUserConnection_id
@@ -437,6 +484,12 @@ union Morph =
   | UsersPermissionsUserConnectionRole
   | UsersPermissionsUserConnectionQuestionary
   | UsersPermissionsUserConnectionUser_category
+  | UsersPermissionsUserConnectionGroup_label
+  | UsersPermissionsUserConnectionName
+  | UsersPermissionsUserConnectionSurname
+  | UsersPermissionsUserConnectionPhone
+  | UsersPermissionsUserConnectionCash_back_level
+  | UsersPermissionsUserConnectionLoyalty_account
   | createUserPayload
   | updateUserPayload
   | deleteUserPayload
@@ -676,6 +729,14 @@ union Morph =
 
 #### [`ItineraryAggregator`](/v1/objects/itinerary-aggregator)
 
+#### [`ItineraryAggregatorSum`](/v1/objects/itinerary-aggregator-sum)
+
+#### [`ItineraryAggregatorAvg`](/v1/objects/itinerary-aggregator-avg)
+
+#### [`ItineraryAggregatorMin`](/v1/objects/itinerary-aggregator-min)
+
+#### [`ItineraryAggregatorMax`](/v1/objects/itinerary-aggregator-max)
+
 #### [`ItineraryGroupBy`](/v1/objects/itinerary-group-by)
 
 #### [`ItineraryConnectionId`](/v1/objects/itinerary-connection-id)
@@ -691,6 +752,16 @@ union Morph =
 #### [`ItineraryConnectionStartTime`](/v1/objects/itinerary-connection-start-time)
 
 #### [`ItineraryConnectionEndTime`](/v1/objects/itinerary-connection-end-time)
+
+#### [`ItineraryConnectionDistance`](/v1/objects/itinerary-connection-distance)
+
+#### [`ItineraryConnectionDuration`](/v1/objects/itinerary-connection-duration)
+
+#### [`ItineraryConnectionAverage_price`](/v1/objects/itinerary-connection-average-price)
+
+#### [`ItineraryConnectionBonus_amount`](/v1/objects/itinerary-connection-bonus-amount)
+
+#### [`ItineraryConnectionGeometry`](/v1/objects/itinerary-connection-geometry)
 
 #### [`ItineraryConnectionPublished_at`](/v1/objects/itinerary-connection-published-at)
 
@@ -741,6 +812,10 @@ union Morph =
 #### [`LegConnectionLegState`](/v1/objects/leg-connection-leg-state)
 
 #### [`LegConnectionPolyline`](/v1/objects/leg-connection-polyline)
+
+#### [`LegConnectionDistance`](/v1/objects/leg-connection-distance)
+
+#### [`LegConnectionDuration`](/v1/objects/leg-connection-duration)
 
 #### [`LegConnectionPublished_at`](/v1/objects/leg-connection-published-at)
 
@@ -884,6 +959,68 @@ union Morph =
 
 #### [`deleteLocationPayload`](/v1/objects/delete-location-payload)
 
+#### [`LoyaltyAccount`](/v1/objects/loyalty-account)
+
+#### [`LoyaltyAccountConnection`](/v1/objects/loyalty-account-connection)
+
+#### [`LoyaltyAccountAggregator`](/v1/objects/loyalty-account-aggregator)
+
+#### [`LoyaltyAccountGroupBy`](/v1/objects/loyalty-account-group-by)
+
+#### [`LoyaltyAccountConnectionId`](/v1/objects/loyalty-account-connection-id)
+
+#### [`LoyaltyAccountConnection_id`](/v1/objects/loyalty-account-connection-id)
+
+#### [`LoyaltyAccountConnectionCreatedAt`](/v1/objects/loyalty-account-connection-created-at)
+
+#### [`LoyaltyAccountConnectionUpdatedAt`](/v1/objects/loyalty-account-connection-updated-at)
+
+#### [`LoyaltyAccountConnectionUser`](/v1/objects/loyalty-account-connection-user)
+
+#### [`LoyaltyAccountConnectionPoints`](/v1/objects/loyalty-account-connection-points)
+
+#### [`LoyaltyAccountConnectionValid`](/v1/objects/loyalty-account-connection-valid)
+
+#### [`LoyaltyAccountConnectionConfirmed_points`](/v1/objects/loyalty-account-connection-confirmed-points)
+
+#### [`LoyaltyAccountConnectionPublished_at`](/v1/objects/loyalty-account-connection-published-at)
+
+#### [`createLoyaltyAccountPayload`](/v1/objects/create-loyalty-account-payload)
+
+#### [`updateLoyaltyAccountPayload`](/v1/objects/update-loyalty-account-payload)
+
+#### [`deleteLoyaltyAccountPayload`](/v1/objects/delete-loyalty-account-payload)
+
+#### [`LoyaltyTransaction`](/v1/objects/loyalty-transaction)
+
+#### [`LoyaltyTransactionConnection`](/v1/objects/loyalty-transaction-connection)
+
+#### [`LoyaltyTransactionAggregator`](/v1/objects/loyalty-transaction-aggregator)
+
+#### [`LoyaltyTransactionGroupBy`](/v1/objects/loyalty-transaction-group-by)
+
+#### [`LoyaltyTransactionConnectionId`](/v1/objects/loyalty-transaction-connection-id)
+
+#### [`LoyaltyTransactionConnection_id`](/v1/objects/loyalty-transaction-connection-id)
+
+#### [`LoyaltyTransactionConnectionCreatedAt`](/v1/objects/loyalty-transaction-connection-created-at)
+
+#### [`LoyaltyTransactionConnectionUpdatedAt`](/v1/objects/loyalty-transaction-connection-updated-at)
+
+#### [`LoyaltyTransactionConnectionPoints`](/v1/objects/loyalty-transaction-connection-points)
+
+#### [`LoyaltyTransactionConnectionUser`](/v1/objects/loyalty-transaction-connection-user)
+
+#### [`LoyaltyTransactionConnectionEmail`](/v1/objects/loyalty-transaction-connection-email)
+
+#### [`LoyaltyTransactionConnectionPublished_at`](/v1/objects/loyalty-transaction-connection-published-at)
+
+#### [`createLoyaltyTransactionPayload`](/v1/objects/create-loyalty-transaction-payload)
+
+#### [`updateLoyaltyTransactionPayload`](/v1/objects/update-loyalty-transaction-payload)
+
+#### [`deleteLoyaltyTransactionPayload`](/v1/objects/delete-loyalty-transaction-payload)
+
 #### [`Notification`](/v1/objects/notification)
 
 #### [`NotificationConnection`](/v1/objects/notification-connection)
@@ -984,11 +1121,27 @@ union Morph =
 
 #### [`OrderConnectionUpdatedAt`](/v1/objects/order-connection-updated-at)
 
-#### [`OrderConnectionCity`](/v1/objects/order-connection-city)
+#### [`OrderConnectionActivity`](/v1/objects/order-connection-activity)
 
-#### [`OrderConnectionActivities`](/v1/objects/order-connection-activities)
+#### [`OrderConnectionProvider`](/v1/objects/order-connection-provider)
 
-#### [`OrderConnectionAmount`](/v1/objects/order-connection-amount)
+#### [`OrderConnectionUser`](/v1/objects/order-connection-user)
+
+#### [`OrderConnectionDate`](/v1/objects/order-connection-date)
+
+#### [`OrderConnectionStatus`](/v1/objects/order-connection-status)
+
+#### [`OrderConnectionDescription`](/v1/objects/order-connection-description)
+
+#### [`OrderConnectionProvider_amount`](/v1/objects/order-connection-provider-amount)
+
+#### [`OrderConnectionUser_amount`](/v1/objects/order-connection-user-amount)
+
+#### [`OrderConnectionKids`](/v1/objects/order-connection-kids)
+
+#### [`OrderConnectionAdults`](/v1/objects/order-connection-adults)
+
+#### [`OrderConnectionReview`](/v1/objects/order-connection-review)
 
 #### [`OrderConnectionPublished_at`](/v1/objects/order-connection-published-at)
 
@@ -1071,6 +1224,14 @@ union Morph =
 #### [`ProviderConnectionBusiness_status`](/v1/objects/provider-connection-business-status)
 
 #### [`ProviderConnectionSimilar`](/v1/objects/provider-connection-similar)
+
+#### [`ProviderConnectionRank`](/v1/objects/provider-connection-rank)
+
+#### [`ProviderConnectionRank0`](/v1/objects/provider-connection-rank-0)
+
+#### [`ProviderConnectionRank1`](/v1/objects/provider-connection-rank-1)
+
+#### [`ProviderConnectionRank2`](/v1/objects/provider-connection-rank-2)
 
 #### [`ProviderConnectionPublished_at`](/v1/objects/provider-connection-published-at)
 
@@ -1159,6 +1320,8 @@ union Morph =
 #### [`ReviewConnectionAuthor`](/v1/objects/review-connection-author)
 
 #### [`ReviewConnectionProvider`](/v1/objects/review-connection-provider)
+
+#### [`ReviewConnectionOrder`](/v1/objects/review-connection-order)
 
 #### [`ReviewConnectionPublished_at`](/v1/objects/review-connection-published-at)
 
@@ -1254,6 +1417,14 @@ union Morph =
 
 #### [`UsersPermissionsUserAggregator`](/v1/objects/users-permissions-user-aggregator)
 
+#### [`UsersPermissionsUserAggregatorSum`](/v1/objects/users-permissions-user-aggregator-sum)
+
+#### [`UsersPermissionsUserAggregatorAvg`](/v1/objects/users-permissions-user-aggregator-avg)
+
+#### [`UsersPermissionsUserAggregatorMin`](/v1/objects/users-permissions-user-aggregator-min)
+
+#### [`UsersPermissionsUserAggregatorMax`](/v1/objects/users-permissions-user-aggregator-max)
+
 #### [`UsersPermissionsUserGroupBy`](/v1/objects/users-permissions-user-group-by)
 
 #### [`UsersPermissionsUserConnectionId`](/v1/objects/users-permissions-user-connection-id)
@@ -1279,6 +1450,18 @@ union Morph =
 #### [`UsersPermissionsUserConnectionQuestionary`](/v1/objects/users-permissions-user-connection-questionary)
 
 #### [`UsersPermissionsUserConnectionUser_category`](/v1/objects/users-permissions-user-connection-user-category)
+
+#### [`UsersPermissionsUserConnectionGroup_label`](/v1/objects/users-permissions-user-connection-group-label)
+
+#### [`UsersPermissionsUserConnectionName`](/v1/objects/users-permissions-user-connection-name)
+
+#### [`UsersPermissionsUserConnectionSurname`](/v1/objects/users-permissions-user-connection-surname)
+
+#### [`UsersPermissionsUserConnectionPhone`](/v1/objects/users-permissions-user-connection-phone)
+
+#### [`UsersPermissionsUserConnectionCash_back_level`](/v1/objects/users-permissions-user-connection-cash-back-level)
+
+#### [`UsersPermissionsUserConnectionLoyalty_account`](/v1/objects/users-permissions-user-connection-loyalty-account)
 
 #### [`createUserPayload`](/v1/objects/create-user-payload)
 

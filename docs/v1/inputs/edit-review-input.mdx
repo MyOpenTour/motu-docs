@@ -3,18 +3,6 @@ id: edit-review-input
 title: editReviewInput
 ---
 
-export const Tag = ({children, color}) => (
-<span
-style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-{children}
-</span>
-);
-
 No description
 
 ```graphql
@@ -24,6 +12,7 @@ type editReviewInput {
   author: ID
   provider: ID
   likes: [ID]
+  order: ID
   published_at: DateTime
   created_by: ID
   updated_by: ID
@@ -41,6 +30,8 @@ type editReviewInput {
 #### `provider` ([`ID`](/v1/scalars/id))
 
 #### `likes` ([`[ID]`](/v1/scalars/id))
+
+#### `order` ([`ID`](/v1/scalars/id))
 
 #### `published_at` ([`DateTime`](/v1/scalars/date-time))
 

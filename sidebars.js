@@ -10,7 +10,7 @@ module.exports = {
           items: ['en/introduction', 'en/versioning',
                   'en/process-flow', 'en/authentication',
             'en/provider-information', 'en/registration',
-          'en/booking', 'en/payment'],
+          'en/booking', 'en/payment', 'en/activities', 'en/coupons', 'en/loyalty', 'en/questionary'],
         },
         {
           type: 'category',
